@@ -10,7 +10,7 @@
 <br/>
 <br/>
 
-<h3 align="center">x.browser.js</h3>
+<h3 align="center">t.browser.js</h3>
 
 <br/>
 <br/>
@@ -42,7 +42,7 @@
 ### Installation
 
 ```html
-<script src="https://raw.githubusercontent.com/4210/x.browser.js/master/index.js"></script>
+<script src="https://raw.githubusercontent.com/4210/t.browser.js/master/build/t.js"></script>
 ```
 
 <br/>
