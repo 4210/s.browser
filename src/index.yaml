@@ -1,0 +1,6183 @@
+
+- name: stop_event_propagation
+  give: [a]
+  call: a.stopPropagation()
+- name: get_inner_height
+  give: [a]
+  call: a.innerHeight
+  hold: true
+- name: get_client_height
+  give: [a]
+  call: a.clientHeight
+  hold: true
+- name: get_inner_width
+  give: [a]
+  call: a.innerWidth
+  hold: true
+- name: get_client_width
+  give: [a]
+  call: a.clientWidth
+  hold: true
+- name: get_scroll_top
+  give: [a]
+  call: a.scrollTop
+  hold: true
+- name: get_hidden
+  give: [a]
+  call: a.hidden
+  hold: true
+- name: get_ready_state
+  give: [a]
+  call: a.readyState
+  hold: true
+- name: get_response_text
+  give: [a]
+  call: a.responseText
+  hold: true
+- name: get_length_computable
+  give: [a]
+  call: a.lengthComputable
+  hold: true
+- name: get_total
+  give: [a]
+  call: a.total
+  hold: true
+- name: get_fullscreen_element
+  give: [a]
+  call: a.fullscreenElement
+  hold: true
+- name: get_cancel_full_screen
+  give: [a]
+  call: a.cancelFullScreen()
+  hold: true
+- name: get_request_fullscreen
+  give: [a]
+  call: a.requestFullscreen()
+  hold: true
+- name: get_history
+  give: [a]
+  call: a.history
+  hold: true
+- name: get_navigator
+  give: [a]
+  call: a.navigator
+  hold: true
+- name: get_user_agent
+  give: [a]
+  call: a.userAgent
+  hold: true
+- name: get_full_screen
+  give: [a]
+  call: a.fullScreen
+  hold: true
+- name: get_local_storage
+  give: [a]
+  call: a.localStorage
+  hold: true
+- name: get_session_storage
+  give: [a]
+  call: a.localStorage
+  hold: true
+- name: get_scroll_x
+  give: [a]
+  call: a.scrollX
+  hold: true
+- name: get_scroll_y
+  give: [a]
+  call: a.scrollY
+  hold: true
+- name: get_value
+  give: [a]
+  call: a.value
+  hold: true
+- name: get_matches
+  give: [a]
+  call: a.matches
+  hold: true
+- name: get_performance
+  give: [a]
+  call: a.performance
+  hold: true
+- name: get_memory
+  give: [a]
+  call: a.memory
+  hold: true
+- name: get_used_js_heap_size
+  give: [a]
+  call: a.usedJSHeapSize
+  hold: true
+- name: get_sheet
+  give: [a]
+  call: a.sheet
+  hold: true
+- name: get_target
+  give: [a]
+  call: a.target
+  hold: true
+- name: get_wheel_delta
+  give: [a]
+  call: a.wheelDelta
+  hold: true
+- name: get_detail
+  give: [a]
+  call: a.detail
+  hold: true
+- name: get_text
+  give: [a]
+  call: a.text
+  hold: true
+- name: style
+  give: [a]
+  call: a.style
+  hold: true
+- name: create_url_from_blob
+  give: [a]
+  call: URL.createObjectURL(o)
+  hold: true
+- name: create_new_blob_from_chunks
+  give: [x, o]
+  call: "new Blob(x, { type: o })"
+  hold: true
+- name: get_audio_context
+  call: window.AudioContext || window.webkitAudioContext
+  hold: true
+- name: get_window
+  call: window
+  hold: true
+- name: get_document
+  call: document
+  hold: true
+- name: listen
+  give: [a, e, f]
+  call: a.addEventListener(e, i)
+- name: check_if_video_can_play_type
+  call: a.canPlayType(x)
+  hold: true
+- name: draw_canvas_image
+  give: [a, e, f, r]
+  hold: o.drawImage(x, i, w)
+- name: begin_canvas_path
+  give: [a]
+  hold: o.beginPath()
+- name: move_canvas_pointer_to
+  give: [a, e, f]
+  hold: o.moveTo(x, i)
+- name: draw_canvas_line_to
+  give: [a, e, f]
+  hold: o.lineTo(x, i)
+- name: draw_canvas_stroke
+  give: [a]
+  hold: o.stroke()
+- name: set_canvas_smoothing
+  give: [a, e]
+  call: |-
+    o.mozImageSmoothingEnabled = a
+      o.webkitImageSmoothingEnabled = a
+      o.msImageSmoothingEnabled = a
+      o.imageSmoothingEnabled = a
+- name: get_cookie_list
+  call: document.cookie
+  hold: true
+- name: set_response_type
+  give: [a, e]
+  call: a.responseType = a
+- name: set_with_credentials
+  give: [a, e]
+  call: a.withCredentials = a
+- name: set_autoplay
+  give: [a, e]
+  call: a.autoplay = true
+- name: set_multiple
+  give: [a, e]
+  call: a.multiple = a
+- name: set_accept
+  give: [a, e]
+  call: a.accept = a
+- name: set_directory
+  give: [a, e]
+  call: a.directory = a
+- name: set_text_content
+  give: [a, e]
+  call: a.textContent = a
+- name: set_inner_html
+  give: [a, e]
+  call: a.innerHTML = a
+- name: set_id
+  give: [a, e]
+  call: a.id = a
+- name: set_rel
+  give: [a, e]
+  call: a.rel = a
+- name: set_href
+  give: [a, e]
+  call: a.href = a
+- name: set_type
+  give: [a, e]
+  call: a.type = a
+- name: set_async
+  give: [a, e]
+  call: a.async = a
+- name: create_dom_element
+  give: [a]
+  call: document.createElement(type)
+  hold: true
+- name: get_dom_element
+  give: [a]
+  call: document.getElementById(x)
+  hold: true
+- name: replace_dom_element
+  give: [a, e, f]
+  call: a.replaceChild(x, i)
+- name: focus_dom_element
+  give: [a]
+  call: n.focus()
+- name: u_create_dom_element_ns
+  give: [a, e, f]
+  call: a.createElementNS(x, i)
+  hold: true
+- name: u_set_dom_element_attr_ns
+  give: [a, e, f, r]
+  call: a.setAttributeNS(x, i, w)
+- name: prevent_default_event_behavior
+  give: [e]
+  call: e.preventDefault()
+- name: set_dom_element_attr
+  give: [a, e, f]
+  call: a.setAttribute(x, i)
+- name: remove_dom_element_attr
+  give: [a, e]
+  call: a.removeAttribute(x)
+- name: create_uint8array
+  give: [a]
+  call: new Uint8Array(x)
+  hold: true
+- name: create_uint16array
+  give: [a]
+  call: new Uint16Array(x)
+  hold: true
+- name: create_uint32array
+  give: [a]
+  call: new Uint32Array(x)
+  hold: true
+- name: create_audio
+  call: new Audio
+  hold: true
+- name: create_audio_context
+  call: new AudioContext
+  hold: true
+- name: create_web_socket
+  give: [a]
+  call: new WebSocket(x)
+  hold: true
+- name: get_canvas_context
+  give: [a, e]
+  call: a.getContext(x)
+  hold: true
+- name: append_dom_element
+  give: [a, e]
+  call: a.appendChild(x)
+- name: remove_dom_element
+  give: [a, e]
+  call: a.removeChild(x)
+- name: get_worker_global_scope_constructor
+  call: WorkerGlobalScope
+  hold: true
+- name: set_align_content_style
+  give: [a]
+  call: style.alignContent = a
+- name: set_align_items_style
+  give: [a]
+  call: style.alignItems = a
+- name: set_align_self_style
+  give: [a]
+  call: style.alignSelf = a
+- name: set_alignment_adjust_style
+  give: [a]
+  call: style.alignmentAdjust = a
+- name: set_alignment_baseline_style
+  give: [a]
+  call: style.alignmentBaseline = a
+- name: set_all_style
+  give: [a]
+  call: style.all = a
+- name: set_animation_style
+  give: [a]
+  call: style.animation = a
+- name: set_animation_delay_style
+  give: [a]
+  call: style.animationDelay = a
+- name: set_animation_direction_style
+  give: [a]
+  call: style.animationDirection = a
+- name: set_animation_duration_style
+  give: [a]
+  call: style.animationDuration = a
+- name: set_animation_fill_mode_style
+  give: [a]
+  call: style.animationFillMode = a
+- name: set_animation_iteration_count_style
+  give: [a]
+  call: style.animationIterationCount = a
+- name: set_animation_name_style
+  give: [a]
+  call: style.animationName = a
+- name: set_animation_play_state_style
+  give: [a]
+  call: style.animationPlayState = a
+- name: set_animation_timing_function_style
+  give: [a]
+  call: style.animationTimingFunction = a
+- name: set_appearance_style
+  give: [a]
+  call: style.appearance = a
+- name: set_azimuth_style
+  give: [a]
+  call: style.azimuth = a
+- name: set_backface_visibility_style
+  give: [a]
+  call: style.backfaceVisibility = a
+- name: set_background_style
+  give: [a]
+  call: style.background = a
+- name: set_background_attachment_style
+  give: [a]
+  call: style.backgroundAttachment = a
+- name: set_background_blend_mode_style
+  give: [a]
+  call: style.backgroundBlendMode = a
+- name: set_background_clip_style
+  give: [a]
+  call: style.backgroundClip = a
+- name: set_background_color_style
+  give: [a]
+  call: style.backgroundColor = a
+- name: set_background_image_style
+  give: [a]
+  call: style.backgroundImage = a
+- name: set_background_origin_style
+  give: [a]
+  call: style.backgroundOrigin = a
+- name: set_background_position_style
+  give: [a]
+  call: style.backgroundPosition = a
+- name: set_background_repeat_style
+  give: [a]
+  call: style.backgroundRepeat = a
+- name: set_background_size_style
+  give: [a]
+  call: style.backgroundSize = a
+- name: set_baseline_shift_style
+  give: [a]
+  call: style.baselineShift = a
+- name: set_baseline_source_style
+  give: [a]
+  call: style.baselineSource = a
+- name: set_block_ellipsis_style
+  give: [a]
+  call: style.blockEllipsis = a
+- name: set_block_overflow_style
+  give: [a]
+  call: style.blockOverflow = a
+- name: set_block_size_style
+  give: [a]
+  call: style.blockSize = a
+- name: set_block_step_style
+  give: [a]
+  call: style.blockStep = a
+- name: set_block_step_align_style
+  give: [a]
+  call: style.blockStepAlign = a
+- name: set_block_step_insert_style
+  give: [a]
+  call: style.blockStepInsert = a
+- name: set_block_step_round_style
+  give: [a]
+  call: style.blockStepRound = a
+- name: set_block_step_size_style
+  give: [a]
+  call: style.blockStepSize = a
+- name: set_bookmark_label_style
+  give: [a]
+  call: style.bookmarkLabel = a
+- name: set_bookmark_level_style
+  give: [a]
+  call: style.bookmarkLevel = a
+- name: set_bookmark_state_style
+  give: [a]
+  call: style.bookmarkState = a
+- name: set_border_style
+  give: [a]
+  call: style.border = a
+- name: set_border_block_style
+  give: [a]
+  call: style.borderBlock = a
+- name: set_border_block_color_style
+  give: [a]
+  call: style.borderBlockColor = a
+- name: set_border_block_end_style
+  give: [a]
+  call: style.borderBlockEnd = a
+- name: set_border_block_end_color_style
+  give: [a]
+  call: style.borderBlockEndColor = a
+- name: set_border_block_end_style_style
+  give: [a]
+  call: style.borderBlockEndStyle = a
+- name: set_border_block_end_width_style
+  give: [a]
+  call: style.borderBlockEndWidth = a
+- name: set_border_block_start_style
+  give: [a]
+  call: style.borderBlockStart = a
+- name: set_border_block_start_color_style
+  give: [a]
+  call: style.borderBlockStartColor = a
+- name: set_border_block_start_style_style
+  give: [a]
+  call: style.borderBlockStartStyle = a
+- name: set_border_block_start_width_style
+  give: [a]
+  call: style.borderBlockStartWidth = a
+- name: set_border_block_style_style
+  give: [a]
+  call: style.borderBlockStyle = a
+- name: set_border_block_width_style
+  give: [a]
+  call: style.borderBlockWidth = a
+- name: set_border_bottom_style
+  give: [a]
+  call: style.borderBottom = a
+- name: set_border_bottom_color_style
+  give: [a]
+  call: style.borderBottomColor = a
+- name: set_border_bottom_fit_length_style
+  give: [a]
+  call: style.borderBottomFitLength = a
+- name: set_border_bottom_fit_width_style
+  give: [a]
+  call: style.borderBottomFitWidth = a
+- name: set_border_bottom_image_style
+  give: [a]
+  call: style.borderBottomImage = a
+- name: set_border_bottom_left_fit_width_style
+  give: [a]
+  call: style.borderBottomLeftFitWidth = a
+- name: set_border_bottom_left_image_style
+  give: [a]
+  call: style.borderBottomLeftImage = a
+- name: set_border_bottom_left_radius_style
+  give: [a]
+  call: style.borderBottomLeftRadius = a
+- name: set_border_bottom_right_fit_length_style
+  give: [a]
+  call: style.borderBottomRightFitLength = a
+- name: set_border_bottom_right_fit_width_style
+  give: [a]
+  call: style.borderBottomRightFitWidth = a
+- name: set_border_bottom_right_image_style
+  give: [a]
+  call: style.borderBottomRightImage = a
+- name: set_border_bottom_right_radius_style
+  give: [a]
+  call: style.borderBottomRightRadius = a
+- name: set_border_bottom_style_style
+  give: [a]
+  call: style.borderBottomStyle = a
+- name: set_border_bottom_width_style
+  give: [a]
+  call: style.borderBottomWidth = a
+- name: set_border_bottoml_eft_fit_length_style
+  give: [a]
+  call: style.borderBottomlEftFitLength = a
+- name: set_border_boundary_style
+  give: [a]
+  call: style.borderBoundary = a
+- name: set_border_break_style
+  give: [a]
+  call: style.borderBreak = a
+- name: set_border_collapse_style
+  give: [a]
+  call: style.borderCollapse = a
+- name: set_border_color_style
+  give: [a]
+  call: style.borderColor = a
+- name: set_border_corner_fit_style
+  give: [a]
+  call: style.borderCornerFit = a
+- name: set_border_corner_image_style
+  give: [a]
+  call: style.borderCornerImage = a
+- name: set_border_corner_image_transform_style
+  give: [a]
+  call: style.borderCornerImageTransform = a
+- name: set_border_end_end_radius_style
+  give: [a]
+  call: style.borderEndEndRadius = a
+- name: set_border_end_start_radius_style
+  give: [a]
+  call: style.borderEndStartRadius = a
+- name: set_border_fit_style
+  give: [a]
+  call: style.borderFit = a
+- name: set_border_fit_length_style
+  give: [a]
+  call: style.borderFitLength = a
+- name: set_border_fit_width_style
+  give: [a]
+  call: style.borderFitWidth = a
+- name: set_border_image_style
+  give: [a]
+  call: style.borderImage = a
+- name: set_border_image_outset_style
+  give: [a]
+  call: style.borderImageOutset = a
+- name: set_border_image_repeat_style
+  give: [a]
+  call: style.borderImageRepeat = a
+- name: set_border_image_slice_style
+  give: [a]
+  call: style.borderImageSlice = a
+- name: set_border_image_source_style
+  give: [a]
+  call: style.borderImageSource = a
+- name: set_border_image_transform_style
+  give: [a]
+  call: style.borderImageTransform = a
+- name: set_border_image_width_style
+  give: [a]
+  call: style.borderImageWidth = a
+- name: set_border_inline_style
+  give: [a]
+  call: style.borderInline = a
+- name: set_border_inline_color_style
+  give: [a]
+  call: style.borderInlineColor = a
+- name: set_border_inline_end_style
+  give: [a]
+  call: style.borderInlineEnd = a
+- name: set_border_inline_end_color_style
+  give: [a]
+  call: style.borderInlineEndColor = a
+- name: set_border_inline_end_style_style
+  give: [a]
+  call: style.borderInlineEndStyle = a
+- name: set_border_inline_end_width_style
+  give: [a]
+  call: style.borderInlineEndWidth = a
+- name: set_border_inline_start_style
+  give: [a]
+  call: style.borderInlineStart = a
+- name: set_border_inline_start_color_style
+  give: [a]
+  call: style.borderInlineStartColor = a
+- name: set_border_inline_start_style_style
+  give: [a]
+  call: style.borderInlineStartStyle = a
+- name: set_border_inline_start_width_style
+  give: [a]
+  call: style.borderInlineStartWidth = a
+- name: set_border_inline_style_style
+  give: [a]
+  call: style.borderInlineStyle = a
+- name: set_border_inline_width_style
+  give: [a]
+  call: style.borderInlineWidth = a
+- name: set_border_left_style
+  give: [a]
+  call: style.borderLeft = a
+- name: set_border_left_color_style
+  give: [a]
+  call: style.borderLeftColor = a
+- name: set_border_left_fit_length_style
+  give: [a]
+  call: style.borderLeftFitLength = a
+- name: set_border_left_fit_width_style
+  give: [a]
+  call: style.borderLeftFitWidth = a
+- name: set_border_left_image_style
+  give: [a]
+  call: style.borderLeftImage = a
+- name: set_border_left_style_style
+  give: [a]
+  call: style.borderLeftStyle = a
+- name: set_border_left_width_style
+  give: [a]
+  call: style.borderLeftWidth = a
+- name: set_border_radius_style
+  give: [a]
+  call: style.borderRadius = a
+- name: set_border_right_style
+  give: [a]
+  call: style.borderRight = a
+- name: set_border_right_color_style
+  give: [a]
+  call: style.borderRightColor = a
+- name: set_border_right_fit_length_style
+  give: [a]
+  call: style.borderRightFitLength = a
+- name: set_border_right_fit_width_style
+  give: [a]
+  call: style.borderRightFitWidth = a
+- name: set_border_right_image_style
+  give: [a]
+  call: style.borderRightImage = a
+- name: set_border_right_style_style
+  give: [a]
+  call: style.borderRightStyle = a
+- name: set_border_right_width_style
+  give: [a]
+  call: style.borderRightWidth = a
+- name: set_border_spacing_style
+  give: [a]
+  call: style.borderSpacing = a
+- name: set_border_start_end_radius_style
+  give: [a]
+  call: style.borderStartEndRadius = a
+- name: set_border_start_start_radius_style
+  give: [a]
+  call: style.borderStartStartRadius = a
+- name: set_border_style_style
+  give: [a]
+  call: style.borderStyle = a
+- name: set_border_top_style
+  give: [a]
+  call: style.borderTop = a
+- name: set_border_top_color_style
+  give: [a]
+  call: style.borderTopColor = a
+- name: set_border_top_fit_length_style
+  give: [a]
+  call: style.borderTopFitLength = a
+- name: set_border_top_fit_width_style
+  give: [a]
+  call: style.borderTopFitWidth = a
+- name: set_border_top_image_style
+  give: [a]
+  call: style.borderTopImage = a
+- name: set_border_top_left_fit_length_style
+  give: [a]
+  call: style.borderTopLeftFitLength = a
+- name: set_border_top_left_fit_width_style
+  give: [a]
+  call: style.borderTopLeftFitWidth = a
+- name: set_border_top_left_image_style
+  give: [a]
+  call: style.borderTopLeftImage = a
+- name: set_border_top_left_radius_style
+  give: [a]
+  call: style.borderTopLeftRadius = a
+- name: set_border_top_right_fit_length_style
+  give: [a]
+  call: style.borderTopRightFitLength = a
+- name: set_border_top_right_fit_width_style
+  give: [a]
+  call: style.borderTopRightFitWidth = a
+- name: set_border_top_right_image_style
+  give: [a]
+  call: style.borderTopRightImage = a
+- name: set_border_top_right_radius_style
+  give: [a]
+  call: style.borderTopRightRadius = a
+- name: set_border_top_style_style
+  give: [a]
+  call: style.borderTopStyle = a
+- name: set_border_top_width_style
+  give: [a]
+  call: style.borderTopWidth = a
+- name: set_border_width_style
+  give: [a]
+  call: style.borderWidth = a
+- name: set_bottom_style
+  give: [a]
+  call: style.bottom = a
+- name: set_box_decoration_break_style
+  give: [a]
+  call: style.boxDecorationBreak = a
+- name: set_box_shadow_style
+  give: [a]
+  call: style.boxShadow = a
+- name: set_box_sizing_style
+  give: [a]
+  call: style.boxSizing = a
+- name: set_box_snap_style
+  give: [a]
+  call: style.boxSnap = a
+- name: set_break_after_style
+  give: [a]
+  call: style.breakAfter = a
+- name: set_break_before_style
+  give: [a]
+  call: style.breakBefore = a
+- name: set_break_inside_style
+  give: [a]
+  call: style.breakInside = a
+- name: set_caption_side_style
+  give: [a]
+  call: style.captionSide = a
+- name: set_caret_style
+  give: [a]
+  call: style.caret = a
+- name: set_caret_color_style
+  give: [a]
+  call: style.caretColor = a
+- name: set_caret_shape_style
+  give: [a]
+  call: style.caretShape = a
+- name: set_chains_style
+  give: [a]
+  call: style.chains = a
+- name: set_clear_style
+  give: [a]
+  call: style.clear = a
+- name: set_clip_style
+  give: [a]
+  call: style.clip = a
+- name: set_clip_path_style
+  give: [a]
+  call: style.clipPath = a
+- name: set_clip_rule_style
+  give: [a]
+  call: style.clipRule = a
+- name: set_color_style
+  give: [a]
+  call: style.color = a
+- name: set_color_adjust_style
+  give: [a]
+  call: style.colorAdjust = a
+- name: set_color_interpolation_filters_style
+  give: [a]
+  call: style.colorInterpolationFilters = a
+- name: set_color_scheme_style
+  give: [a]
+  call: style.colorScheme = a
+- name: set_column_count_style
+  give: [a]
+  call: style.columnCount = a
+- name: set_column_fill_style
+  give: [a]
+  call: style.columnFill = a
+- name: set_column_gap_style
+  give: [a]
+  call: style.columnGap = a
+- name: set_column_rule_style
+  give: [a]
+  call: style.columnRule = a
+- name: set_column_rule_color_style
+  give: [a]
+  call: style.columnRuleColor = a
+- name: set_column_rule_style_style
+  give: [a]
+  call: style.columnRuleStyle = a
+- name: set_column_rule_width_style
+  give: [a]
+  call: style.columnRuleWidth = a
+- name: set_column_span_style
+  give: [a]
+  call: style.columnSpan = a
+- name: set_column_width_style
+  give: [a]
+  call: style.columnWidth = a
+- name: set_columns_style
+  give: [a]
+  call: style.columns = a
+- name: set_contain_style
+  give: [a]
+  call: style.contain = a
+- name: set_content_style
+  give: [a]
+  call: style.content = a
+- name: set_continue_style
+  give: [a]
+  call: style.continue = a
+- name: set_counter_increment_style
+  give: [a]
+  call: style.counterIncrement = a
+- name: set_counter_reset_style
+  give: [a]
+  call: style.counterReset = a
+- name: set_counter_set_style
+  give: [a]
+  call: style.counterSet = a
+- name: set_cue_style
+  give: [a]
+  call: style.cue = a
+- name: set_cue_after_style
+  give: [a]
+  call: style.cueAfter = a
+- name: set_cue_before_style
+  give: [a]
+  call: style.cueBefore = a
+- name: set_cursor_style
+  give: [a]
+  call: style.cursor = a
+- name: set_direction_style
+  give: [a]
+  call: style.direction = a
+- name: set_display_style
+  give: [a]
+  call: style.display = a
+- name: set_dominant_baseline_style
+  give: [a]
+  call: style.dominantBaseline = a
+- name: set_drop_initial_after_adjust_style
+  give: [a]
+  call: style.dropInitialAfterAdjust = a
+- name: set_drop_initial_after_align_style
+  give: [a]
+  call: style.dropInitialAfterAlign = a
+- name: set_drop_initial_before_adjust_style
+  give: [a]
+  call: style.dropInitialBeforeAdjust = a
+- name: set_drop_initial_before_align_style
+  give: [a]
+  call: style.dropInitialBeforeAlign = a
+- name: set_drop_initial_size_style
+  give: [a]
+  call: style.dropInitialSize = a
+- name: set_drop_initial_value_style
+  give: [a]
+  call: style.dropInitialValue = a
+- name: set_elevation_style
+  give: [a]
+  call: style.elevation = a
+- name: set_empty_cells_style
+  give: [a]
+  call: style.emptyCells = a
+- name: set_fill_style
+  give: [a]
+  call: style.fill = a
+- name: set_fill_break_style
+  give: [a]
+  call: style.fillBreak = a
+- name: set_fill_color_style
+  give: [a]
+  call: style.fillColor = a
+- name: set_fill_image_style
+  give: [a]
+  call: style.fillImage = a
+- name: set_fill_opacity_style
+  give: [a]
+  call: style.fillOpacity = a
+- name: set_fill_origin_style
+  give: [a]
+  call: style.fillOrigin = a
+- name: set_fill_position_style
+  give: [a]
+  call: style.fillPosition = a
+- name: set_fill_repeat_style
+  give: [a]
+  call: style.fillRepeat = a
+- name: set_fill_rule_style
+  give: [a]
+  call: style.fillRule = a
+- name: set_fill_size_style
+  give: [a]
+  call: style.fillSize = a
+- name: set_filter_style
+  give: [a]
+  call: style.filter = a
+- name: set_flex_style
+  give: [a]
+  call: style.flex = a
+- name: set_flex_basis_style
+  give: [a]
+  call: style.flexBasis = a
+- name: set_flex_direction_style
+  give: [a]
+  call: style.flexDirection = a
+- name: set_flex_flow_style
+  give: [a]
+  call: style.flexFlow = a
+- name: set_flex_grow_style
+  give: [a]
+  call: style.flexGrow = a
+- name: set_flex_shrink_style
+  give: [a]
+  call: style.flexShrink = a
+- name: set_flex_wrap_style
+  give: [a]
+  call: style.flexWrap = a
+- name: set_float_style
+  give: [a]
+  call: style.float = a
+- name: set_float_defer_style
+  give: [a]
+  call: style.floatDefer = a
+- name: set_float_offset_style
+  give: [a]
+  call: style.floatOffset = a
+- name: set_float_reference_style
+  give: [a]
+  call: style.floatReference = a
+- name: set_flood_color_style
+  give: [a]
+  call: style.floodColor = a
+- name: set_flood_opacity_style
+  give: [a]
+  call: style.floodOpacity = a
+- name: set_flow_style
+  give: [a]
+  call: style.flow = a
+- name: set_flow_from_style
+  give: [a]
+  call: style.flowFrom = a
+- name: set_flow_into_style
+  give: [a]
+  call: style.flowInto = a
+- name: set_font_style
+  give: [a]
+  call: style.font = a
+- name: set_font_family_style
+  give: [a]
+  call: style.fontFamily = a
+- name: set_font_feature_settings_style
+  give: [a]
+  call: style.fontFeatureSettings = a
+- name: set_font_kerning_style
+  give: [a]
+  call: style.fontKerning = a
+- name: set_font_language_override_style
+  give: [a]
+  call: style.fontLanguageOverride = a
+- name: set_font_max_size_style
+  give: [a]
+  call: style.fontMaxSize = a
+- name: set_font_min_size_style
+  give: [a]
+  call: style.fontMinSize = a
+- name: set_font_optical_sizing_style
+  give: [a]
+  call: style.fontOpticalSizing = a
+- name: set_font_palette_style
+  give: [a]
+  call: style.fontPalette = a
+- name: set_font_size_style
+  give: [a]
+  call: style.fontSize = a
+- name: set_font_size_adjust_style
+  give: [a]
+  call: style.fontSizeAdjust = a
+- name: set_font_stretch_style
+  give: [a]
+  call: style.fontStretch = a
+- name: set_font_style_style
+  give: [a]
+  call: style.fontStyle = a
+- name: set_font_synthesis_style
+  give: [a]
+  call: style.fontSynthesis = a
+- name: set_font_synthesis_small_caps_style
+  give: [a]
+  call: style.fontSynthesisSmallCaps = a
+- name: set_font_synthesis_style_style
+  give: [a]
+  call: style.fontSynthesisStyle = a
+- name: set_font_synthesis_weight_style
+  give: [a]
+  call: style.fontSynthesisWeight = a
+- name: set_font_variant_style
+  give: [a]
+  call: style.fontVariant = a
+- name: set_font_variant_alternates_style
+  give: [a]
+  call: style.fontVariantAlternates = a
+- name: set_font_variant_caps_style
+  give: [a]
+  call: style.fontVariantCaps = a
+- name: set_font_variant_east_asian_style
+  give: [a]
+  call: style.fontVariantEastAsian = a
+- name: set_font_variant_emoji_style
+  give: [a]
+  call: style.fontVariantEmoji = a
+- name: set_font_variant_ligatures_style
+  give: [a]
+  call: style.fontVariantLigatures = a
+- name: set_font_variant_numeric_style
+  give: [a]
+  call: style.fontVariantNumeric = a
+- name: set_font_variant_position_style
+  give: [a]
+  call: style.fontVariantPosition = a
+- name: set_font_variation_settings_style
+  give: [a]
+  call: style.fontVariationSettings = a
+- name: set_font_weight_style
+  give: [a]
+  call: style.fontWeight = a
+- name: set_footnote_display_style
+  give: [a]
+  call: style.footnoteDisplay = a
+- name: set_footnote_policy_style
+  give: [a]
+  call: style.footnotePolicy = a
+- name: set_forced_color_adjust_style
+  give: [a]
+  call: style.forcedColorAdjust = a
+- name: set_gap_style
+  give: [a]
+  call: style.gap = a
+- name: set_glyph_orientation_vertical_style
+  give: [a]
+  call: style.glyphOrientationVertical = a
+- name: set_grid_style
+  give: [a]
+  call: style.grid = a
+- name: set_grid_area_style
+  give: [a]
+  call: style.gridArea = a
+- name: set_grid_auto_columns_style
+  give: [a]
+  call: style.gridAutoColumns = a
+- name: set_grid_auto_flow_style
+  give: [a]
+  call: style.gridAutoFlow = a
+- name: set_grid_auto_rows_style
+  give: [a]
+  call: style.gridAutoRows = a
+- name: set_grid_column_style
+  give: [a]
+  call: style.gridColumn = a
+- name: set_grid_column_end_style
+  give: [a]
+  call: style.gridColumnEnd = a
+- name: set_grid_column_start_style
+  give: [a]
+  call: style.gridColumnStart = a
+- name: set_grid_row_style
+  give: [a]
+  call: style.gridRow = a
+- name: set_grid_row_end_style
+  give: [a]
+  call: style.gridRowEnd = a
+- name: set_grid_row_start_style
+  give: [a]
+  call: style.gridRowStart = a
+- name: set_grid_template_style
+  give: [a]
+  call: style.gridTemplate = a
+- name: set_grid_template_areas_style
+  give: [a]
+  call: style.gridTemplateAreas = a
+- name: set_grid_template_columns_style
+  give: [a]
+  call: style.gridTemplateColumns = a
+- name: set_grid_template_rows_style
+  give: [a]
+  call: style.gridTemplateRows = a
+- name: set_hanging_punctuation_style
+  give: [a]
+  call: style.hangingPunctuation = a
+- name: set_height_style
+  give: [a]
+  call: style.height = a
+- name: set_hyphenate_character_style
+  give: [a]
+  call: style.hyphenateCharacter = a
+- name: set_hyphenate_limit_chars_style
+  give: [a]
+  call: style.hyphenateLimitChars = a
+- name: set_hyphenate_limit_last_style
+  give: [a]
+  call: style.hyphenateLimitLast = a
+- name: set_hyphenate_limit_lines_style
+  give: [a]
+  call: style.hyphenateLimitLines = a
+- name: set_hyphenate_limit_zone_style
+  give: [a]
+  call: style.hyphenateLimitZone = a
+- name: set_hyphens_style
+  give: [a]
+  call: style.hyphens = a
+- name: set_image_orientation_style
+  give: [a]
+  call: style.imageOrientation = a
+- name: set_image_rendering_style
+  give: [a]
+  call: style.imageRendering = a
+- name: set_image_resolution_style
+  give: [a]
+  call: style.imageResolution = a
+- name: set_initial_letters_style
+  give: [a]
+  call: style.initialLetters = a
+- name: set_initial_letters_align_style
+  give: [a]
+  call: style.initialLettersAlign = a
+- name: set_initial_letters_wrap_style
+  give: [a]
+  call: style.initialLettersWrap = a
+- name: set_inline_box_align_style
+  give: [a]
+  call: style.inlineBoxAlign = a
+- name: set_inline_size_style
+  give: [a]
+  call: style.inlineSize = a
+- name: set_inline_sizing_style
+  give: [a]
+  call: style.inlineSizing = a
+- name: set_inset_style
+  give: [a]
+  call: style.inset = a
+- name: set_inset_after_style
+  give: [a]
+  call: style.insetAfter = a
+- name: set_inset_before_style
+  give: [a]
+  call: style.insetBefore = a
+- name: set_inset_block_style
+  give: [a]
+  call: style.insetBlock = a
+- name: set_inset_block_end_style
+  give: [a]
+  call: style.insetBlockEnd = a
+- name: set_inset_block_start_style
+  give: [a]
+  call: style.insetBlockStart = a
+- name: set_inset_end_style
+  give: [a]
+  call: style.insetEnd = a
+- name: set_inset_inline_style
+  give: [a]
+  call: style.insetInline = a
+- name: set_inset_inline_end_style
+  give: [a]
+  call: style.insetInlineEnd = a
+- name: set_inset_inline_start_style
+  give: [a]
+  call: style.insetInlineStart = a
+- name: set_inset_start_style
+  give: [a]
+  call: style.insetStart = a
+- name: set_isolation_style
+  give: [a]
+  call: style.isolation = a
+- name: set_justify_content_style
+  give: [a]
+  call: style.justifyContent = a
+- name: set_justify_items_style
+  give: [a]
+  call: style.justifyItems = a
+- name: set_justify_self_style
+  give: [a]
+  call: style.justifySelf = a
+- name: set_leading_trim_style
+  give: [a]
+  call: style.leadingTrim = a
+- name: set_leading_trim_over_style
+  give: [a]
+  call: style.leadingTrimOver = a
+- name: set_leading_trim_under_style
+  give: [a]
+  call: style.leadingTrimUnder = a
+- name: set_left_style
+  give: [a]
+  call: style.left = a
+- name: set_letter_spacing_style
+  give: [a]
+  call: style.letterSpacing = a
+- name: set_lighting_color_style
+  give: [a]
+  call: style.lightingColor = a
+- name: set_line_break_style
+  give: [a]
+  call: style.lineBreak = a
+- name: set_line_clamp_style
+  give: [a]
+  call: style.lineClamp = a
+- name: set_line_grid_style
+  give: [a]
+  call: style.lineGrid = a
+- name: set_line_height_style
+  give: [a]
+  call: style.lineHeight = a
+- name: set_line_height_step_style
+  give: [a]
+  call: style.lineHeightStep = a
+- name: set_line_padding_style
+  give: [a]
+  call: style.linePadding = a
+- name: set_line_sizing_style
+  give: [a]
+  call: style.lineSizing = a
+- name: set_line_snap_style
+  give: [a]
+  call: style.lineSnap = a
+- name: set_line_stacking_style
+  give: [a]
+  call: style.lineStacking = a
+- name: set_line_stacking_ruby_style
+  give: [a]
+  call: style.lineStackingRuby = a
+- name: set_line_stacking_shift_style
+  give: [a]
+  call: style.lineStackingShift = a
+- name: set_line_stacking_strategy_style
+  give: [a]
+  call: style.lineStackingStrategy = a
+- name: set_list_style_style
+  give: [a]
+  call: style.listStyle = a
+- name: set_list_style_image_style
+  give: [a]
+  call: style.listStyleImage = a
+- name: set_list_style_position_style
+  give: [a]
+  call: style.listStylePosition = a
+- name: set_list_style_type_style
+  give: [a]
+  call: style.listStyleType = a
+- name: set_margin_style
+  give: [a]
+  call: style.margin = a
+- name: set_margin_block_style
+  give: [a]
+  call: style.marginBlock = a
+- name: set_margin_block_end_style
+  give: [a]
+  call: style.marginBlockEnd = a
+- name: set_margin_block_start_style
+  give: [a]
+  call: style.marginBlockStart = a
+- name: set_margin_bottom_style
+  give: [a]
+  call: style.marginBottom = a
+- name: set_margin_break_style
+  give: [a]
+  call: style.marginBreak = a
+- name: set_margin_inline_style
+  give: [a]
+  call: style.marginInline = a
+- name: set_margin_inline_end_style
+  give: [a]
+  call: style.marginInlineEnd = a
+- name: set_margin_inline_start_style
+  give: [a]
+  call: style.marginInlineStart = a
+- name: set_margin_left_style
+  give: [a]
+  call: style.marginLeft = a
+- name: set_margin_right_style
+  give: [a]
+  call: style.marginRight = a
+- name: set_margin_top_style
+  give: [a]
+  call: style.marginTop = a
+- name: set_margin_trim_style
+  give: [a]
+  call: style.marginTrim = a
+- name: set_marker_style
+  give: [a]
+  call: style.marker = a
+- name: set_marker_end_style
+  give: [a]
+  call: style.markerEnd = a
+- name: set_marker_knockout_left_style
+  give: [a]
+  call: style.markerKnockoutLeft = a
+- name: set_marker_knockout_right_style
+  give: [a]
+  call: style.markerKnockoutRight = a
+- name: set_marker_mid_style
+  give: [a]
+  call: style.markerMid = a
+- name: set_marker_pattern_style
+  give: [a]
+  call: style.markerPattern = a
+- name: set_marker_segment_style
+  give: [a]
+  call: style.markerSegment = a
+- name: set_marker_side_style
+  give: [a]
+  call: style.markerSide = a
+- name: set_marker_start_style
+  give: [a]
+  call: style.markerStart = a
+- name: set_mask_style
+  give: [a]
+  call: style.mask = a
+- name: set_mask_border_style
+  give: [a]
+  call: style.maskBorder = a
+- name: set_mask_border_mode_style
+  give: [a]
+  call: style.maskBorderMode = a
+- name: set_mask_border_outset_style
+  give: [a]
+  call: style.maskBorderOutset = a
+- name: set_mask_border_repeat_style
+  give: [a]
+  call: style.maskBorderRepeat = a
+- name: set_mask_border_slice_style
+  give: [a]
+  call: style.maskBorderSlice = a
+- name: set_mask_border_source_style
+  give: [a]
+  call: style.maskBorderSource = a
+- name: set_mask_border_width_style
+  give: [a]
+  call: style.maskBorderWidth = a
+- name: set_mask_clip_style
+  give: [a]
+  call: style.maskClip = a
+- name: set_mask_composite_style
+  give: [a]
+  call: style.maskComposite = a
+- name: set_mask_image_style
+  give: [a]
+  call: style.maskImage = a
+- name: set_mask_mode_style
+  give: [a]
+  call: style.maskMode = a
+- name: set_mask_origin_style
+  give: [a]
+  call: style.maskOrigin = a
+- name: set_mask_position_style
+  give: [a]
+  call: style.maskPosition = a
+- name: set_mask_repeat_style
+  give: [a]
+  call: style.maskRepeat = a
+- name: set_mask_size_style
+  give: [a]
+  call: style.maskSize = a
+- name: set_mask_type_style
+  give: [a]
+  call: style.maskType = a
+- name: set_max_block_size_style
+  give: [a]
+  call: style.maxBlockSize = a
+- name: set_max_height_style
+  give: [a]
+  call: style.maxHeight = a
+- name: set_max_inline_size_style
+  give: [a]
+  call: style.maxInlineSize = a
+- name: set_max_lines_style
+  give: [a]
+  call: style.maxLines = a
+- name: set_max_width_style
+  give: [a]
+  call: style.maxWidth = a
+- name: set_min_block_size_style
+  give: [a]
+  call: style.minBlockSize = a
+- name: set_min_height_style
+  give: [a]
+  call: style.minHeight = a
+- name: set_min_inline_size_style
+  give: [a]
+  call: style.minInlineSize = a
+- name: set_min_width_style
+  give: [a]
+  call: style.minWidth = a
+- name: set_mix_blend_mode_style
+  give: [a]
+  call: style.mixBlendMode = a
+- name: set_nav_down_style
+  give: [a]
+  call: style.navDown = a
+- name: set_nav_left_style
+  give: [a]
+  call: style.navLeft = a
+- name: set_nav_right_style
+  give: [a]
+  call: style.navRight = a
+- name: set_nav_up_style
+  give: [a]
+  call: style.navUp = a
+- name: set_object_fit_style
+  give: [a]
+  call: style.objectFit = a
+- name: set_object_position_style
+  give: [a]
+  call: style.objectPosition = a
+- name: set_offset_style
+  give: [a]
+  call: style.offset = a
+- name: set_offset_after_style
+  give: [a]
+  call: style.offsetAfter = a
+- name: set_offset_anchor_style
+  give: [a]
+  call: style.offsetAnchor = a
+- name: set_offset_before_style
+  give: [a]
+  call: style.offsetBefore = a
+- name: set_offset_distance_style
+  give: [a]
+  call: style.offsetDistance = a
+- name: set_offset_end_style
+  give: [a]
+  call: style.offsetEnd = a
+- name: set_offset_path_style
+  give: [a]
+  call: style.offsetPath = a
+- name: set_offset_position_style
+  give: [a]
+  call: style.offsetPosition = a
+- name: set_offset_rotate_style
+  give: [a]
+  call: style.offsetRotate = a
+- name: set_offset_start_style
+  give: [a]
+  call: style.offsetStart = a
+- name: set_opacity_style
+  give: [a]
+  call: style.opacity = a
+- name: set_order_style
+  give: [a]
+  call: style.order = a
+- name: set_orphans_style
+  give: [a]
+  call: style.orphans = a
+- name: set_outline_style
+  give: [a]
+  call: style.outline = a
+- name: set_outline_color_style
+  give: [a]
+  call: style.outlineColor = a
+- name: set_outline_offset_style
+  give: [a]
+  call: style.outlineOffset = a
+- name: set_outline_style_style
+  give: [a]
+  call: style.outlineStyle = a
+- name: set_outline_width_style
+  give: [a]
+  call: style.outlineWidth = a
+- name: set_overflow_style
+  give: [a]
+  call: style.overflow = a
+- name: set_overflow_block_style
+  give: [a]
+  call: style.overflowBlock = a
+- name: set_overflow_inline_style
+  give: [a]
+  call: style.overflowInline = a
+- name: set_overflow_wrap_style
+  give: [a]
+  call: style.overflowWrap = a
+- name: set_overflow_x_style
+  give: [a]
+  call: style.overflowX = a
+- name: set_overflow_y_style
+  give: [a]
+  call: style.overflowY = a
+- name: set_overscroll_behavior_style
+  give: [a]
+  call: style.overscrollBehavior = a
+- name: set_overscroll_behavior_block_style
+  give: [a]
+  call: style.overscrollBehaviorBlock = a
+- name: set_overscroll_behavior_inline_style
+  give: [a]
+  call: style.overscrollBehaviorInline = a
+- name: set_overscroll_behavior_x_style
+  give: [a]
+  call: style.overscrollBehaviorX = a
+- name: set_overscroll_behavior_y_style
+  give: [a]
+  call: style.overscrollBehaviorY = a
+- name: set_padding_style
+  give: [a]
+  call: style.padding = a
+- name: set_padding_block_style
+  give: [a]
+  call: style.paddingBlock = a
+- name: set_padding_block_end_style
+  give: [a]
+  call: style.paddingBlockEnd = a
+- name: set_padding_block_start_style
+  give: [a]
+  call: style.paddingBlockStart = a
+- name: set_padding_bottom_style
+  give: [a]
+  call: style.paddingBottom = a
+- name: set_padding_inline_style
+  give: [a]
+  call: style.paddingInline = a
+- name: set_padding_inline_end_style
+  give: [a]
+  call: style.paddingInlineEnd = a
+- name: set_padding_inline_start_style
+  give: [a]
+  call: style.paddingInlineStart = a
+- name: set_padding_left_style
+  give: [a]
+  call: style.paddingLeft = a
+- name: set_padding_right_style
+  give: [a]
+  call: style.paddingRight = a
+- name: set_padding_top_style
+  give: [a]
+  call: style.paddingTop = a
+- name: set_page_style
+  give: [a]
+  call: style.page = a
+- name: set_page_break_after_style
+  give: [a]
+  call: style.pageBreakAfter = a
+- name: set_page_break_before_style
+  give: [a]
+  call: style.pageBreakBefore = a
+- name: set_page_break_inside_style
+  give: [a]
+  call: style.pageBreakInside = a
+- name: set_pause_style
+  give: [a]
+  call: style.pause = a
+- name: set_pause_after_style
+  give: [a]
+  call: style.pauseAfter = a
+- name: set_pause_before_style
+  give: [a]
+  call: style.pauseBefore = a
+- name: set_perspective_style
+  give: [a]
+  call: style.perspective = a
+- name: set_perspective_origin_style
+  give: [a]
+  call: style.perspectiveOrigin = a
+- name: set_pitch_style
+  give: [a]
+  call: style.pitch = a
+- name: set_pitch_range_style
+  give: [a]
+  call: style.pitchRange = a
+- name: set_place_content_style
+  give: [a]
+  call: style.placeContent = a
+- name: set_place_items_style
+  give: [a]
+  call: style.placeItems = a
+- name: set_place_self_style
+  give: [a]
+  call: style.placeSelf = a
+- name: set_play_during_style
+  give: [a]
+  call: style.playDuring = a
+- name: set_position_style
+  give: [a]
+  call: style.position = a
+- name: set_quotes_style
+  give: [a]
+  call: style.quotes = a
+- name: set_region_fragment_style
+  give: [a]
+  call: style.regionFragment = a
+- name: set_resize_style
+  give: [a]
+  call: style.resize = a
+- name: set_richness_style
+  give: [a]
+  call: style.richness = a
+- name: set_right_style
+  give: [a]
+  call: style.right = a
+- name: set_row_gap_style
+  give: [a]
+  call: style.rowGap = a
+- name: set_ruby_align_style
+  give: [a]
+  call: style.rubyAlign = a
+- name: set_ruby_merge_style
+  give: [a]
+  call: style.rubyMerge = a
+- name: set_ruby_position_style
+  give: [a]
+  call: style.rubyPosition = a
+- name: set_running_style
+  give: [a]
+  call: style.running = a
+- name: set_scroll_behavior_style
+  give: [a]
+  call: style.scrollBehavior = a
+- name: set_scroll_margin_style
+  give: [a]
+  call: style.scrollMargin = a
+- name: set_scroll_margin_block_style
+  give: [a]
+  call: style.scrollMarginBlock = a
+- name: set_scroll_margin_block_end_style
+  give: [a]
+  call: style.scrollMarginBlockEnd = a
+- name: set_scroll_margin_block_start_style
+  give: [a]
+  call: style.scrollMarginBlockStart = a
+- name: set_scroll_margin_bottom_style
+  give: [a]
+  call: style.scrollMarginBottom = a
+- name: set_scroll_margin_inline_style
+  give: [a]
+  call: style.scrollMarginInline = a
+- name: set_scroll_margin_inline_end_style
+  give: [a]
+  call: style.scrollMarginInlineEnd = a
+- name: set_scroll_margin_inline_start_style
+  give: [a]
+  call: style.scrollMarginInlineStart = a
+- name: set_scroll_margin_left_style
+  give: [a]
+  call: style.scrollMarginLeft = a
+- name: set_scroll_margin_right_style
+  give: [a]
+  call: style.scrollMarginRight = a
+- name: set_scroll_margin_top_style
+  give: [a]
+  call: style.scrollMarginTop = a
+- name: set_scroll_padding_style
+  give: [a]
+  call: style.scrollPadding = a
+- name: set_scroll_padding_block_style
+  give: [a]
+  call: style.scrollPaddingBlock = a
+- name: set_scroll_padding_block_end_style
+  give: [a]
+  call: style.scrollPaddingBlockEnd = a
+- name: set_scroll_padding_block_start_style
+  give: [a]
+  call: style.scrollPaddingBlockStart = a
+- name: set_scroll_padding_bottom_style
+  give: [a]
+  call: style.scrollPaddingBottom = a
+- name: set_scroll_padding_inline_style
+  give: [a]
+  call: style.scrollPaddingInline = a
+- name: set_scroll_padding_inline_end_style
+  give: [a]
+  call: style.scrollPaddingInlineEnd = a
+- name: set_scroll_padding_inline_start_style
+  give: [a]
+  call: style.scrollPaddingInlineStart = a
+- name: set_scroll_padding_left_style
+  give: [a]
+  call: style.scrollPaddingLeft = a
+- name: set_scroll_padding_right_style
+  give: [a]
+  call: style.scrollPaddingRight = a
+- name: set_scroll_padding_top_style
+  give: [a]
+  call: style.scrollPaddingTop = a
+- name: set_scroll_snap_align_style
+  give: [a]
+  call: style.scrollSnapAlign = a
+- name: set_scroll_snap_stop_style
+  give: [a]
+  call: style.scrollSnapStop = a
+- name: set_scroll_snap_type_style
+  give: [a]
+  call: style.scrollSnapType = a
+- name: set_scrollbar_color_style
+  give: [a]
+  call: style.scrollbarColor = a
+- name: set_scrollbar_gutter_style
+  give: [a]
+  call: style.scrollbarGutter = a
+- name: set_scrollbar_width_style
+  give: [a]
+  call: style.scrollbarWidth = a
+- name: set_shape_image_threshold_style
+  give: [a]
+  call: style.shapeImageThreshold = a
+- name: set_shape_inside_style
+  give: [a]
+  call: style.shapeInside = a
+- name: set_shape_margin_style
+  give: [a]
+  call: style.shapeMargin = a
+- name: set_shape_outside_style
+  give: [a]
+  call: style.shapeOutside = a
+- name: set_spatial_navigation_action_style
+  give: [a]
+  call: style.spatialNavigationAction = a
+- name: set_spatial_navigation_contain_style
+  give: [a]
+  call: style.spatialNavigationContain = a
+- name: set_spatial_navigation_function_style
+  give: [a]
+  call: style.spatialNavigationFunction = a
+- name: set_speak_style
+  give: [a]
+  call: style.speak = a
+- name: set_speak_header_style
+  give: [a]
+  call: style.speakHeader = a
+- name: set_speak_numeral_style
+  give: [a]
+  call: style.speakNumeral = a
+- name: set_speak_punctuation_style
+  give: [a]
+  call: style.speakPunctuation = a
+- name: set_speech_rate_style
+  give: [a]
+  call: style.speechRate = a
+- name: set_stress_style
+  give: [a]
+  call: style.stress = a
+- name: set_string_set_style
+  give: [a]
+  call: style.stringSet = a
+- name: set_stroke_style
+  give: [a]
+  call: style.stroke = a
+- name: set_stroke_align_style
+  give: [a]
+  call: style.strokeAlign = a
+- name: set_stroke_alignment_style
+  give: [a]
+  call: style.strokeAlignment = a
+- name: set_stroke_break_style
+  give: [a]
+  call: style.strokeBreak = a
+- name: set_stroke_color_style
+  give: [a]
+  call: style.strokeColor = a
+- name: set_stroke_dash_corner_style
+  give: [a]
+  call: style.strokeDashCorner = a
+- name: set_stroke_dash_justify_style
+  give: [a]
+  call: style.strokeDashJustify = a
+- name: set_stroke_dashadjust_style
+  give: [a]
+  call: style.strokeDashadjust = a
+- name: set_stroke_dasharray_style
+  give: [a]
+  call: style.strokeDasharray = a
+- name: set_stroke_dashcorner_style
+  give: [a]
+  call: style.strokeDashcorner = a
+- name: set_stroke_dashoffset_style
+  give: [a]
+  call: style.strokeDashoffset = a
+- name: set_stroke_image_style
+  give: [a]
+  call: style.strokeImage = a
+- name: set_stroke_linecap_style
+  give: [a]
+  call: style.strokeLinecap = a
+- name: set_stroke_linejoin_style
+  give: [a]
+  call: style.strokeLinejoin = a
+- name: set_stroke_miterlimit_style
+  give: [a]
+  call: style.strokeMiterlimit = a
+- name: set_stroke_opacity_style
+  give: [a]
+  call: style.strokeOpacity = a
+- name: set_stroke_origin_style
+  give: [a]
+  call: style.strokeOrigin = a
+- name: set_stroke_position_style
+  give: [a]
+  call: style.strokePosition = a
+- name: set_stroke_repeat_style
+  give: [a]
+  call: style.strokeRepeat = a
+- name: set_stroke_size_style
+  give: [a]
+  call: style.strokeSize = a
+- name: set_stroke_width_style
+  give: [a]
+  call: style.strokeWidth = a
+- name: set_tab_size_style
+  give: [a]
+  call: style.tabSize = a
+- name: set_table_layout_style
+  give: [a]
+  call: style.tableLayout = a
+- name: set_text_align_style
+  give: [a]
+  call: style.textAlign = a
+- name: set_text_align_all_style
+  give: [a]
+  call: style.textAlignAll = a
+- name: set_text_align_last_style
+  give: [a]
+  call: style.textAlignLast = a
+- name: set_text_combine_upright_style
+  give: [a]
+  call: style.textCombineUpright = a
+- name: set_text_decoration_style
+  give: [a]
+  call: style.textDecoration = a
+- name: set_text_decoration_color_style
+  give: [a]
+  call: style.textDecorationColor = a
+- name: set_text_decoration_line_style
+  give: [a]
+  call: style.textDecorationLine = a
+- name: set_text_decoration_skip_style
+  give: [a]
+  call: style.textDecorationSkip = a
+- name: set_text_decoration_skip_ink_style
+  give: [a]
+  call: style.textDecorationSkipInk = a
+- name: set_text_decoration_style_style
+  give: [a]
+  call: style.textDecorationStyle = a
+- name: set_text_decoration_thickenss_style
+  give: [a]
+  call: style.textDecorationThickenss = a
+- name: set_text_decoration_width_style
+  give: [a]
+  call: style.textDecorationWidth = a
+- name: set_text_emphasis_style
+  give: [a]
+  call: style.textEmphasis = a
+- name: set_text_emphasis_color_style
+  give: [a]
+  call: style.textEmphasisColor = a
+- name: set_text_emphasis_position_style
+  give: [a]
+  call: style.textEmphasisPosition = a
+- name: set_text_emphasis_skip_style
+  give: [a]
+  call: style.textEmphasisSkip = a
+- name: set_text_emphasis_style_style
+  give: [a]
+  call: style.textEmphasisStyle = a
+- name: set_text_group_align_style
+  give: [a]
+  call: style.textGroupAlign = a
+- name: set_text_height_style
+  give: [a]
+  call: style.textHeight = a
+- name: set_text_indent_style
+  give: [a]
+  call: style.textIndent = a
+- name: set_text_justify_style
+  give: [a]
+  call: style.textJustify = a
+- name: set_text_orientation_style
+  give: [a]
+  call: style.textOrientation = a
+- name: set_text_overflow_style
+  give: [a]
+  call: style.textOverflow = a
+- name: set_text_shadow_style
+  give: [a]
+  call: style.textShadow = a
+- name: set_text_space_collapse_style
+  give: [a]
+  call: style.textSpaceCollapse = a
+- name: set_text_space_trim_style
+  give: [a]
+  call: style.textSpaceTrim = a
+- name: set_text_spacing_style
+  give: [a]
+  call: style.textSpacing = a
+- name: set_text_transform_style
+  give: [a]
+  call: style.textTransform = a
+- name: set_text_underline_offset_style
+  give: [a]
+  call: style.textUnderlineOffset = a
+- name: set_text_underline_position_style
+  give: [a]
+  call: style.textUnderlinePosition = a
+- name: set_text_wrap_style
+  give: [a]
+  call: style.textWrap = a
+- name: set_top_style
+  give: [a]
+  call: style.top = a
+- name: set_transform_style
+  give: [a]
+  call: style.transform = a
+- name: set_transform_box_style
+  give: [a]
+  call: style.transformBox = a
+- name: set_transform_origin_style
+  give: [a]
+  call: style.transformOrigin = a
+- name: set_transform_style_style
+  give: [a]
+  call: style.transformStyle = a
+- name: set_transition_style
+  give: [a]
+  call: style.transition = a
+- name: set_transition_delay_style
+  give: [a]
+  call: style.transitionDelay = a
+- name: set_transition_duration_style
+  give: [a]
+  call: style.transitionDuration = a
+- name: set_transition_property_style
+  give: [a]
+  call: style.transitionProperty = a
+- name: set_transition_timing_function_style
+  give: [a]
+  call: style.transitionTimingFunction = a
+- name: set_unicode_bidi_style
+  give: [a]
+  call: style.unicodeBidi = a
+- name: set_user_select_style
+  give: [a]
+  call: style.userSelect = a
+- name: set_vertical_align_style
+  give: [a]
+  call: style.verticalAlign = a
+- name: set_visibility_style
+  give: [a]
+  call: style.visibility = a
+- name: set_voice_family_style
+  give: [a]
+  call: style.voiceFamily = a
+- name: set_volume_style
+  give: [a]
+  call: style.volume = a
+- name: set_white_space_style
+  give: [a]
+  call: style.whiteSpace = a
+- name: set_widows_style
+  give: [a]
+  call: style.widows = a
+- name: set_width_style
+  give: [a]
+  call: style.width = a
+- name: set_will_change_style
+  give: [a]
+  call: style.willChange = a
+- name: set_word_break_style
+  give: [a]
+  call: style.wordBreak = a
+- name: set_word_spacing_style
+  give: [a]
+  call: style.wordSpacing = a
+- name: set_word_wrap_style
+  give: [a]
+  call: style.wordWrap = a
+- name: set_wrap_after_style
+  give: [a]
+  call: style.wrapAfter = a
+- name: set_wrap_before_style
+  give: [a]
+  call: style.wrapBefore = a
+- name: set_wrap_flow_style
+  give: [a]
+  call: style.wrapFlow = a
+- name: set_wrap_inside_style
+  give: [a]
+  call: style.wrapInside = a
+- name: set_wrap_through_style
+  give: [a]
+  call: style.wrapThrough = a
+- name: set_writing_mode_style
+  give: [a]
+  call: style.writingMode = a
+- name: set_z_index_style
+  give: [a]
+  call: style.zIndex = a
+- name: listen_to_abort_event
+  give: [a, e]
+  call: a.addEventListener('abort', e)
+- name: listen_to_afterprint_event
+  give: [a, e]
+  call: a.addEventListener('afterprint', e)
+- name: listen_to_animationcancel_event
+  give: [a, e]
+  call: a.addEventListener('animationcancel', e)
+- name: listen_to_animationend_event
+  give: [a, e]
+  call: a.addEventListener('animationend', e)
+- name: listen_to_animationiteration_event
+  give: [a, e]
+  call: a.addEventListener('animationiteration', e)
+- name: listen_to_animationstart_event
+  give: [a, e]
+  call: a.addEventListener('animationstart', e)
+- name: listen_to_appinstalled_event
+  give: [a, e]
+  call: a.addEventListener('appinstalled', e)
+- name: listen_to_audioprocess_event
+  give: [a, e]
+  call: a.addEventListener('audioprocess', e)
+- name: listen_to_audioend_event
+  give: [a, e]
+  call: a.addEventListener('audioend', e)
+- name: listen_to_audiostart_event
+  give: [a, e]
+  call: a.addEventListener('audiostart', e)
+- name: listen_to_beforeprint_event
+  give: [a, e]
+  call: a.addEventListener('beforeprint', e)
+- name: listen_to_beforeunload_event
+  give: [a, e]
+  call: a.addEventListener('beforeunload', e)
+- name: listen_to_beginEvent_event
+  give: [a, e]
+  call: a.addEventListener('beginEvent', e)
+- name: listen_to_blocked_event
+  give: [a, e]
+  call: a.addEventListener('blocked', e)
+- name: listen_to_blur_event
+  give: [a, e]
+  call: a.addEventListener('blur', e)
+- name: listen_to_boundary_event
+  give: [a, e]
+  call: a.addEventListener('boundary', e)
+- name: listen_to_canplay_event
+  give: [a, e]
+  call: a.addEventListener('canplay', e)
+- name: listen_to_canplaythrough_event
+  give: [a, e]
+  call: a.addEventListener('canplaythrough', e)
+- name: listen_to_change_event
+  give: [a, e]
+  call: a.addEventListener('change', e)
+- name: listen_to_chargingchange_event
+  give: [a, e]
+  call: a.addEventListener('chargingchange', e)
+- name: listen_to_chargingtimechange_event
+  give: [a, e]
+  call: a.addEventListener('chargingtimechange', e)
+- name: listen_to_click_event
+  give: [a, e]
+  call: a.addEventListener('click', e)
+- name: listen_to_close_event
+  give: [a, e]
+  call: a.addEventListener('close', e)
+- name: listen_to_complete_event
+  give: [a, e]
+  call: a.addEventListener('complete', e)
+- name: listen_to_compositionend_event
+  give: [a, e]
+  call: a.addEventListener('compositionend', e)
+- name: listen_to_compositionstart_event
+  give: [a, e]
+  call: a.addEventListener('compositionstart', e)
+- name: listen_to_compositionupdate_event
+  give: [a, e]
+  call: a.addEventListener('compositionupdate', e)
+- name: listen_to_contextmenu_event
+  give: [a, e]
+  call: a.addEventListener('contextmenu', e)
+- name: listen_to_copy_event
+  give: [a, e]
+  call: a.addEventListener('copy', e)
+- name: listen_to_cut_event
+  give: [a, e]
+  call: a.addEventListener('cut', e)
+- name: listen_to_dblclick_event
+  give: [a, e]
+  call: a.addEventListener('dblclick', e)
+- name: listen_to_devicechange_event
+  give: [a, e]
+  call: a.addEventListener('devicechange', e)
+- name: listen_to_devicemotion_event
+  give: [a, e]
+  call: a.addEventListener('devicemotion', e)
+- name: listen_to_deviceorientation_event
+  give: [a, e]
+  call: a.addEventListener('deviceorientation', e)
+- name: listen_to_dischargingtimechange_event
+  give: [a, e]
+  call: a.addEventListener('dischargingtimechange', e)
+- name: listen_to_dom_activate_event
+  give: [a, e]
+  call: a.addEventListener('DOMActivate', e)
+- name: listen_to_dom_attribute_name_changed_event
+  give: [a, e]
+  call: a.addEventListener('DOMAttributeNameChanged', e)
+- name: listen_to_dom_attr_modified_event
+  give: [a, e]
+  call: a.addEventListener('DOMAttrModified', e)
+- name: listen_to_dom_character_data_modified_event
+  give: [a, e]
+  call: a.addEventListener('DOMCharacterDataModified', e)
+- name: listen_to_dom_content_loaded_event
+  give: [a, e]
+  call: a.addEventListener('DOMContentLoaded', e)
+- name: listen_to_dom_element_name_changed_event
+  give: [a, e]
+  call: a.addEventListener('DOMElementNameChanged', e)
+- name: listen_to_dom_focus_in_event
+  give: [a, e]
+  call: a.addEventListener('DOMFocusIn', e)
+- name: listen_to_dom_focus_out_event
+  give: [a, e]
+  call: a.addEventListener('DOMFocusOut', e)
+- name: listen_to_dom_node_inserted_event
+  give: [a, e]
+  call: a.addEventListener('DOMNodeInserted', e)
+- name: listen_to_dom_node_inserted_into_document_event
+  give: [a, e]
+  call: a.addEventListener('DOMNodeInsertedIntoDocument', e)
+- name: listen_to_dom_node_removed_event
+  give: [a, e]
+  call: a.addEventListener('DOMNodeRemoved', e)
+- name: listen_to_dom_node_removed_from_document_event
+  give: [a, e]
+  call: a.addEventListener('DOMNodeRemovedFromDocument', e)
+- name: listen_to_dom_subtree_modified_event
+  give: [a, e]
+  call: a.addEventListener('DOMSubtreeModified', e)
+- name: listen_to_drag_event
+  give: [a, e]
+  call: a.addEventListener('drag', e)
+- name: listen_to_dragend_event
+  give: [a, e]
+  call: a.addEventListener('dragend', e)
+- name: listen_to_dragenter_event
+  give: [a, e]
+  call: a.addEventListener('dragenter', e)
+- name: listen_to_dragleave_event
+  give: [a, e]
+  call: a.addEventListener('dragleave', e)
+- name: listen_to_dragover_event
+  give: [a, e]
+  call: a.addEventListener('dragover', e)
+- name: listen_to_dragstart_event
+  give: [a, e]
+  call: a.addEventListener('dragstart', e)
+- name: listen_to_drop_event
+  give: [a, e]
+  call: a.addEventListener('drop', e)
+- name: listen_to_durationchange_event
+  give: [a, e]
+  call: a.addEventListener('durationchange', e)
+- name: listen_to_emptied_event
+  give: [a, e]
+  call: a.addEventListener('emptied', e)
+- name: listen_to_end_event
+  give: [a, e]
+  call: a.addEventListener('end', e)
+- name: listen_to_ended_event
+  give: [a, e]
+  call: a.addEventListener('ended', e)
+- name: listen_to_end_event_event
+  give: [a, e]
+  call: a.addEventListener('endEvent', e)
+- name: listen_to_error_event
+  give: [a, e]
+  call: a.addEventListener('error', e)
+- name: listen_to_focus_event
+  give: [a, e]
+  call: a.addEventListener('focus', e)
+- name: listen_to_focusin_event
+  give: [a, e]
+  call: a.addEventListener('focusin', e)
+- name: listen_to_focusout_event
+  give: [a, e]
+  call: a.addEventListener('focusout', e)
+- name: listen_to_fullscreenchange_event
+  give: [a, e]
+  call: a.addEventListener('fullscreenchange', e)
+- name: listen_to_fullscreenerror_event
+  give: [a, e]
+  call: a.addEventListener('fullscreenerror', e)
+- name: listen_to_gamepadconnected_event
+  give: [a, e]
+  call: a.addEventListener('gamepadconnected', e)
+- name: listen_to_gamepaddisconnected_event
+  give: [a, e]
+  call: a.addEventListener('gamepaddisconnected', e)
+- name: listen_to_gotpointercapture_event
+  give: [a, e]
+  call: a.addEventListener('gotpointercapture', e)
+- name: listen_to_hashchange_event
+  give: [a, e]
+  call: a.addEventListener('hashchange', e)
+- name: listen_to_lostpointercapture_event
+  give: [a, e]
+  call: a.addEventListener('lostpointercapture', e)
+- name: listen_to_input_event
+  give: [a, e]
+  call: a.addEventListener('input', e)
+- name: listen_to_invalid_event
+  give: [a, e]
+  call: a.addEventListener('invalid', e)
+- name: listen_to_keydown_event
+  give: [a, e]
+  call: a.addEventListener('keydown', e)
+- name: listen_to_keypress_event
+  give: [a, e]
+  call: a.addEventListener('keypress', e)
+- name: listen_to_keyup_event
+  give: [a, e]
+  call: a.addEventListener('keyup', e)
+- name: listen_to_languagechange_event
+  give: [a, e]
+  call: a.addEventListener('languagechange', e)
+- name: listen_to_levelchange_event
+  give: [a, e]
+  call: a.addEventListener('levelchange', e)
+- name: listen_to_load_event
+  give: [a, e]
+  call: a.addEventListener('load', e)
+- name: listen_to_loadeddata_event
+  give: [a, e]
+  call: a.addEventListener('loadeddata', e)
+- name: listen_to_loadedmetadata_event
+  give: [a, e]
+  call: a.addEventListener('loadedmetadata', e)
+- name: listen_to_loadend_event
+  give: [a, e]
+  call: a.addEventListener('loadend', e)
+- name: listen_to_loadstart_event
+  give: [a, e]
+  call: a.addEventListener('loadstart', e)
+- name: listen_to_mark_event
+  give: [a, e]
+  call: a.addEventListener('mark', e)
+- name: listen_to_messageerror_event
+  give: [a, e]
+  call: a.addEventListener('messageerror', e)
+- name: listen_to_message_event
+  give: [a, e]
+  call: a.addEventListener('message', e)
+- name: listen_to_mousedown_event
+  give: [a, e]
+  call: a.addEventListener('mousedown', e)
+- name: listen_to_mouseenter_event
+  give: [a, e]
+  call: a.addEventListener('mouseenter', e)
+- name: listen_to_mouseleave_event
+  give: [a, e]
+  call: a.addEventListener('mouseleave', e)
+- name: listen_to_mousemove_event
+  give: [a, e]
+  call: a.addEventListener('mousemove', e)
+- name: listen_to_mouseout_event
+  give: [a, e]
+  call: a.addEventListener('mouseout', e)
+- name: listen_to_mouseover_event
+  give: [a, e]
+  call: a.addEventListener('mouseover', e)
+- name: listen_to_mouseup_event
+  give: [a, e]
+  call: a.addEventListener('mouseup', e)
+- name: listen_to_nomatch_event
+  give: [a, e]
+  call: a.addEventListener('nomatch', e)
+- name: listen_to_notificationclick_event
+  give: [a, e]
+  call: a.addEventListener('notificationclick', e)
+- name: listen_to_offline_event
+  give: [a, e]
+  call: a.addEventListener('offline', e)
+- name: listen_to_online_event
+  give: [a, e]
+  call: a.addEventListener('online', e)
+- name: listen_to_open_event
+  give: [a, e]
+  call: a.addEventListener('open', e)
+- name: listen_to_orientationchange_event
+  give: [a, e]
+  call: a.addEventListener('orientationchange', e)
+- name: listen_to_pagehide_event
+  give: [a, e]
+  call: a.addEventListener('pagehide', e)
+- name: listen_to_pageshow_event
+  give: [a, e]
+  call: a.addEventListener('pageshow', e)
+- name: listen_to_paste_event
+  give: [a, e]
+  call: a.addEventListener('paste', e)
+- name: listen_to_pause_event
+  give: [a, e]
+  call: a.addEventListener('pause', e)
+- name: listen_to_pointercancel_event
+  give: [a, e]
+  call: a.addEventListener('pointercancel', e)
+- name: listen_to_pointerdown_event
+  give: [a, e]
+  call: a.addEventListener('pointerdown', e)
+- name: listen_to_pointerenter_event
+  give: [a, e]
+  call: a.addEventListener('pointerenter', e)
+- name: listen_to_pointerleave_event
+  give: [a, e]
+  call: a.addEventListener('pointerleave', e)
+- name: listen_to_pointerlockchange_event
+  give: [a, e]
+  call: a.addEventListener('pointerlockchange', e)
+- name: listen_to_pointerlockerror_event
+  give: [a, e]
+  call: a.addEventListener('pointerlockerror', e)
+- name: listen_to_pointermove_event
+  give: [a, e]
+  call: a.addEventListener('pointermove', e)
+- name: listen_to_pointerout_event
+  give: [a, e]
+  call: a.addEventListener('pointerout', e)
+- name: listen_to_pointerover_event
+  give: [a, e]
+  call: a.addEventListener('pointerover', e)
+- name: listen_to_pointerup_event
+  give: [a, e]
+  call: a.addEventListener('pointerup', e)
+- name: listen_to_play_event
+  give: [a, e]
+  call: a.addEventListener('play', e)
+- name: listen_to_playing_event
+  give: [a, e]
+  call: a.addEventListener('playing', e)
+- name: listen_to_popstate_event
+  give: [a, e]
+  call: a.addEventListener('popstate', e)
+- name: listen_to_progress_event
+  give: [a, e]
+  call: a.addEventListener('progress', e)
+- name: listen_to_push_event
+  give: [a, e]
+  call: a.addEventListener('push', e)
+- name: listen_to_pushsubscriptionchange_event
+  give: [a, e]
+  call: a.addEventListener('pushsubscriptionchange', e)
+- name: listen_to_ratechange_event
+  give: [a, e]
+  call: a.addEventListener('ratechange', e)
+- name: listen_to_readystatechange_event
+  give: [a, e]
+  call: a.addEventListener('readystatechange', e)
+- name: listen_to_repeatEvent_event
+  give: [a, e]
+  call: a.addEventListener('repeatEvent', e)
+- name: listen_to_reset_event
+  give: [a, e]
+  call: a.addEventListener('reset', e)
+- name: listen_to_resize_event
+  give: [a, e]
+  call: a.addEventListener('resize', e)
+- name: listen_to_resourcetimingbufferfull_event
+  give: [a, e]
+  call: a.addEventListener('resourcetimingbufferfull', e)
+- name: listen_to_result_event
+  give: [a, e]
+  call: a.addEventListener('result', e)
+- name: listen_to_resume_event
+  give: [a, e]
+  call: a.addEventListener('resume', e)
+- name: listen_to_scroll_event
+  give: [a, e]
+  call: a.addEventListener('scroll', e)
+- name: listen_to_seeked_event
+  give: [a, e]
+  call: a.addEventListener('seeked', e)
+- name: listen_to_seeking_event
+  give: [a, e]
+  call: a.addEventListener('seeking', e)
+- name: listen_to_select_event
+  give: [a, e]
+  call: a.addEventListener('select', e)
+- name: listen_to_selectstart_event
+  give: [a, e]
+  call: a.addEventListener('selectstart', e)
+- name: listen_to_selectionchange_event
+  give: [a, e]
+  call: a.addEventListener('selectionchange', e)
+- name: listen_to_show_event
+  give: [a, e]
+  call: a.addEventListener('show', e)
+- name: listen_to_slotchange_event
+  give: [a, e]
+  call: a.addEventListener('slotchange', e)
+- name: listen_to_soundend_event
+  give: [a, e]
+  call: a.addEventListener('soundend', e)
+- name: listen_to_soundstart_event
+  give: [a, e]
+  call: a.addEventListener('soundstart', e)
+- name: listen_to_speechend_event
+  give: [a, e]
+  call: a.addEventListener('speechend', e)
+- name: listen_to_speechstart_event
+  give: [a, e]
+  call: a.addEventListener('speechstart', e)
+- name: listen_to_stalled_event
+  give: [a, e]
+  call: a.addEventListener('stalled', e)
+- name: listen_to_start_event
+  give: [a, e]
+  call: a.addEventListener('start', e)
+- name: listen_to_storage_event
+  give: [a, e]
+  call: a.addEventListener('storage', e)
+- name: listen_to_submit_event
+  give: [a, e]
+  call: a.addEventListener('submit', e)
+- name: listen_to_success_event
+  give: [a, e]
+  call: a.addEventListener('success', e)
+- name: listen_to_suspend_event
+  give: [a, e]
+  call: a.addEventListener('suspend', e)
+- name: listen_to_svg_abort_event
+  give: [a, e]
+  call: a.addEventListener('SVGAbort', e)
+- name: listen_to_svg_error_event
+  give: [a, e]
+  call: a.addEventListener('SVGError', e)
+- name: listen_to_svg_load_event
+  give: [a, e]
+  call: a.addEventListener('SVGLoad', e)
+- name: listen_to_svg_resize_event
+  give: [a, e]
+  call: a.addEventListener('SVGResize', e)
+- name: listen_to_svg_scroll_event
+  give: [a, e]
+  call: a.addEventListener('SVGScroll', e)
+- name: listen_to_svg_unload_event
+  give: [a, e]
+  call: a.addEventListener('SVGUnload', e)
+- name: listen_to_svg_zoom_event
+  give: [a, e]
+  call: a.addEventListener('SVGZoom', e)
+- name: listen_to_timeout_event
+  give: [a, e]
+  call: a.addEventListener('timeout', e)
+- name: listen_to_timeupdate_event
+  give: [a, e]
+  call: a.addEventListener('timeupdate', e)
+- name: listen_to_touchcancel_event
+  give: [a, e]
+  call: a.addEventListener('touchcancel', e)
+- name: listen_to_touchend_event
+  give: [a, e]
+  call: a.addEventListener('touchend', e)
+- name: listen_to_touchmove_event
+  give: [a, e]
+  call: a.addEventListener('touchmove', e)
+- name: listen_to_touchstart_event
+  give: [a, e]
+  call: a.addEventListener('touchstart', e)
+- name: listen_to_transitionend_event
+  give: [a, e]
+  call: a.addEventListener('transitionend', e)
+- name: listen_to_unload_event
+  give: [a, e]
+  call: a.addEventListener('unload', e)
+- name: listen_to_upgradeneeded_event
+  give: [a, e]
+  call: a.addEventListener('upgradeneeded', e)
+- name: listen_to_userproximity_event
+  give: [a, e]
+  call: a.addEventListener('userproximity', e)
+- name: listen_to_voiceschanged_event
+  give: [a, e]
+  call: a.addEventListener('voiceschanged', e)
+- name: listen_to_versionchange_event
+  give: [a, e]
+  call: a.addEventListener('versionchange', e)
+- name: listen_to_visibilitychange_event
+  give: [a, e]
+  call: a.addEventListener('visibilitychange', e)
+- name: listen_to_volumechange_event
+  give: [a, e]
+  call: a.addEventListener('volumechange', e)
+- name: listen_to_waiting_event
+  give: [a, e]
+  call: a.addEventListener('waiting', e)
+- name: listen_to_wheel_event
+  give: [a, e]
+  call: a.addEventListener('wheel', e)
+- name: listen_to_afterscriptexecute_event
+  give: [a, e]
+  call: a.addEventListener('afterscriptexecute', e)
+- name: listen_to_beforescriptexecute_event
+  give: [a, e]
+  call: a.addEventListener('beforescriptexecute', e)
+- name: listen_to_beforeinstallprompt_event
+  give: [a, e]
+  call: a.addEventListener('beforeinstallprompt', e)
+- name: listen_to_cardstatechange_event
+  give: [a, e]
+  call: a.addEventListener('cardstatechange', e)
+- name: listen_to_connectionInfoUpdate_event
+  give: [a, e]
+  call: a.addEventListener('connectionInfoUpdate', e)
+- name: listen_to_cfstatechange_event
+  give: [a, e]
+  call: a.addEventListener('cfstatechange', e)
+- name: listen_to_datachange_event
+  give: [a, e]
+  call: a.addEventListener('datachange', e)
+- name: listen_to_dataerror_event
+  give: [a, e]
+  call: a.addEventListener('dataerror', e)
+- name: listen_to_dom_mouse_scroll_event
+  give: [a, e]
+  call: a.addEventListener('DOMMouseScroll', e)
+- name: listen_to_dragdrop_event
+  give: [a, e]
+  call: a.addEventListener('dragdrop', e)
+- name: listen_to_dragexit_event
+  give: [a, e]
+  call: a.addEventListener('dragexit', e)
+- name: listen_to_draggesture_event
+  give: [a, e]
+  call: a.addEventListener('draggesture', e)
+- name: listen_to_icccardlockerror_event
+  give: [a, e]
+  call: a.addEventListener('icccardlockerror', e)
+- name: listen_to_iccinfochange_event
+  give: [a, e]
+  call: a.addEventListener('iccinfochange', e)
+- name: listen_to_localized_event
+  give: [a, e]
+  call: a.addEventListener('localized', e)
+- name: listen_to_mousewheel_event
+  give: [a, e]
+  call: a.addEventListener('mousewheel', e)
+- name: listen_to_alerting_event
+  give: [a, e]
+  call: a.addEventListener('alerting', e)
+- name: listen_to_busy_event
+  give: [a, e]
+  call: a.addEventListener('busy', e)
+- name: listen_to_callschanged_event
+  give: [a, e]
+  call: a.addEventListener('callschanged', e)
+- name: listen_to_onconnected connected_event
+  give: [a, e]
+  call: a.addEventListener('onconnected connected', x)
+- name: listen_to_connecting_event
+  give: [a, e]
+  call: a.addEventListener('connecting', e)
+- name: listen_to_delivered_event
+  give: [a, e]
+  call: a.addEventListener('delivered', e)
+- name: listen_to_dialing_event
+  give: [a, e]
+  call: a.addEventListener('dialing', e)
+- name: listen_to_disabled_event
+  give: [a, e]
+  call: a.addEventListener('disabled', e)
+- name: listen_to_disconnected_event
+  give: [a, e]
+  call: a.addEventListener('disconnected', e)
+- name: listen_to_disconnecting_event
+  give: [a, e]
+  call: a.addEventListener('disconnecting', e)
+- name: listen_to_enabled_event
+  give: [a, e]
+  call: a.addEventListener('enabled', e)
+- name: listen_to_held_event
+  give: [a, e]
+  call: a.addEventListener('held', e)
+- name: listen_to_holding_event
+  give: [a, e]
+  call: a.addEventListener('holding', e)
+- name: listen_to_incoming_event
+  give: [a, e]
+  call: a.addEventListener('incoming', e)
+- name: listen_to_received_event
+  give: [a, e]
+  call: a.addEventListener('received', e)
+- name: listen_to_resuming_event
+  give: [a, e]
+  call: a.addEventListener('resuming', e)
+- name: listen_to_sent_event
+  give: [a, e]
+  call: a.addEventListener('sent', e)
+- name: listen_to_statechange_event
+  give: [a, e]
+  call: a.addEventListener('statechange', e)
+- name: listen_to_statuschange_event
+  give: [a, e]
+  call: a.addEventListener('statuschange', e)
+- name: listen_to_overflow_event
+  give: [a, e]
+  call: a.addEventListener('overflow', e)
+- name: listen_to_smartcard-insert_event
+  give: [a, e]
+  call: a.addEventListener('smartcard-insert', e)
+- name: listen_to_smartcard-remove_event
+  give: [a, e]
+  call: a.addEventListener('smartcard-remove', e)
+- name: listen_to_stkcommand_event
+  give: [a, e]
+  call: a.addEventListener('stkcommand', e)
+- name: listen_to_stksessionend_event
+  give: [a, e]
+  call: a.addEventListener('stksessionend', e)
+- name: listen_to_touchenter_event
+  give: [a, e]
+  call: a.addEventListener('touchenter', e)
+- name: listen_to_touchleave_event
+  give: [a, e]
+  call: a.addEventListener('touchleave', e)
+- name: listen_to_underflow_event
+  give: [a, e]
+  call: a.addEventListener('underflow', e)
+- name: listen_to_uploadprogress_event
+  give: [a, e]
+  call: a.addEventListener('uploadprogress', e)
+- name: listen_to_ussdreceived_event
+  give: [a, e]
+  call: a.addEventListener('ussdreceived', e)
+- name: listen_to_voicechange_event
+  give: [a, e]
+  call: a.addEventListener('voicechange', e)
+- name: listen_to_msContentZoom_event
+  give: [a, e]
+  call: a.addEventListener('msContentZoom', e)
+- name: listen_to_ms_manipulation_state_changed_event
+  give: [a, e]
+  call: a.addEventListener('MSManipulationStateChanged', e)
+- name: listen_to_ms_pointer_hover_event
+  give: [a, e]
+  call: a.addEventListener('MSPointerHover', e)
+- name: listen_to_broadcast_event
+  give: [a, e]
+  call: a.addEventListener('broadcast', e)
+- name: listen_to_checkbox_state_change_event
+  give: [a, e]
+  call: a.addEventListener('CheckboxStateChange', e)
+- name: listen_to_command_event
+  give: [a, e]
+  call: a.addEventListener('command', e)
+- name: listen_to_commandupdate_event
+  give: [a, e]
+  call: a.addEventListener('commandupdate', e)
+- name: listen_to_dom_menu_item_active_event
+  give: [a, e]
+  call: a.addEventListener('DOMMenuItemActive', e)
+- name: listen_to_dom_menu_item_inactive_event
+  give: [a, e]
+  call: a.addEventListener('DOMMenuItemInactive', e)
+- name: listen_to_popuphidden_event
+  give: [a, e]
+  call: a.addEventListener('popuphidden', e)
+- name: listen_to_popuphiding_event
+  give: [a, e]
+  call: a.addEventListener('popuphiding', e)
+- name: listen_to_popupshowing_event
+  give: [a, e]
+  call: a.addEventListener('popupshowing', e)
+- name: listen_to_popupshown_event
+  give: [a, e]
+  call: a.addEventListener('popupshown', e)
+- name: listen_to_radio_state_change_event
+  give: [a, e]
+  call: a.addEventListener('RadioStateChange', e)
+- name: listen_to_value_change_event
+  give: [a, e]
+  call: a.addEventListener('ValueChange', e)
+- name: listen_to_dom_popup_blocked_event
+  give: [a, e]
+  call: a.addEventListener('DOMPopupBlocked', e)
+- name: listen_to_dom_window_created_event
+  give: [a, e]
+  call: a.addEventListener('DOMWindowCreated', e)
+- name: listen_to_dom_window_close_event
+  give: [a, e]
+  call: a.addEventListener('DOMWindowClose', e)
+- name: listen_to_dom_title_changed_event
+  give: [a, e]
+  call: a.addEventListener('DOMTitleChanged', e)
+- name: listen_to_dom_link_added_event
+  give: [a, e]
+  call: a.addEventListener('DOMLinkAdded', e)
+- name: listen_to_dom_link_removed_event
+  give: [a, e]
+  call: a.addEventListener('DOMLinkRemoved', e)
+- name: listen_to_dom_meta_added_event
+  give: [a, e]
+  call: a.addEventListener('DOMMetaAdded', e)
+- name: listen_to_dom_meta_removed_event
+  give: [a, e]
+  call: a.addEventListener('DOMMetaRemoved', e)
+- name: listen_to_dom_will_open_modal_dialog_event
+  give: [a, e]
+  call: a.addEventListener('DOMWillOpenModalDialog', e)
+- name: listen_to_dom_modal_dialog_closed_event
+  give: [a, e]
+  call: a.addEventListener('DOMModalDialogClosed', e)
+- name: listen_to_dom_auto_complete_event
+  give: [a, e]
+  call: a.addEventListener('DOMAutoComplete', e)
+- name: listen_to_dom_frame_content_loaded_event
+  give: [a, e]
+  call: a.addEventListener('DOMFrameContentLoaded', e)
+- name: listen_to_alert_active_event
+  give: [a, e]
+  call: a.addEventListener('AlertActive', e)
+- name: listen_to_alert_close_event
+  give: [a, e]
+  call: a.addEventListener('AlertClose', e)
+- name: listen_to_fullscreen_event
+  give: [a, e]
+  call: a.addEventListener('fullscreen', e)
+- name: listen_to_sizemodechange_event
+  give: [a, e]
+  call: a.addEventListener('sizemodechange', e)
+- name: listen_to_ss_window_closing_event
+  give: [a, e]
+  call: a.addEventListener('SSWindowClosing', e)
+- name: listen_to_ss_tab_closing_event
+  give: [a, e]
+  call: a.addEventListener('SSTabClosing', e)
+- name: listen_to_ss_tab_restoring_event
+  give: [a, e]
+  call: a.addEventListener('SSTabRestoring', e)
+- name: listen_to_ss_tab_restored_event
+  give: [a, e]
+  call: a.addEventListener('SSTabRestored', e)
+- name: listen_to_ss_window_state_ready_event
+  give: [a, e]
+  call: a.addEventListener('SSWindowStateReady', e)
+- name: listen_to_ss_window_state_busy_event
+  give: [a, e]
+  call: a.addEventListener('SSWindowStateBusy', e)
+- name: listen_to_tab_open_event
+  give: [a, e]
+  call: a.addEventListener('TabOpen', e)
+- name: listen_to_tab_close_event
+  give: [a, e]
+  call: a.addEventListener('TabClose', e)
+- name: listen_to_tab_select_event
+  give: [a, e]
+  call: a.addEventListener('TabSelect', e)
+- name: listen_to_tab_show_event
+  give: [a, e]
+  call: a.addEventListener('TabShow', e)
+- name: listen_to_tab_hide_event
+  give: [a, e]
+  call: a.addEventListener('TabHide', e)
+- name: listen_to_tab_pinned_event
+  give: [a, e]
+  call: a.addEventListener('TabPinned', e)
+- name: listen_to_tab_unpinned_event
+  give: [a, e]
+  call: a.addEventListener('TabUnpinned', e)
+- name: listen_to_css_rule_view_refreshed_event
+  give: [a, e]
+  call: a.addEventListener('CssRuleViewRefreshed', e)
+- name: listen_to_css_rule_view_changed_event
+  give: [a, e]
+  call: a.addEventListener('CssRuleViewChanged', e)
+- name: listen_to_css_rule_view_css_link_clicked_event
+  give: [a, e]
+  call: a.addEventListener('CssRuleViewCSSLinkClicked', e)
+- name: set_dom_element_accept
+  give: [a, e]
+  call: a.setAttribute('accept', e)
+- name: set_dom_element_accept_charset
+  give: [a, e]
+  call: a.setAttribute('accept-charset', e)
+- name: set_dom_element_accesskey
+  give: [a, e]
+  call: a.setAttribute('accesskey', e)
+- name: set_dom_element_action
+  give: [a, e]
+  call: a.setAttribute('action', e)
+- name: set_dom_element_align
+  give: [a, e]
+  call: a.setAttribute('align', e)
+- name: set_dom_element_allow
+  give: [a, e]
+  call: a.setAttribute('allow', e)
+- name: set_dom_element_alt
+  give: [a, e]
+  call: a.setAttribute('alt', e)
+- name: set_dom_element_async
+  give: [a, e]
+  call: a.setAttribute('async', e)
+- name: set_dom_element_autocapitalize
+  give: [a, e]
+  call: a.setAttribute('autocapitalize', e)
+- name: set_dom_element_autocomplete
+  give: [a, e]
+  call: a.setAttribute('autocomplete', e)
+- name: set_dom_element_autofocus
+  give: [a, e]
+  call: a.setAttribute('autofocus', e)
+- name: set_dom_element_autoplay
+  give: [a, e]
+  call: a.setAttribute('autoplay', e)
+- name: set_dom_element_background
+  give: [a, e]
+  call: a.setAttribute('background', e)
+- name: set_dom_element_bgcolor
+  give: [a, e]
+  call: a.setAttribute('bgcolor', e)
+- name: set_dom_element_border
+  give: [a, e]
+  call: a.setAttribute('border', e)
+- name: set_dom_element_buffered
+  give: [a, e]
+  call: a.setAttribute('buffered', e)
+- name: set_dom_element_challenge
+  give: [a, e]
+  call: a.setAttribute('challenge', e)
+- name: set_dom_element_charset
+  give: [a, e]
+  call: a.setAttribute('charset', e)
+- name: set_dom_element_checked
+  give: [a, e]
+  call: a.setAttribute('checked', e)
+- name: set_dom_element_cite
+  give: [a, e]
+  call: a.setAttribute('cite', e)
+- name: set_dom_element_class
+  give: [a, e]
+  call: a.setAttribute('class', e)
+- name: set_dom_element_code
+  give: [a, e]
+  call: a.setAttribute('code', e)
+- name: set_dom_element_codebase
+  give: [a, e]
+  call: a.setAttribute('codebase', e)
+- name: set_dom_element_color
+  give: [a, e]
+  call: a.setAttribute('color', e)
+- name: set_dom_element_cols
+  give: [a, e]
+  call: a.setAttribute('cols', e)
+- name: set_dom_element_colspan
+  give: [a, e]
+  call: a.setAttribute('colspan', e)
+- name: set_dom_element_content
+  give: [a, e]
+  call: a.setAttribute('content', e)
+- name: set_dom_element_contenteditable
+  give: [a, e]
+  call: a.setAttribute('contenteditable', e)
+- name: set_dom_element_contextmenu
+  give: [a, e]
+  call: a.setAttribute('contextmenu', e)
+- name: set_dom_element_controls
+  give: [a, e]
+  call: a.setAttribute('controls', e)
+- name: set_dom_element_coords
+  give: [a, e]
+  call: a.setAttribute('coords', e)
+- name: set_dom_element_crossorigin
+  give: [a, e]
+  call: a.setAttribute('crossorigin', e)
+- name: set_dom_element_csp
+  give: [a, e]
+  call: a.setAttribute('csp', e)
+- name: set_dom_element_data
+  give: [a, e]
+  call: a.setAttribute('data', e)
+- name: set_dom_element_datetime
+  give: [a, e]
+  call: a.setAttribute('datetime', e)
+- name: set_dom_element_decoding
+  give: [a, e]
+  call: a.setAttribute('decoding', e)
+- name: set_dom_element_default
+  give: [a, e]
+  call: a.setAttribute('default', e)
+- name: set_dom_element_defer
+  give: [a, e]
+  call: a.setAttribute('defer', e)
+- name: set_dom_element_dir
+  give: [a, e]
+  call: a.setAttribute('dir', e)
+- name: set_dom_element_dirname
+  give: [a, e]
+  call: a.setAttribute('dirname', e)
+- name: set_dom_element_disabled
+  give: [a, e]
+  call: a.setAttribute('disabled', e)
+- name: set_dom_element_download
+  give: [a, e]
+  call: a.setAttribute('download', e)
+- name: set_dom_element_draggable
+  give: [a, e]
+  call: a.setAttribute('draggable', e)
+- name: set_dom_element_dropzone
+  give: [a, e]
+  call: a.setAttribute('dropzone', e)
+- name: set_dom_element_enctype
+  give: [a, e]
+  call: a.setAttribute('enctype', e)
+- name: set_dom_element_enterkeyhint
+  give: [a, e]
+  call: a.setAttribute('enterkeyhint', e)
+- name: set_dom_element_for
+  give: [a, e]
+  call: a.setAttribute('for', e)
+- name: set_dom_element_form
+  give: [a, e]
+  call: a.setAttribute('form', e)
+- name: set_dom_element_formaction
+  give: [a, e]
+  call: a.setAttribute('formaction', e)
+- name: set_dom_element_formenctype
+  give: [a, e]
+  call: a.setAttribute('formenctype', e)
+- name: set_dom_element_formmethod
+  give: [a, e]
+  call: a.setAttribute('formmethod', e)
+- name: set_dom_element_formnovalidate
+  give: [a, e]
+  call: a.setAttribute('formnovalidate', e)
+- name: set_dom_element_formtarget
+  give: [a, e]
+  call: a.setAttribute('formtarget', e)
+- name: set_dom_element_headers
+  give: [a, e]
+  call: a.setAttribute('headers', e)
+- name: set_dom_element_height
+  give: [a, e]
+  call: a.setAttribute('height', e)
+- name: set_dom_element_hidden
+  give: [a, e]
+  call: a.setAttribute('hidden', e)
+- name: set_dom_element_high
+  give: [a, e]
+  call: a.setAttribute('high', e)
+- name: set_dom_element_href
+  give: [a, e]
+  call: a.setAttribute('href', e)
+- name: set_dom_element_hreflang
+  give: [a, e]
+  call: a.setAttribute('hreflang', e)
+- name: set_dom_element_http_equiv
+  give: [a, e]
+  call: a.setAttribute('http-equiv', e)
+- name: set_dom_element_icon
+  give: [a, e]
+  call: a.setAttribute('icon', e)
+- name: set_dom_element_id
+  give: [a, e]
+  call: a.setAttribute('id', e)
+- name: set_dom_element_importance
+  give: [a, e]
+  call: a.setAttribute('importance', e)
+- name: set_dom_element_integrity
+  give: [a, e]
+  call: a.setAttribute('integrity', e)
+- name: set_dom_element_intrinsicsize
+  give: [a, e]
+  call: a.setAttribute('intrinsicsize', e)
+- name: set_dom_element_inputmode
+  give: [a, e]
+  call: a.setAttribute('inputmode', e)
+- name: set_dom_element_ismap
+  give: [a, e]
+  call: a.setAttribute('ismap', e)
+- name: set_dom_element_itemprop
+  give: [a, e]
+  call: a.setAttribute('itemprop', e)
+- name: set_dom_element_keytype
+  give: [a, e]
+  call: a.setAttribute('keytype', e)
+- name: set_dom_element_kind
+  give: [a, e]
+  call: a.setAttribute('kind', e)
+- name: set_dom_element_label
+  give: [a, e]
+  call: a.setAttribute('label', e)
+- name: set_dom_element_lang
+  give: [a, e]
+  call: a.setAttribute('lang', e)
+- name: set_dom_element_language
+  give: [a, e]
+  call: a.setAttribute('language', e)
+- name: set_dom_element_loading
+  give: [a, e]
+  call: a.setAttribute('loading', e)
+- name: set_dom_element_list
+  give: [a, e]
+  call: a.setAttribute('list', e)
+- name: set_dom_element_loop
+  give: [a, e]
+  call: a.setAttribute('loop', e)
+- name: set_dom_element_low
+  give: [a, e]
+  call: a.setAttribute('low', e)
+- name: set_dom_element_manifest
+  give: [a, e]
+  call: a.setAttribute('manifest', e)
+- name: set_dom_element_max
+  give: [a, e]
+  call: a.setAttribute('max', e)
+- name: set_dom_element_maxlength
+  give: [a, e]
+  call: a.setAttribute('maxlength', e)
+- name: set_dom_element_minlength
+  give: [a, e]
+  call: a.setAttribute('minlength', e)
+- name: set_dom_element_media
+  give: [a, e]
+  call: a.setAttribute('media', e)
+- name: set_dom_element_method
+  give: [a, e]
+  call: a.setAttribute('method', e)
+- name: set_dom_element_min
+  give: [a, e]
+  call: a.setAttribute('min', e)
+- name: set_dom_element_multiple
+  give: [a, e]
+  call: a.setAttribute('multiple', e)
+- name: set_dom_element_muted
+  give: [a, e]
+  call: a.setAttribute('muted', e)
+- name: set_dom_element_name
+  give: [a, e]
+  call: a.setAttribute('name', e)
+- name: set_dom_element_novalidate
+  give: [a, e]
+  call: a.setAttribute('novalidate', e)
+- name: set_dom_element_open
+  give: [a, e]
+  call: a.setAttribute('open', e)
+- name: set_dom_element_optimum
+  give: [a, e]
+  call: a.setAttribute('optimum', e)
+- name: set_dom_element_pattern
+  give: [a, e]
+  call: a.setAttribute('pattern', e)
+- name: set_dom_element_ping
+  give: [a, e]
+  call: a.setAttribute('ping', e)
+- name: set_dom_element_placeholder
+  give: [a, e]
+  call: a.setAttribute('placeholder', e)
+- name: set_dom_element_poster
+  give: [a, e]
+  call: a.setAttribute('poster', e)
+- name: set_dom_element_preload
+  give: [a, e]
+  call: a.setAttribute('preload', e)
+- name: set_dom_element_radiogroup
+  give: [a, e]
+  call: a.setAttribute('radiogroup', e)
+- name: set_dom_element_readonly
+  give: [a, e]
+  call: a.setAttribute('readonly', e)
+- name: set_dom_element_referrerpolicy
+  give: [a, e]
+  call: a.setAttribute('referrerpolicy', e)
+- name: set_dom_element_rel
+  give: [a, e]
+  call: a.setAttribute('rel', e)
+- name: set_dom_element_required
+  give: [a, e]
+  call: a.setAttribute('required', e)
+- name: set_dom_element_reversed
+  give: [a, e]
+  call: a.setAttribute('reversed', e)
+- name: set_dom_element_rows
+  give: [a, e]
+  call: a.setAttribute('rows', e)
+- name: set_dom_element_rowspan
+  give: [a, e]
+  call: a.setAttribute('rowspan', e)
+- name: set_dom_element_sandbox
+  give: [a, e]
+  call: a.setAttribute('sandbox', e)
+- name: set_dom_element_scope
+  give: [a, e]
+  call: a.setAttribute('scope', e)
+- name: set_dom_element_scoped
+  give: [a, e]
+  call: a.setAttribute('scoped', e)
+- name: set_dom_element_selected
+  give: [a, e]
+  call: a.setAttribute('selected', e)
+- name: set_dom_element_shape
+  give: [a, e]
+  call: a.setAttribute('shape', e)
+- name: set_dom_element_size
+  give: [a, e]
+  call: a.setAttribute('size', e)
+- name: set_dom_element_sizes
+  give: [a, e]
+  call: a.setAttribute('sizes', e)
+- name: set_dom_element_slot
+  give: [a, e]
+  call: a.setAttribute('slot', e)
+- name: set_dom_element_span
+  give: [a, e]
+  call: a.setAttribute('span', e)
+- name: set_dom_element_spellcheck
+  give: [a, e]
+  call: a.setAttribute('spellcheck', e)
+- name: set_dom_element_src
+  give: [a, e]
+  call: a.setAttribute('src', e)
+- name: set_dom_element_srcdoc
+  give: [a, e]
+  call: a.setAttribute('srcdoc', e)
+- name: set_dom_element_srclang
+  give: [a, e]
+  call: a.setAttribute('srclang', e)
+- name: set_dom_element_srcset
+  give: [a, e]
+  call: a.setAttribute('srcset', e)
+- name: set_dom_element_start
+  give: [a, e]
+  call: a.setAttribute('start', e)
+- name: set_dom_element_step
+  give: [a, e]
+  call: a.setAttribute('step', e)
+- name: set_dom_element_style
+  give: [a, e]
+  call: a.setAttribute('style', e)
+- name: set_dom_element_summary
+  give: [a, e]
+  call: a.setAttribute('summary', e)
+- name: set_dom_element_tabindex
+  give: [a, e]
+  call: a.setAttribute('tabindex', e)
+- name: set_dom_element_target
+  give: [a, e]
+  call: a.setAttribute('target', e)
+- name: set_dom_element_title
+  give: [a, e]
+  call: a.setAttribute('title', e)
+- name: set_dom_element_translate
+  give: [a, e]
+  call: a.setAttribute('translate', e)
+- name: set_dom_element_type
+  give: [a, e]
+  call: a.setAttribute('type', e)
+- name: set_dom_element_usemap
+  give: [a, e]
+  call: a.setAttribute('usemap', e)
+- name: set_dom_element_value
+  give: [a, e]
+  call: a.setAttribute('value', e)
+- name: set_dom_element_width
+  give: [a, e]
+  call: a.setAttribute('width', e)
+- name: set_dom_element_wrap
+  give: [a, e]
+  call: a.setAttribute('wrap', e)
+- name: remove_dom_element_accept_attribute
+  give: [a]
+  call: a.removeAttribute('accept')
+- name: remove_dom_element_accept-charset_attribute
+  give: [a]
+  call: a.removeAttribute('accept-charset')
+- name: remove_dom_element_accesskey_attribute
+  give: [a]
+  call: a.removeAttribute('accesskey')
+- name: remove_dom_element_action_attribute
+  give: [a]
+  call: a.removeAttribute('action')
+- name: remove_dom_element_align_attribute
+  give: [a]
+  call: a.removeAttribute('align')
+- name: remove_dom_element_allow_attribute
+  give: [a]
+  call: a.removeAttribute('allow')
+- name: remove_dom_element_alt_attribute
+  give: [a]
+  call: a.removeAttribute('alt')
+- name: remove_dom_element_async_attribute
+  give: [a]
+  call: a.removeAttribute('async')
+- name: remove_dom_element_autocapitalize_attribute
+  give: [a]
+  call: a.removeAttribute('autocapitalize')
+- name: remove_dom_element_autocomplete_attribute
+  give: [a]
+  call: a.removeAttribute('autocomplete')
+- name: remove_dom_element_autofocus_attribute
+  give: [a]
+  call: a.removeAttribute('autofocus')
+- name: remove_dom_element_autoplay_attribute
+  give: [a]
+  call: a.removeAttribute('autoplay')
+- name: remove_dom_element_background_attribute
+  give: [a]
+  call: a.removeAttribute('background')
+- name: remove_dom_element_bgcolor_attribute
+  give: [a]
+  call: a.removeAttribute('bgcolor')
+- name: remove_dom_element_border_attribute
+  give: [a]
+  call: a.removeAttribute('border')
+- name: remove_dom_element_buffered_attribute
+  give: [a]
+  call: a.removeAttribute('buffered')
+- name: remove_dom_element_challenge_attribute
+  give: [a]
+  call: a.removeAttribute('challenge')
+- name: remove_dom_element_charset_attribute
+  give: [a]
+  call: a.removeAttribute('charset')
+- name: remove_dom_element_checked_attribute
+  give: [a]
+  call: a.removeAttribute('checked')
+- name: remove_dom_element_cite_attribute
+  give: [a]
+  call: a.removeAttribute('cite')
+- name: remove_dom_element_class_attribute
+  give: [a]
+  call: a.removeAttribute('class')
+- name: remove_dom_element_code_attribute
+  give: [a]
+  call: a.removeAttribute('code')
+- name: remove_dom_element_codebase_attribute
+  give: [a]
+  call: a.removeAttribute('codebase')
+- name: remove_dom_element_color_attribute
+  give: [a]
+  call: a.removeAttribute('color')
+- name: remove_dom_element_cols_attribute
+  give: [a]
+  call: a.removeAttribute('cols')
+- name: remove_dom_element_colspan_attribute
+  give: [a]
+  call: a.removeAttribute('colspan')
+- name: remove_dom_element_content_attribute
+  give: [a]
+  call: a.removeAttribute('content')
+- name: remove_dom_element_contenteditable_attribute
+  give: [a]
+  call: a.removeAttribute('contenteditable')
+- name: remove_dom_element_contextmenu_attribute
+  give: [a]
+  call: a.removeAttribute('contextmenu')
+- name: remove_dom_element_controls_attribute
+  give: [a]
+  call: a.removeAttribute('controls')
+- name: remove_dom_element_coords_attribute
+  give: [a]
+  call: a.removeAttribute('coords')
+- name: remove_dom_element_crossorigin_attribute
+  give: [a]
+  call: a.removeAttribute('crossorigin')
+- name: remove_dom_element_csp_attribute
+  give: [a]
+  call: a.removeAttribute('csp')
+- name: remove_dom_element_data_attribute
+  give: [a]
+  call: a.removeAttribute('data')
+- name: remove_dom_element_data-*_attribute
+  give: [a]
+  call: a.removeAttribute('data-*')
+- name: remove_dom_element_datetime_attribute
+  give: [a]
+  call: a.removeAttribute('datetime')
+- name: remove_dom_element_decoding_attribute
+  give: [a]
+  call: a.removeAttribute('decoding')
+- name: remove_dom_element_default_attribute
+  give: [a]
+  call: a.removeAttribute('default')
+- name: remove_dom_element_defer_attribute
+  give: [a]
+  call: a.removeAttribute('defer')
+- name: remove_dom_element_dir_attribute
+  give: [a]
+  call: a.removeAttribute('dir')
+- name: remove_dom_element_dirname_attribute
+  give: [a]
+  call: a.removeAttribute('dirname')
+- name: remove_dom_element_disabled_attribute
+  give: [a]
+  call: a.removeAttribute('disabled')
+- name: remove_dom_element_download_attribute
+  give: [a]
+  call: a.removeAttribute('download')
+- name: remove_dom_element_draggable_attribute
+  give: [a]
+  call: a.removeAttribute('draggable')
+- name: remove_dom_element_dropzone_attribute
+  give: [a]
+  call: a.removeAttribute('dropzone')
+- name: remove_dom_element_enctype_attribute
+  give: [a]
+  call: a.removeAttribute('enctype')
+- name: remove_dom_element_enterkeyhint_attribute
+  give: [a]
+  call: a.removeAttribute('enterkeyhint')
+- name: remove_dom_element_for_attribute
+  give: [a]
+  call: a.removeAttribute('for')
+- name: remove_dom_element_form_attribute
+  give: [a]
+  call: a.removeAttribute('form')
+- name: remove_dom_element_formaction_attribute
+  give: [a]
+  call: a.removeAttribute('formaction')
+- name: remove_dom_element_formenctype_attribute
+  give: [a]
+  call: a.removeAttribute('formenctype')
+- name: remove_dom_element_formmethod_attribute
+  give: [a]
+  call: a.removeAttribute('formmethod')
+- name: remove_dom_element_formnovalidate_attribute
+  give: [a]
+  call: a.removeAttribute('formnovalidate')
+- name: remove_dom_element_formtarget_attribute
+  give: [a]
+  call: a.removeAttribute('formtarget')
+- name: remove_dom_element_headers_attribute
+  give: [a]
+  call: a.removeAttribute('headers')
+- name: remove_dom_element_height_attribute
+  give: [a]
+  call: a.removeAttribute('height')
+- name: remove_dom_element_hidden_attribute
+  give: [a]
+  call: a.removeAttribute('hidden')
+- name: remove_dom_element_high_attribute
+  give: [a]
+  call: a.removeAttribute('high')
+- name: remove_dom_element_href_attribute
+  give: [a]
+  call: a.removeAttribute('href')
+- name: remove_dom_element_hreflang_attribute
+  give: [a]
+  call: a.removeAttribute('hreflang')
+- name: remove_dom_element_http-equiv_attribute
+  give: [a]
+  call: a.removeAttribute('http-equiv')
+- name: remove_dom_element_icon_attribute
+  give: [a]
+  call: a.removeAttribute('icon')
+- name: remove_dom_element_id_attribute
+  give: [a]
+  call: a.removeAttribute('id')
+- name: remove_dom_element_importance_attribute
+  give: [a]
+  call: a.removeAttribute('importance')
+- name: remove_dom_element_integrity_attribute
+  give: [a]
+  call: a.removeAttribute('integrity')
+- name: remove_dom_element_intrinsicsize_attribute
+  give: [a]
+  call: a.removeAttribute('intrinsicsize')
+- name: remove_dom_element_inputmode_attribute
+  give: [a]
+  call: a.removeAttribute('inputmode')
+- name: remove_dom_element_ismap_attribute
+  give: [a]
+  call: a.removeAttribute('ismap')
+- name: remove_dom_element_itemprop_attribute
+  give: [a]
+  call: a.removeAttribute('itemprop')
+- name: remove_dom_element_keytype_attribute
+  give: [a]
+  call: a.removeAttribute('keytype')
+- name: remove_dom_element_kind_attribute
+  give: [a]
+  call: a.removeAttribute('kind')
+- name: remove_dom_element_label_attribute
+  give: [a]
+  call: a.removeAttribute('label')
+- name: remove_dom_element_lang_attribute
+  give: [a]
+  call: a.removeAttribute('lang')
+- name: remove_dom_element_language_attribute
+  give: [a]
+  call: a.removeAttribute('language')
+- name: remove_dom_element_loading_attribute
+  give: [a]
+  call: a.removeAttribute('loading')
+- name: remove_dom_element_list_attribute
+  give: [a]
+  call: a.removeAttribute('list')
+- name: remove_dom_element_loop_attribute
+  give: [a]
+  call: a.removeAttribute('loop')
+- name: remove_dom_element_low_attribute
+  give: [a]
+  call: a.removeAttribute('low')
+- name: remove_dom_element_manifest_attribute
+  give: [a]
+  call: a.removeAttribute('manifest')
+- name: remove_dom_element_max_attribute
+  give: [a]
+  call: a.removeAttribute('max')
+- name: remove_dom_element_maxlength_attribute
+  give: [a]
+  call: a.removeAttribute('maxlength')
+- name: remove_dom_element_minlength_attribute
+  give: [a]
+  call: a.removeAttribute('minlength')
+- name: remove_dom_element_media_attribute
+  give: [a]
+  call: a.removeAttribute('media')
+- name: remove_dom_element_method_attribute
+  give: [a]
+  call: a.removeAttribute('method')
+- name: remove_dom_element_min_attribute
+  give: [a]
+  call: a.removeAttribute('min')
+- name: remove_dom_element_multiple_attribute
+  give: [a]
+  call: a.removeAttribute('multiple')
+- name: remove_dom_element_muted_attribute
+  give: [a]
+  call: a.removeAttribute('muted')
+- name: remove_dom_element_name_attribute
+  give: [a]
+  call: a.removeAttribute('name')
+- name: remove_dom_element_novalidate_attribute
+  give: [a]
+  call: a.removeAttribute('novalidate')
+- name: remove_dom_element_open_attribute
+  give: [a]
+  call: a.removeAttribute('open')
+- name: remove_dom_element_optimum_attribute
+  give: [a]
+  call: a.removeAttribute('optimum')
+- name: remove_dom_element_pattern_attribute
+  give: [a]
+  call: a.removeAttribute('pattern')
+- name: remove_dom_element_ping_attribute
+  give: [a]
+  call: a.removeAttribute('ping')
+- name: remove_dom_element_placeholder_attribute
+  give: [a]
+  call: a.removeAttribute('placeholder')
+- name: remove_dom_element_poster_attribute
+  give: [a]
+  call: a.removeAttribute('poster')
+- name: remove_dom_element_preload_attribute
+  give: [a]
+  call: a.removeAttribute('preload')
+- name: remove_dom_element_radiogroup_attribute
+  give: [a]
+  call: a.removeAttribute('radiogroup')
+- name: remove_dom_element_readonly_attribute
+  give: [a]
+  call: a.removeAttribute('readonly')
+- name: remove_dom_element_referrerpolicy_attribute
+  give: [a]
+  call: a.removeAttribute('referrerpolicy')
+- name: remove_dom_element_rel_attribute
+  give: [a]
+  call: a.removeAttribute('rel')
+- name: remove_dom_element_required_attribute
+  give: [a]
+  call: a.removeAttribute('required')
+- name: remove_dom_element_reversed_attribute
+  give: [a]
+  call: a.removeAttribute('reversed')
+- name: remove_dom_element_rows_attribute
+  give: [a]
+  call: a.removeAttribute('rows')
+- name: remove_dom_element_rowspan_attribute
+  give: [a]
+  call: a.removeAttribute('rowspan')
+- name: remove_dom_element_sandbox_attribute
+  give: [a]
+  call: a.removeAttribute('sandbox')
+- name: remove_dom_element_scope_attribute
+  give: [a]
+  call: a.removeAttribute('scope')
+- name: remove_dom_element_scoped_attribute
+  give: [a]
+  call: a.removeAttribute('scoped')
+- name: remove_dom_element_selected_attribute
+  give: [a]
+  call: a.removeAttribute('selected')
+- name: remove_dom_element_shape_attribute
+  give: [a]
+  call: a.removeAttribute('shape')
+- name: remove_dom_element_size_attribute
+  give: [a]
+  call: a.removeAttribute('size')
+- name: remove_dom_element_sizes_attribute
+  give: [a]
+  call: a.removeAttribute('sizes')
+- name: remove_dom_element_slot_attribute
+  give: [a]
+  call: a.removeAttribute('slot')
+- name: remove_dom_element_span_attribute
+  give: [a]
+  call: a.removeAttribute('span')
+- name: remove_dom_element_spellcheck_attribute
+  give: [a]
+  call: a.removeAttribute('spellcheck')
+- name: remove_dom_element_src_attribute
+  give: [a]
+  call: a.removeAttribute('src')
+- name: remove_dom_element_srcdoc_attribute
+  give: [a]
+  call: a.removeAttribute('srcdoc')
+- name: remove_dom_element_srclang_attribute
+  give: [a]
+  call: a.removeAttribute('srclang')
+- name: remove_dom_element_srcset_attribute
+  give: [a]
+  call: a.removeAttribute('srcset')
+- name: remove_dom_element_start_attribute
+  give: [a]
+  call: a.removeAttribute('start')
+- name: remove_dom_element_step_attribute
+  give: [a]
+  call: a.removeAttribute('step')
+- name: remove_dom_element_style_attribute
+  give: [a]
+  call: a.removeAttribute('style')
+- name: remove_dom_element_summary_attribute
+  give: [a]
+  call: a.removeAttribute('summary')
+- name: remove_dom_element_tabindex_attribute
+  give: [a]
+  call: a.removeAttribute('tabindex')
+- name: remove_dom_element_target_attribute
+  give: [a]
+  call: a.removeAttribute('target')
+- name: remove_dom_element_title_attribute
+  give: [a]
+  call: a.removeAttribute('title')
+- name: remove_dom_element_translate_attribute
+  give: [a]
+  call: a.removeAttribute('translate')
+- name: remove_dom_element_type_attribute
+  give: [a]
+  call: a.removeAttribute('type')
+- name: remove_dom_element_usemap_attribute
+  give: [a]
+  call: a.removeAttribute('usemap')
+- name: remove_dom_element_value_attribute
+  give: [a]
+  call: a.removeAttribute('value')
+- name: remove_dom_element_width_attribute
+  give: [a]
+  call: a.removeAttribute('width')
+- name: remove_dom_element_wrap_attribute
+  give: [a]
+  call: a.removeAttribute('wrap')
+
+- name: get_dom_element_accept_attribute
+  give: [a]
+  call: a.getAttribute('accept')
+  hold: true
+- name: get_dom_element_accept-charset_attribute
+  give: [a]
+  call: a.getAttribute('accept-charset')
+  hold: true
+- name: get_dom_element_accesskey_attribute
+  give: [a]
+  call: a.getAttribute('accesskey')
+  hold: true
+- name: get_dom_element_action_attribute
+  give: [a]
+  call: a.getAttribute('action')
+  hold: true
+- name: get_dom_element_align_attribute
+  give: [a]
+  call: a.getAttribute('align')
+  hold: true
+- name: get_dom_element_allow_attribute
+  give: [a]
+  call: a.getAttribute('allow')
+  hold: true
+- name: get_dom_element_alt_attribute
+  give: [a]
+  call: a.getAttribute('alt')
+  hold: true
+- name: get_dom_element_async_attribute
+  give: [a]
+  call: a.getAttribute('async')
+  hold: true
+- name: get_dom_element_autocapitalize_attribute
+  give: [a]
+  call: a.getAttribute('autocapitalize')
+  hold: true
+- name: get_dom_element_autocomplete_attribute
+  give: [a]
+  call: a.getAttribute('autocomplete')
+  hold: true
+- name: get_dom_element_autofocus_attribute
+  give: [a]
+  call: a.getAttribute('autofocus')
+  hold: true
+- name: get_dom_element_autoplay_attribute
+  give: [a]
+  call: a.getAttribute('autoplay')
+  hold: true
+- name: get_dom_element_background_attribute
+  give: [a]
+  call: a.getAttribute('background')
+  hold: true
+- name: get_dom_element_bgcolor_attribute
+  give: [a]
+  call: a.getAttribute('bgcolor')
+  hold: true
+- name: get_dom_element_border_attribute
+  give: [a]
+  call: a.getAttribute('border')
+  hold: true
+- name: get_dom_element_buffered_attribute
+  give: [a]
+  call: a.getAttribute('buffered')
+  hold: true
+- name: get_dom_element_challenge_attribute
+  give: [a]
+  call: a.getAttribute('challenge')
+  hold: true
+- name: get_dom_element_charset_attribute
+  give: [a]
+  call: a.getAttribute('charset')
+  hold: true
+- name: get_dom_element_checked_attribute
+  give: [a]
+  call: a.getAttribute('checked')
+  hold: true
+- name: get_dom_element_cite_attribute
+  give: [a]
+  call: a.getAttribute('cite')
+  hold: true
+- name: get_dom_element_class_attribute
+  give: [a]
+  call: a.getAttribute('class')
+  hold: true
+- name: get_dom_element_code_attribute
+  give: [a]
+  call: a.getAttribute('code')
+  hold: true
+- name: get_dom_element_codebase_attribute
+  give: [a]
+  call: a.getAttribute('codebase')
+  hold: true
+- name: get_dom_element_color_attribute
+  give: [a]
+  call: a.getAttribute('color')
+  hold: true
+- name: get_dom_element_cols_attribute
+  give: [a]
+  call: a.getAttribute('cols')
+  hold: true
+- name: get_dom_element_colspan_attribute
+  give: [a]
+  call: a.getAttribute('colspan')
+  hold: true
+- name: get_dom_element_content_attribute
+  give: [a]
+  call: a.getAttribute('content')
+  hold: true
+- name: get_dom_element_contenteditable_attribute
+  give: [a]
+  call: a.getAttribute('contenteditable')
+  hold: true
+- name: get_dom_element_contextmenu_attribute
+  give: [a]
+  call: a.getAttribute('contextmenu')
+  hold: true
+- name: get_dom_element_controls_attribute
+  give: [a]
+  call: a.getAttribute('controls')
+  hold: true
+- name: get_dom_element_coords_attribute
+  give: [a]
+  call: a.getAttribute('coords')
+  hold: true
+- name: get_dom_element_crossorigin_attribute
+  give: [a]
+  call: a.getAttribute('crossorigin')
+  hold: true
+- name: get_dom_element_csp_attribute
+  give: [a]
+  call: a.getAttribute('csp')
+  hold: true
+- name: get_dom_element_data_attribute
+  give: [a]
+  call: a.getAttribute('data')
+  hold: true
+- name: get_dom_element_data-*_attribute
+  give: [a]
+  call: a.getAttribute('data-*')
+  hold: true
+- name: get_dom_element_datetime_attribute
+  give: [a]
+  call: a.getAttribute('datetime')
+  hold: true
+- name: get_dom_element_decoding_attribute
+  give: [a]
+  call: a.getAttribute('decoding')
+  hold: true
+- name: get_dom_element_default_attribute
+  give: [a]
+  call: a.getAttribute('default')
+  hold: true
+- name: get_dom_element_defer_attribute
+  give: [a]
+  call: a.getAttribute('defer')
+  hold: true
+- name: get_dom_element_dir_attribute
+  give: [a]
+  call: a.getAttribute('dir')
+  hold: true
+- name: get_dom_element_dirname_attribute
+  give: [a]
+  call: a.getAttribute('dirname')
+  hold: true
+- name: get_dom_element_disabled_attribute
+  give: [a]
+  call: a.getAttribute('disabled')
+  hold: true
+- name: get_dom_element_download_attribute
+  give: [a]
+  call: a.getAttribute('download')
+  hold: true
+- name: get_dom_element_draggable_attribute
+  give: [a]
+  call: a.getAttribute('draggable')
+  hold: true
+- name: get_dom_element_dropzone_attribute
+  give: [a]
+  call: a.getAttribute('dropzone')
+  hold: true
+- name: get_dom_element_enctype_attribute
+  give: [a]
+  call: a.getAttribute('enctype')
+  hold: true
+- name: get_dom_element_enterkeyhint_attribute
+  give: [a]
+  call: a.getAttribute('enterkeyhint')
+  hold: true
+- name: get_dom_element_for_attribute
+  give: [a]
+  call: a.getAttribute('for')
+  hold: true
+- name: get_dom_element_form_attribute
+  give: [a]
+  call: a.getAttribute('form')
+  hold: true
+- name: get_dom_element_formaction_attribute
+  give: [a]
+  call: a.getAttribute('formaction')
+  hold: true
+- name: get_dom_element_formenctype_attribute
+  give: [a]
+  call: a.getAttribute('formenctype')
+  hold: true
+- name: get_dom_element_formmethod_attribute
+  give: [a]
+  call: a.getAttribute('formmethod')
+  hold: true
+- name: get_dom_element_formnovalidate_attribute
+  give: [a]
+  call: a.getAttribute('formnovalidate')
+  hold: true
+- name: get_dom_element_formtarget_attribute
+  give: [a]
+  call: a.getAttribute('formtarget')
+  hold: true
+- name: get_dom_element_headers_attribute
+  give: [a]
+  call: a.getAttribute('headers')
+  hold: true
+- name: get_dom_element_height_attribute
+  give: [a]
+  call: a.getAttribute('height')
+  hold: true
+- name: get_dom_element_hidden_attribute
+  give: [a]
+  call: a.getAttribute('hidden')
+  hold: true
+- name: get_dom_element_high_attribute
+  give: [a]
+  call: a.getAttribute('high')
+  hold: true
+- name: get_dom_element_href_attribute
+  give: [a]
+  call: a.getAttribute('href')
+  hold: true
+- name: get_dom_element_hreflang_attribute
+  give: [a]
+  call: a.getAttribute('hreflang')
+  hold: true
+- name: get_dom_element_http-equiv_attribute
+  give: [a]
+  call: a.getAttribute('http-equiv')
+  hold: true
+- name: get_dom_element_icon_attribute
+  give: [a]
+  call: a.getAttribute('icon')
+  hold: true
+- name: get_dom_element_id_attribute
+  give: [a]
+  call: a.getAttribute('id')
+  hold: true
+- name: get_dom_element_importance_attribute
+  give: [a]
+  call: a.getAttribute('importance')
+  hold: true
+- name: get_dom_element_integrity_attribute
+  give: [a]
+  call: a.getAttribute('integrity')
+  hold: true
+- name: get_dom_element_intrinsicsize_attribute
+  give: [a]
+  call: a.getAttribute('intrinsicsize')
+  hold: true
+- name: get_dom_element_inputmode_attribute
+  give: [a]
+  call: a.getAttribute('inputmode')
+  hold: true
+- name: get_dom_element_ismap_attribute
+  give: [a]
+  call: a.getAttribute('ismap')
+  hold: true
+- name: get_dom_element_itemprop_attribute
+  give: [a]
+  call: a.getAttribute('itemprop')
+  hold: true
+- name: get_dom_element_keytype_attribute
+  give: [a]
+  call: a.getAttribute('keytype')
+  hold: true
+- name: get_dom_element_kind_attribute
+  give: [a]
+  call: a.getAttribute('kind')
+  hold: true
+- name: get_dom_element_label_attribute
+  give: [a]
+  call: a.getAttribute('label')
+  hold: true
+- name: get_dom_element_lang_attribute
+  give: [a]
+  call: a.getAttribute('lang')
+  hold: true
+- name: get_dom_element_language_attribute
+  give: [a]
+  call: a.getAttribute('language')
+  hold: true
+- name: get_dom_element_loading_attribute
+  give: [a]
+  call: a.getAttribute('loading')
+  hold: true
+- name: get_dom_element_list_attribute
+  give: [a]
+  call: a.getAttribute('list')
+  hold: true
+- name: get_dom_element_loop_attribute
+  give: [a]
+  call: a.getAttribute('loop')
+  hold: true
+- name: get_dom_element_low_attribute
+  give: [a]
+  call: a.getAttribute('low')
+  hold: true
+- name: get_dom_element_manifest_attribute
+  give: [a]
+  call: a.getAttribute('manifest')
+  hold: true
+- name: get_dom_element_max_attribute
+  give: [a]
+  call: a.getAttribute('max')
+  hold: true
+- name: get_dom_element_maxlength_attribute
+  give: [a]
+  call: a.getAttribute('maxlength')
+  hold: true
+- name: get_dom_element_minlength_attribute
+  give: [a]
+  call: a.getAttribute('minlength')
+  hold: true
+- name: get_dom_element_media_attribute
+  give: [a]
+  call: a.getAttribute('media')
+  hold: true
+- name: get_dom_element_method_attribute
+  give: [a]
+  call: a.getAttribute('method')
+  hold: true
+- name: get_dom_element_min_attribute
+  give: [a]
+  call: a.getAttribute('min')
+  hold: true
+- name: get_dom_element_multiple_attribute
+  give: [a]
+  call: a.getAttribute('multiple')
+  hold: true
+- name: get_dom_element_muted_attribute
+  give: [a]
+  call: a.getAttribute('muted')
+  hold: true
+- name: get_dom_element_name_attribute
+  give: [a]
+  call: a.getAttribute('name')
+  hold: true
+- name: get_dom_element_novalidate_attribute
+  give: [a]
+  call: a.getAttribute('novalidate')
+  hold: true
+- name: get_dom_element_open_attribute
+  give: [a]
+  call: a.getAttribute('open')
+  hold: true
+- name: get_dom_element_optimum_attribute
+  give: [a]
+  call: a.getAttribute('optimum')
+  hold: true
+- name: get_dom_element_pattern_attribute
+  give: [a]
+  call: a.getAttribute('pattern')
+  hold: true
+- name: get_dom_element_ping_attribute
+  give: [a]
+  call: a.getAttribute('ping')
+  hold: true
+- name: get_dom_element_placeholder_attribute
+  give: [a]
+  call: a.getAttribute('placeholder')
+  hold: true
+- name: get_dom_element_poster_attribute
+  give: [a]
+  call: a.getAttribute('poster')
+  hold: true
+- name: get_dom_element_preload_attribute
+  give: [a]
+  call: a.getAttribute('preload')
+  hold: true
+- name: get_dom_element_radiogroup_attribute
+  give: [a]
+  call: a.getAttribute('radiogroup')
+  hold: true
+- name: get_dom_element_readonly_attribute
+  give: [a]
+  call: a.getAttribute('readonly')
+  hold: true
+- name: get_dom_element_referrerpolicy_attribute
+  give: [a]
+  call: a.getAttribute('referrerpolicy')
+  hold: true
+- name: get_dom_element_rel_attribute
+  give: [a]
+  call: a.getAttribute('rel')
+  hold: true
+- name: get_dom_element_required_attribute
+  give: [a]
+  call: a.getAttribute('required')
+  hold: true
+- name: get_dom_element_reversed_attribute
+  give: [a]
+  call: a.getAttribute('reversed')
+  hold: true
+- name: get_dom_element_rows_attribute
+  give: [a]
+  call: a.getAttribute('rows')
+  hold: true
+- name: get_dom_element_rowspan_attribute
+  give: [a]
+  call: a.getAttribute('rowspan')
+  hold: true
+- name: get_dom_element_sandbox_attribute
+  give: [a]
+  call: a.getAttribute('sandbox')
+  hold: true
+- name: get_dom_element_scope_attribute
+  give: [a]
+  call: a.getAttribute('scope')
+  hold: true
+- name: get_dom_element_scoped_attribute
+  give: [a]
+  call: a.getAttribute('scoped')
+  hold: true
+- name: get_dom_element_selected_attribute
+  give: [a]
+  call: a.getAttribute('selected')
+  hold: true
+- name: get_dom_element_shape_attribute
+  give: [a]
+  call: a.getAttribute('shape')
+  hold: true
+- name: get_dom_element_size_attribute
+  give: [a]
+  call: a.getAttribute('size')
+  hold: true
+- name: get_dom_element_sizes_attribute
+  give: [a]
+  call: a.getAttribute('sizes')
+  hold: true
+- name: get_dom_element_slot_attribute
+  give: [a]
+  call: a.getAttribute('slot')
+  hold: true
+- name: get_dom_element_span_attribute
+  give: [a]
+  call: a.getAttribute('span')
+  hold: true
+- name: get_dom_element_spellcheck_attribute
+  give: [a]
+  call: a.getAttribute('spellcheck')
+  hold: true
+- name: get_dom_element_src_attribute
+  give: [a]
+  call: a.getAttribute('src')
+  hold: true
+- name: get_dom_element_srcdoc_attribute
+  give: [a]
+  call: a.getAttribute('srcdoc')
+  hold: true
+- name: get_dom_element_srclang_attribute
+  give: [a]
+  call: a.getAttribute('srclang')
+  hold: true
+- name: get_dom_element_srcset_attribute
+  give: [a]
+  call: a.getAttribute('srcset')
+  hold: true
+- name: get_dom_element_start_attribute
+  give: [a]
+  call: a.getAttribute('start')
+  hold: true
+- name: get_dom_element_step_attribute
+  give: [a]
+  call: a.getAttribute('step')
+  hold: true
+- name: get_dom_element_style_attribute
+  give: [a]
+  call: a.getAttribute('style')
+  hold: true
+- name: get_dom_element_summary_attribute
+  give: [a]
+  call: a.getAttribute('summary')
+  hold: true
+- name: get_dom_element_tabindex_attribute
+  give: [a]
+  call: a.getAttribute('tabindex')
+  hold: true
+- name: get_dom_element_target_attribute
+  give: [a]
+  call: a.getAttribute('target')
+  hold: true
+- name: get_dom_element_title_attribute
+  give: [a]
+  call: a.getAttribute('title')
+  hold: true
+- name: get_dom_element_translate_attribute
+  give: [a]
+  call: a.getAttribute('translate')
+  hold: true
+- name: get_dom_element_type_attribute
+  give: [a]
+  call: a.getAttribute('type')
+  hold: true
+- name: get_dom_element_usemap_attribute
+  give: [a]
+  call: a.getAttribute('usemap')
+  hold: true
+- name: get_dom_element_value_attribute
+  give: [a]
+  call: a.getAttribute('value')
+  hold: true
+- name: get_dom_element_width_attribute
+  give: [a]
+  call: a.getAttribute('width')
+  hold: true
+- name: get_dom_element_wrap_attribute
+  give: [a]
+  call: a.getAttribute('wrap')
+  hold: true
+- name: create_a_dom_element
+  give: [a]
+  call: a.createElement('a')
+  hold: true
+- name: create_abbr_dom_element
+  give: [a]
+  call: a.createElement('abbr')
+  hold: true
+- name: create_acronym_dom_element
+  give: [a]
+  call: a.createElement('acronym')
+  hold: true
+- name: create_address_dom_element
+  give: [a]
+  call: a.createElement('address')
+  hold: true
+- name: create_applet_dom_element
+  give: [a]
+  call: a.createElement('applet')
+  hold: true
+- name: create_area_dom_element
+  give: [a]
+  call: a.createElement('area')
+  hold: true
+- name: create_article_dom_element
+  give: [a]
+  call: a.createElement('article')
+  hold: true
+- name: create_aside_dom_element
+  give: [a]
+  call: a.createElement('aside')
+  hold: true
+- name: create_audio_dom_element
+  give: [a]
+  call: a.createElement('audio')
+  hold: true
+- name: create_b_dom_element
+  give: [a]
+  call: a.createElement('b')
+  hold: true
+- name: create_base_dom_element
+  give: [a]
+  call: a.createElement('base')
+  hold: true
+- name: create_basefont_dom_element
+  give: [a]
+  call: a.createElement('basefont')
+  hold: true
+- name: create_bdi_dom_element
+  give: [a]
+  call: a.createElement('bdi')
+  hold: true
+- name: create_bdo_dom_element
+  give: [a]
+  call: a.createElement('bdo')
+  hold: true
+- name: create_bgsound_dom_element
+  give: [a]
+  call: a.createElement('bgsound')
+  hold: true
+- name: create_big_dom_element
+  give: [a]
+  call: a.createElement('big')
+  hold: true
+- name: create_blink_dom_element
+  give: [a]
+  call: a.createElement('blink')
+  hold: true
+- name: create_blockquote_dom_element
+  give: [a]
+  call: a.createElement('blockquote')
+  hold: true
+- name: create_body_dom_element
+  give: [a]
+  call: a.createElement('body')
+  hold: true
+- name: create_br_dom_element
+  give: [a]
+  call: a.createElement('br')
+  hold: true
+- name: create_button_dom_element
+  give: [a]
+  call: a.createElement('button')
+  hold: true
+- name: create_canvas_dom_element
+  give: [a]
+  call: a.createElement('canvas')
+  hold: true
+- name: create_caption_dom_element
+  give: [a]
+  call: a.createElement('caption')
+  hold: true
+- name: create_center_dom_element
+  give: [a]
+  call: a.createElement('center')
+  hold: true
+- name: create_cite_dom_element
+  give: [a]
+  call: a.createElement('cite')
+  hold: true
+- name: create_code_dom_element
+  give: [a]
+  call: a.createElement('code')
+  hold: true
+- name: create_col_dom_element
+  give: [a]
+  call: a.createElement('col')
+  hold: true
+- name: create_colgroup_dom_element
+  give: [a]
+  call: a.createElement('colgroup')
+  hold: true
+- name: create_command_dom_element
+  give: [a]
+  call: a.createElement('command')
+  hold: true
+- name: create_content_dom_element
+  give: [a]
+  call: a.createElement('content')
+  hold: true
+- name: create_data_dom_element
+  give: [a]
+  call: a.createElement('data')
+  hold: true
+- name: create_datalist_dom_element
+  give: [a]
+  call: a.createElement('datalist')
+  hold: true
+- name: create_dd_dom_element
+  give: [a]
+  call: a.createElement('dd')
+  hold: true
+- name: create_del_dom_element
+  give: [a]
+  call: a.createElement('del')
+  hold: true
+- name: create_details_dom_element
+  give: [a]
+  call: a.createElement('details')
+  hold: true
+- name: create_dfn_dom_element
+  give: [a]
+  call: a.createElement('dfn')
+  hold: true
+- name: create_dialog_dom_element
+  give: [a]
+  call: a.createElement('dialog')
+  hold: true
+- name: create_dir_dom_element
+  give: [a]
+  call: a.createElement('dir')
+  hold: true
+- name: create_div_dom_element
+  give: [a]
+  call: a.createElement('div')
+  hold: true
+- name: create_dl_dom_element
+  give: [a]
+  call: a.createElement('dl')
+  hold: true
+- name: create_dt_dom_element
+  give: [a]
+  call: a.createElement('dt')
+  hold: true
+- name: create_element_dom_element
+  give: [a]
+  call: a.createElement('element')
+  hold: true
+- name: create_em_dom_element
+  give: [a]
+  call: a.createElement('em')
+  hold: true
+- name: create_embed_dom_element
+  give: [a]
+  call: a.createElement('embed')
+  hold: true
+- name: create_fieldset_dom_element
+  give: [a]
+  call: a.createElement('fieldset')
+  hold: true
+- name: create_figcaption_dom_element
+  give: [a]
+  call: a.createElement('figcaption')
+  hold: true
+- name: create_figure_dom_element
+  give: [a]
+  call: a.createElement('figure')
+  hold: true
+- name: create_font_dom_element
+  give: [a]
+  call: a.createElement('font')
+  hold: true
+- name: create_footer_dom_element
+  give: [a]
+  call: a.createElement('footer')
+  hold: true
+- name: create_form_dom_element
+  give: [a]
+  call: a.createElement('form')
+  hold: true
+- name: create_frame_dom_element
+  give: [a]
+  call: a.createElement('frame')
+  hold: true
+- name: create_frameset_dom_element
+  give: [a]
+  call: a.createElement('frameset')
+  hold: true
+- name: create_h1_dom_element
+  give: [a]
+  call: a.createElement('h1')
+  hold: true
+- name: create_head_dom_element
+  give: [a]
+  call: a.createElement('head')
+  hold: true
+- name: create_header_dom_element
+  give: [a]
+  call: a.createElement('header')
+  hold: true
+- name: create_hgroup_dom_element
+  give: [a]
+  call: a.createElement('hgroup')
+  hold: true
+- name: create_hr_dom_element
+  give: [a]
+  call: a.createElement('hr')
+  hold: true
+- name: create_html_dom_element
+  give: [a]
+  call: a.createElement('html')
+  hold: true
+- name: create_i_dom_element
+  give: [a]
+  call: a.createElement('i')
+  hold: true
+- name: create_iframe_dom_element
+  give: [a]
+  call: a.createElement('iframe')
+  hold: true
+- name: create_image_dom_element
+  give: [a]
+  call: a.createElement('image')
+  hold: true
+- name: create_img_dom_element
+  give: [a]
+  call: a.createElement('img')
+  hold: true
+- name: create_input_dom_element
+  give: [a]
+  call: a.createElement('input')
+  hold: true
+- name: create_ins_dom_element
+  give: [a]
+  call: a.createElement('ins')
+  hold: true
+- name: create_isindex_dom_element
+  give: [a]
+  call: a.createElement('isindex')
+  hold: true
+- name: create_kbd_dom_element
+  give: [a]
+  call: a.createElement('kbd')
+  hold: true
+- name: create_keygen_dom_element
+  give: [a]
+  call: a.createElement('keygen')
+  hold: true
+- name: create_label_dom_element
+  give: [a]
+  call: a.createElement('label')
+  hold: true
+- name: create_legend_dom_element
+  give: [a]
+  call: a.createElement('legend')
+  hold: true
+- name: create_li_dom_element
+  give: [a]
+  call: a.createElement('li')
+  hold: true
+- name: create_link_dom_element
+  give: [a]
+  call: a.createElement('link')
+  hold: true
+- name: create_listing_dom_element
+  give: [a]
+  call: a.createElement('listing')
+  hold: true
+- name: create_main_dom_element
+  give: [a]
+  call: a.createElement('main')
+  hold: true
+- name: create_map_dom_element
+  give: [a]
+  call: a.createElement('map')
+  hold: true
+- name: create_mark_dom_element
+  give: [a]
+  call: a.createElement('mark')
+  hold: true
+- name: create_marquee_dom_element
+  give: [a]
+  call: a.createElement('marquee')
+  hold: true
+- name: create_menu_dom_element
+  give: [a]
+  call: a.createElement('menu')
+  hold: true
+- name: create_menuitem_dom_element
+  give: [a]
+  call: a.createElement('menuitem')
+  hold: true
+- name: create_meta_dom_element
+  give: [a]
+  call: a.createElement('meta')
+  hold: true
+- name: create_meter_dom_element
+  give: [a]
+  call: a.createElement('meter')
+  hold: true
+- name: create_multicol_dom_element
+  give: [a]
+  call: a.createElement('multicol')
+  hold: true
+- name: create_nav_dom_element
+  give: [a]
+  call: a.createElement('nav')
+  hold: true
+- name: create_nextid_dom_element
+  give: [a]
+  call: a.createElement('nextid')
+  hold: true
+- name: create_nobr_dom_element
+  give: [a]
+  call: a.createElement('nobr')
+  hold: true
+- name: create_noembed_dom_element
+  give: [a]
+  call: a.createElement('noembed')
+  hold: true
+- name: create_noframes_dom_element
+  give: [a]
+  call: a.createElement('noframes')
+  hold: true
+- name: create_noscript_dom_element
+  give: [a]
+  call: a.createElement('noscript')
+  hold: true
+- name: create_object_dom_element
+  give: [a]
+  call: a.createElement('object')
+  hold: true
+- name: create_ol_dom_element
+  give: [a]
+  call: a.createElement('ol')
+  hold: true
+- name: create_optgroup_dom_element
+  give: [a]
+  call: a.createElement('optgroup')
+  hold: true
+- name: create_option_dom_element
+  give: [a]
+  call: a.createElement('option')
+  hold: true
+- name: create_output_dom_element
+  give: [a]
+  call: a.createElement('output')
+  hold: true
+- name: create_p_dom_element
+  give: [a]
+  call: a.createElement('p')
+  hold: true
+- name: create_param_dom_element
+  give: [a]
+  call: a.createElement('param')
+  hold: true
+- name: create_picture_dom_element
+  give: [a]
+  call: a.createElement('picture')
+  hold: true
+- name: create_plaintext_dom_element
+  give: [a]
+  call: a.createElement('plaintext')
+  hold: true
+- name: create_pre_dom_element
+  give: [a]
+  call: a.createElement('pre')
+  hold: true
+- name: create_progress_dom_element
+  give: [a]
+  call: a.createElement('progress')
+  hold: true
+- name: create_q_dom_element
+  give: [a]
+  call: a.createElement('q')
+  hold: true
+- name: create_rb_dom_element
+  give: [a]
+  call: a.createElement('rb')
+  hold: true
+- name: create_rp_dom_element
+  give: [a]
+  call: a.createElement('rp')
+  hold: true
+- name: create_rt_dom_element
+  give: [a]
+  call: a.createElement('rt')
+  hold: true
+- name: create_rtc_dom_element
+  give: [a]
+  call: a.createElement('rtc')
+  hold: true
+- name: create_ruby_dom_element
+  give: [a]
+  call: a.createElement('ruby')
+  hold: true
+- name: create_s_dom_element
+  give: [a]
+  call: a.createElement('s')
+  hold: true
+- name: create_samp_dom_element
+  give: [a]
+  call: a.createElement('samp')
+  hold: true
+- name: create_script_dom_element
+  give: [a]
+  call: a.createElement('script')
+  hold: true
+- name: create_section_dom_element
+  give: [a]
+  call: a.createElement('section')
+  hold: true
+- name: create_select_dom_element
+  give: [a]
+  call: a.createElement('select')
+  hold: true
+- name: create_shadow_dom_element
+  give: [a]
+  call: a.createElement('shadow')
+  hold: true
+- name: create_slot_dom_element
+  give: [a]
+  call: a.createElement('slot')
+  hold: true
+- name: create_small_dom_element
+  give: [a]
+  call: a.createElement('small')
+  hold: true
+- name: create_source_dom_element
+  give: [a]
+  call: a.createElement('source')
+  hold: true
+- name: create_spacer_dom_element
+  give: [a]
+  call: a.createElement('spacer')
+  hold: true
+- name: create_span_dom_element
+  give: [a]
+  call: a.createElement('span')
+  hold: true
+- name: create_strike_dom_element
+  give: [a]
+  call: a.createElement('strike')
+  hold: true
+- name: create_strong_dom_element
+  give: [a]
+  call: a.createElement('strong')
+  hold: true
+- name: create_style_dom_element
+  give: [a]
+  call: a.createElement('style')
+  hold: true
+- name: create_sub_dom_element
+  give: [a]
+  call: a.createElement('sub')
+  hold: true
+- name: create_summary_dom_element
+  give: [a]
+  call: a.createElement('summary')
+  hold: true
+- name: create_sup_dom_element
+  give: [a]
+  call: a.createElement('sup')
+  hold: true
+- name: create_table_dom_element
+  give: [a]
+  call: a.createElement('table')
+  hold: true
+- name: create_tbody_dom_element
+  give: [a]
+  call: a.createElement('tbody')
+  hold: true
+- name: create_td_dom_element
+  give: [a]
+  call: a.createElement('td')
+  hold: true
+- name: create_template_dom_element
+  give: [a]
+  call: a.createElement('template')
+  hold: true
+- name: create_textarea_dom_element
+  give: [a]
+  call: a.createElement('textarea')
+  hold: true
+- name: create_tfoot_dom_element
+  give: [a]
+  call: a.createElement('tfoot')
+  hold: true
+- name: create_th_dom_element
+  give: [a]
+  call: a.createElement('th')
+  hold: true
+- name: create_thead_dom_element
+  give: [a]
+  call: a.createElement('thead')
+  hold: true
+- name: create_time_dom_element
+  give: [a]
+  call: a.createElement('time')
+  hold: true
+- name: create_title_dom_element
+  give: [a]
+  call: a.createElement('title')
+  hold: true
+- name: create_tr_dom_element
+  give: [a]
+  call: a.createElement('tr')
+  hold: true
+- name: create_track_dom_element
+  give: [a]
+  call: a.createElement('track')
+  hold: true
+- name: create_tt_dom_element
+  give: [a]
+  call: a.createElement('tt')
+  hold: true
+- name: create_u_dom_element
+  give: [a]
+  call: a.createElement('u')
+  hold: true
+- name: create_ul_dom_element
+  give: [a]
+  call: a.createElement('ul')
+  hold: true
+- name: create_var_dom_element
+  give: [a]
+  call: a.createElement('var')
+  hold: true
+- name: create_video_dom_element
+  give: [a]
+  call: a.createElement('video')
+  hold: true
+- name: create_wbr_dom_element
+  give: [a]
+  call: a.createElement('wbr')
+  hold: true
+- name: set_aria_activedescendant
+  give: [a, e]
+  call: a.setAttribute('aria-activedescendant', e)
+- name: set_aria_atomic
+  give: [a, e]
+  call: a.setAttribute('aria-atomic', e)
+- name: set_aria_autocomplete
+  give: [a, e]
+  call: a.setAttribute('aria-autocomplete', e)
+- name: set_aria_busy
+  give: [a, e]
+  call: a.setAttribute('aria-busy', e)
+- name: set_aria_checked
+  give: [a, e]
+  call: a.setAttribute('aria-checked', e)
+- name: set_aria_colcount
+  give: [a, e]
+  call: a.setAttribute('aria-colcount', e)
+- name: set_aria_colindex
+  give: [a, e]
+  call: a.setAttribute('aria-colindex', e)
+- name: set_aria_colspan
+  give: [a, e]
+  call: a.setAttribute('aria-colspan', e)
+- name: set_aria_controls
+  give: [a, e]
+  call: a.setAttribute('aria-controls', e)
+- name: set_aria_current
+  give: [a, e]
+  call: a.setAttribute('aria-current', e)
+- name: set_aria_describedby
+  give: [a, e]
+  call: a.setAttribute('aria-describedby', e)
+- name: set_aria_details
+  give: [a, e]
+  call: a.setAttribute('aria-details', e)
+- name: set_aria_disabled
+  give: [a, e]
+  call: a.setAttribute('aria-disabled', e)
+- name: set_aria_dropeffect
+  give: [a, e]
+  call: a.setAttribute('aria-dropeffect', e)
+- name: set_aria_errormessage
+  give: [a, e]
+  call: a.setAttribute('aria-errormessage', e)
+- name: set_aria_expanded
+  give: [a, e]
+  call: a.setAttribute('aria-expanded', e)
+- name: set_aria_flowto
+  give: [a, e]
+  call: a.setAttribute('aria-flowto', e)
+- name: set_aria_grabbed
+  give: [a, e]
+  call: a.setAttribute('aria-grabbed', e)
+- name: set_aria_haspopup
+  give: [a, e]
+  call: a.setAttribute('aria-haspopup', e)
+- name: set_aria_hidden
+  give: [a, e]
+  call: a.setAttribute('aria-hidden', e)
+- name: set_aria_invalid
+  give: [a, e]
+  call: a.setAttribute('aria-invalid', e)
+- name: set_aria_keyshortcuts
+  give: [a, e]
+  call: a.setAttribute('aria-keyshortcuts', e)
+- name: set_aria_label
+  give: [a, e]
+  call: a.setAttribute('aria-label', e)
+- name: set_aria_labelledby
+  give: [a, e]
+  call: a.setAttribute('aria-labelledby', e)
+- name: set_aria_level
+  give: [a, e]
+  call: a.setAttribute('aria-level', e)
+- name: set_aria_live
+  give: [a, e]
+  call: a.setAttribute('aria-live', e)
+- name: set_aria_modal
+  give: [a, e]
+  call: a.setAttribute('aria-modal', e)
+- name: set_aria_multiline
+  give: [a, e]
+  call: a.setAttribute('aria-multiline', e)
+- name: set_aria_multiselectable
+  give: [a, e]
+  call: a.setAttribute('aria-multiselectable', e)
+- name: set_aria_orientation
+  give: [a, e]
+  call: a.setAttribute('aria-orientation', e)
+- name: set_aria_owns
+  give: [a, e]
+  call: a.setAttribute('aria-owns', e)
+- name: set_aria_placeholder
+  give: [a, e]
+  call: a.setAttribute('aria-placeholder', e)
+- name: set_aria_posinset
+  give: [a, e]
+  call: a.setAttribute('aria-posinset', e)
+- name: set_aria_pressed
+  give: [a, e]
+  call: a.setAttribute('aria-pressed', e)
+- name: set_aria_readonly
+  give: [a, e]
+  call: a.setAttribute('aria-readonly', e)
+- name: set_aria_relevant
+  give: [a, e]
+  call: a.setAttribute('aria-relevant', e)
+- name: set_aria_required
+  give: [a, e]
+  call: a.setAttribute('aria-required', e)
+- name: set_aria_roledescription
+  give: [a, e]
+  call: a.setAttribute('aria-roledescription', e)
+- name: set_aria_rowcount
+  give: [a, e]
+  call: a.setAttribute('aria-rowcount', e)
+- name: set_aria_rowindex
+  give: [a, e]
+  call: a.setAttribute('aria-rowindex', e)
+- name: set_aria_rowspan
+  give: [a, e]
+  call: a.setAttribute('aria-rowspan', e)
+- name: set_aria_selected
+  give: [a, e]
+  call: a.setAttribute('aria-selected', e)
+- name: set_aria_setsize
+  give: [a, e]
+  call: a.setAttribute('aria-setsize', e)
+- name: set_aria_sort
+  give: [a, e]
+  call: a.setAttribute('aria-sort', e)
+- name: set_aria_valuemax
+  give: [a, e]
+  call: a.setAttribute('aria-valuemax', e)
+- name: set_aria_valuemin
+  give: [a, e]
+  call: a.setAttribute('aria-valuemin', e)
+- name: set_aria_valuenow
+  give: [a, e]
+  call: a.setAttribute('aria-valuenow', e)
+- name: set_aria_valuetext
+  give: [a, e]
+  call: a.setAttribute('aria-valuetext', e)
+- name: set_role
+  give: [a, e]
+  call: a.setAttribute('role', e)
+
+- name: get_aria_activedescendant_attribute
+  give: [a]
+  call: a.getAttribute('aria-activedescendant')
+  hold: true
+- name: get_aria_atomic_attribute
+  give: [a]
+  call: a.getAttribute('aria-atomic')
+  hold: true
+- name: get_aria_autocomplete_attribute
+  give: [a]
+  call: a.getAttribute('aria-autocomplete')
+  hold: true
+- name: get_aria_busy_attribute
+  give: [a]
+  call: a.getAttribute('aria-busy')
+  hold: true
+- name: get_aria_checked_attribute
+  give: [a]
+  call: a.getAttribute('aria-checked')
+  hold: true
+- name: get_aria_colcount_attribute
+  give: [a]
+  call: a.getAttribute('aria-colcount')
+  hold: true
+- name: get_aria_colindex_attribute
+  give: [a]
+  call: a.getAttribute('aria-colindex')
+  hold: true
+- name: get_aria_colspan_attribute
+  give: [a]
+  call: a.getAttribute('aria-colspan')
+  hold: true
+- name: get_aria_controls_attribute
+  give: [a]
+  call: a.getAttribute('aria-controls')
+  hold: true
+- name: get_aria_current_attribute
+  give: [a]
+  call: a.getAttribute('aria-current')
+  hold: true
+- name: get_aria_describedby_attribute
+  give: [a]
+  call: a.getAttribute('aria-describedby')
+  hold: true
+- name: get_aria_details_attribute
+  give: [a]
+  call: a.getAttribute('aria-details')
+  hold: true
+- name: get_aria_disabled_attribute
+  give: [a]
+  call: a.getAttribute('aria-disabled')
+  hold: true
+- name: get_aria_dropeffect_attribute
+  give: [a]
+  call: a.getAttribute('aria-dropeffect')
+  hold: true
+- name: get_aria_errormessage_attribute
+  give: [a]
+  call: a.getAttribute('aria-errormessage')
+  hold: true
+- name: get_aria_expanded_attribute
+  give: [a]
+  call: a.getAttribute('aria-expanded')
+  hold: true
+- name: get_aria_flowto_attribute
+  give: [a]
+  call: a.getAttribute('aria-flowto')
+  hold: true
+- name: get_aria_grabbed_attribute
+  give: [a]
+  call: a.getAttribute('aria-grabbed')
+  hold: true
+- name: get_aria_haspopup_attribute
+  give: [a]
+  call: a.getAttribute('aria-haspopup')
+  hold: true
+- name: get_aria_hidden_attribute
+  give: [a]
+  call: a.getAttribute('aria-hidden')
+  hold: true
+- name: get_aria_invalid_attribute
+  give: [a]
+  call: a.getAttribute('aria-invalid')
+  hold: true
+- name: get_aria_keyshortcuts_attribute
+  give: [a]
+  call: a.getAttribute('aria-keyshortcuts')
+  hold: true
+- name: get_aria_label_attribute
+  give: [a]
+  call: a.getAttribute('aria-label')
+  hold: true
+- name: get_aria_labelledby_attribute
+  give: [a]
+  call: a.getAttribute('aria-labelledby')
+  hold: true
+- name: get_aria_level_attribute
+  give: [a]
+  call: a.getAttribute('aria-level')
+  hold: true
+- name: get_aria_live_attribute
+  give: [a]
+  call: a.getAttribute('aria-live')
+  hold: true
+- name: get_aria_modal_attribute
+  give: [a]
+  call: a.getAttribute('aria-modal')
+  hold: true
+- name: get_aria_multiline_attribute
+  give: [a]
+  call: a.getAttribute('aria-multiline')
+  hold: true
+- name: get_aria_multiselectable_attribute
+  give: [a]
+  call: a.getAttribute('aria-multiselectable')
+  hold: true
+- name: get_aria_orientation_attribute
+  give: [a]
+  call: a.getAttribute('aria-orientation')
+  hold: true
+- name: get_aria_owns_attribute
+  give: [a]
+  call: a.getAttribute('aria-owns')
+  hold: true
+- name: get_aria_placeholder_attribute
+  give: [a]
+  call: a.getAttribute('aria-placeholder')
+  hold: true
+- name: get_aria_posinset_attribute
+  give: [a]
+  call: a.getAttribute('aria-posinset')
+  hold: true
+- name: get_aria_pressed_attribute
+  give: [a]
+  call: a.getAttribute('aria-pressed')
+  hold: true
+- name: get_aria_readonly_attribute
+  give: [a]
+  call: a.getAttribute('aria-readonly')
+  hold: true
+- name: get_aria_relevant_attribute
+  give: [a]
+  call: a.getAttribute('aria-relevant')
+  hold: true
+- name: get_aria_required_attribute
+  give: [a]
+  call: a.getAttribute('aria-required')
+  hold: true
+- name: get_aria_roledescription_attribute
+  give: [a]
+  call: a.getAttribute('aria-roledescription')
+  hold: true
+- name: get_aria_rowcount_attribute
+  give: [a]
+  call: a.getAttribute('aria-rowcount')
+  hold: true
+- name: get_aria_rowindex_attribute
+  give: [a]
+  call: a.getAttribute('aria-rowindex')
+  hold: true
+- name: get_aria_rowspan_attribute
+  give: [a]
+  call: a.getAttribute('aria-rowspan')
+  hold: true
+- name: get_aria_selected_attribute
+  give: [a]
+  call: a.getAttribute('aria-selected')
+  hold: true
+- name: get_aria_setsize_attribute
+  give: [a]
+  call: a.getAttribute('aria-setsize')
+  hold: true
+- name: get_aria_sort_attribute
+  give: [a]
+  call: a.getAttribute('aria-sort')
+  hold: true
+- name: get_aria_valuemax_attribute
+  give: [a]
+  call: a.getAttribute('aria-valuemax')
+  hold: true
+- name: get_aria_valuemin_attribute
+  give: [a]
+  call: a.getAttribute('aria-valuemin')
+  hold: true
+- name: get_aria_valuenow_attribute
+  give: [a]
+  call: a.getAttribute('aria-valuenow')
+  hold: true
+- name: get_aria_valuetext_attribute
+  give: [a]
+  call: a.getAttribute('aria-valuetext')
+  hold: true
+- name: get_role_attribute
+  give: [a]
+  call: a.getAttribute('role')
+  hold: true
+- name: remove_aria_activedescendant_attribute
+  give: [a]
+  call: a.removeAttribute('aria-activedescendant')
+- name: remove_aria_atomic_attribute
+  give: [a]
+  call: a.removeAttribute('aria-atomic')
+- name: remove_aria_autocomplete_attribute
+  give: [a]
+  call: a.removeAttribute('aria-autocomplete')
+- name: remove_aria_busy_attribute
+  give: [a]
+  call: a.removeAttribute('aria-busy')
+- name: remove_aria_checked_attribute
+  give: [a]
+  call: a.removeAttribute('aria-checked')
+- name: remove_aria_colcount_attribute
+  give: [a]
+  call: a.removeAttribute('aria-colcount')
+- name: remove_aria_colindex_attribute
+  give: [a]
+  call: a.removeAttribute('aria-colindex')
+- name: remove_aria_colspan_attribute
+  give: [a]
+  call: a.removeAttribute('aria-colspan')
+- name: remove_aria_controls_attribute
+  give: [a]
+  call: a.removeAttribute('aria-controls')
+- name: remove_aria_current_attribute
+  give: [a]
+  call: a.removeAttribute('aria-current')
+- name: remove_aria_describedby_attribute
+  give: [a]
+  call: a.removeAttribute('aria-describedby')
+- name: remove_aria_details_attribute
+  give: [a]
+  call: a.removeAttribute('aria-details')
+- name: remove_aria_disabled_attribute
+  give: [a]
+  call: a.removeAttribute('aria-disabled')
+- name: remove_aria_dropeffect_attribute
+  give: [a]
+  call: a.removeAttribute('aria-dropeffect')
+- name: remove_aria_errormessage_attribute
+  give: [a]
+  call: a.removeAttribute('aria-errormessage')
+- name: remove_aria_expanded_attribute
+  give: [a]
+  call: a.removeAttribute('aria-expanded')
+- name: remove_aria_flowto_attribute
+  give: [a]
+  call: a.removeAttribute('aria-flowto')
+- name: remove_aria_grabbed_attribute
+  give: [a]
+  call: a.removeAttribute('aria-grabbed')
+- name: remove_aria_haspopup_attribute
+  give: [a]
+  call: a.removeAttribute('aria-haspopup')
+- name: remove_aria_hidden_attribute
+  give: [a]
+  call: a.removeAttribute('aria-hidden')
+- name: remove_aria_invalid_attribute
+  give: [a]
+  call: a.removeAttribute('aria-invalid')
+- name: remove_aria_keyshortcuts_attribute
+  give: [a]
+  call: a.removeAttribute('aria-keyshortcuts')
+- name: remove_aria_label_attribute
+  give: [a]
+  call: a.removeAttribute('aria-label')
+- name: remove_aria_labelledby_attribute
+  give: [a]
+  call: a.removeAttribute('aria-labelledby')
+- name: remove_aria_level_attribute
+  give: [a]
+  call: a.removeAttribute('aria-level')
+- name: remove_aria_live_attribute
+  give: [a]
+  call: a.removeAttribute('aria-live')
+- name: remove_aria_modal_attribute
+  give: [a]
+  call: a.removeAttribute('aria-modal')
+- name: remove_aria_multiline_attribute
+  give: [a]
+  call: a.removeAttribute('aria-multiline')
+- name: remove_aria_multiselectable_attribute
+  give: [a]
+  call: a.removeAttribute('aria-multiselectable')
+- name: remove_aria_orientation_attribute
+  give: [a]
+  call: a.removeAttribute('aria-orientation')
+- name: remove_aria_owns_attribute
+  give: [a]
+  call: a.removeAttribute('aria-owns')
+- name: remove_aria_placeholder_attribute
+  give: [a]
+  call: a.removeAttribute('aria-placeholder')
+- name: remove_aria_posinset_attribute
+  give: [a]
+  call: a.removeAttribute('aria-posinset')
+- name: remove_aria_pressed_attribute
+  give: [a]
+  call: a.removeAttribute('aria-pressed')
+- name: remove_aria_readonly_attribute
+  give: [a]
+  call: a.removeAttribute('aria-readonly')
+- name: remove_aria_relevant_attribute
+  give: [a]
+  call: a.removeAttribute('aria-relevant')
+- name: remove_aria_required_attribute
+  give: [a]
+  call: a.removeAttribute('aria-required')
+- name: remove_aria_roledescription_attribute
+  give: [a]
+  call: a.removeAttribute('aria-roledescription')
+- name: remove_aria_rowcount_attribute
+  give: [a]
+  call: a.removeAttribute('aria-rowcount')
+- name: remove_aria_rowindex_attribute
+  give: [a]
+  call: a.removeAttribute('aria-rowindex')
+- name: remove_aria_rowspan_attribute
+  give: [a]
+  call: a.removeAttribute('aria-rowspan')
+- name: remove_aria_selected_attribute
+  give: [a]
+  call: a.removeAttribute('aria-selected')
+- name: remove_aria_setsize_attribute
+  give: [a]
+  call: a.removeAttribute('aria-setsize')
+- name: remove_aria_sort_attribute
+  give: [a]
+  call: a.removeAttribute('aria-sort')
+- name: remove_aria_valuemax_attribute
+  give: [a]
+  call: a.removeAttribute('aria-valuemax')
+- name: remove_aria_valuemin_attribute
+  give: [a]
+  call: a.removeAttribute('aria-valuemin')
+- name: remove_aria_valuenow_attribute
+  give: [a]
+  call: a.removeAttribute('aria-valuenow')
+- name: remove_aria_valuetext_attribute
+  give: [a]
+  call: a.removeAttribute('aria-valuetext')
+- name: remove_role_attribute
+  give: [a]
+  call: a.removeAttribute('role')
+- name: create_audio_context_buffer
+  give: [a, e, f, r]
+  call: a.createBuffer(x, i, w)
+- name: fill_canvas_rectangle
+  give: [o, x, y, w, h]
+  call: a.fillRect(x, y, w, h)
+- name: clear_canvas_rectangle
+  give: [o, x, y, w, h]
+  call: a.clearRect(x, y, w, h)
+- name: get_global
+  give: [a]
+  call: a.global
+  hold: true
+- name: get_ignore_case
+  give: [a]
+  call: a.ignoreCase
+  hold: true
+- name: get_source
+  give: [a]
+  call: a.source
+  hold: true
+- name: replace_substring
+  give: [a, e, f]
+  call: a.replace(x, i)
+- name: get_complete
+  give: [a]
+  call: a.complete
+  hold: true
+- name: get_natural_width
+  give: [a]
+  call: a.naturalWidth
+  hold: true
+- name: get_original_event
+  give: [a]
+  call: a.originalEvent
+  hold: true
+- name: get_scale
+  give: [a]
+  call: a.scale
+  hold: true
+- name: check_if_has_geolocation
+  call: "!!navigator.geolocation"
+  hold: true
+- name: get_geolocation
+  give: [a]
+  call: navigator.geolocation.getCurrentPosition(x)
+- name: get_coords
+  give: [a]
+  call: a.coords
+  hold: true
+- name: get_latitude
+  give: [a]
+  call: a.latitude
+  hold: true
+- name: get_longitude
+  give: [a]
+  call: a.longitude
+  hold: true
+- name: create_dom_event
+  give: [a, e]
+  call: a.createEvent(x)
+  hold: true
+- name: set_dom_event_type
+  give: [a, e]
+  call: a.initEvent(x, true, true)
+- name: dispatch_dom_event
+  give: [a, e]
+  call: a.dispatchEvent(x, true)
+- name: create_webgl_program
+  give: [a]
+  call: a.createProgram()
+  hold: true
+- name: create_vertex_shader
+  give: [a]
+  call: a.createShader(o.VERTEX_SHADER)
+  hold: true
+- name: create_fragment_shader
+  give: [a]
+  call: a.createShader(o.FRAGMENT_SHADER)
+  hold: true
+- name: attach_webgl_shader
+  give: [a, e, f]
+  call: "o.attachShader(x, i)"
+- name: set_accent_height_attribute
+  give: [a, e]
+  call: a.setAttribute('accent-height', e)
+- name: set_accumulate_attribute
+  give: [a, e]
+  call: a.setAttribute('accumulate', e)
+- name: set_additive_attribute
+  give: [a, e]
+  call: a.setAttribute('additive', e)
+- name: set_alignment_baseline_attribute
+  give: [a, e]
+  call: a.setAttribute('alignment-baseline', e)
+- name: set_allow_reorder_attribute
+  give: [a, e]
+  call: a.setAttribute('allowReorder', e)
+- name: set_alphabetic_attribute
+  give: [a, e]
+  call: a.setAttribute('alphabetic', e)
+- name: set_amplitude_attribute
+  give: [a, e]
+  call: a.setAttribute('amplitude', e)
+- name: set_arabic_form_attribute
+  give: [a, e]
+  call: a.setAttribute('arabic-form', e)
+- name: set_ascent_attribute
+  give: [a, e]
+  call: a.setAttribute('ascent', e)
+- name: set_attribute_name_attribute
+  give: [a, e]
+  call: a.setAttribute('attributeName', e)
+- name: set_attribute_type_attribute
+  give: [a, e]
+  call: a.setAttribute('attributeType', e)
+- name: set_auto_reverse_attribute
+  give: [a, e]
+  call: a.setAttribute('autoReverse', e)
+- name: set_azimuth_attribute
+  give: [a, e]
+  call: a.setAttribute('azimuth', e)
+- name: set_base_frequency_attribute
+  give: [a, e]
+  call: a.setAttribute('baseFrequency', e)
+- name: set_baseline_shift_attribute
+  give: [a, e]
+  call: a.setAttribute('baseline-shift', e)
+- name: set_base_profile_attribute
+  give: [a, e]
+  call: a.setAttribute('baseProfile', e)
+- name: set_bbox_attribute
+  give: [a, e]
+  call: a.setAttribute('bbox', e)
+- name: set_begin_attribute
+  give: [a, e]
+  call: a.setAttribute('begin', e)
+- name: set_bias_attribute
+  give: [a, e]
+  call: a.setAttribute('bias', e)
+- name: set_by_attribute
+  give: [a, e]
+  call: a.setAttribute('by', e)
+- name: set_calc_mode_attribute
+  give: [a, e]
+  call: a.setAttribute('calcMode', e)
+- name: set_cap_height_attribute
+  give: [a, e]
+  call: a.setAttribute('cap-height', e)
+- name: set_class_attribute
+  give: [a, e]
+  call: a.setAttribute('class', e)
+- name: set_clip_attribute
+  give: [a, e]
+  call: a.setAttribute('clip', e)
+- name: set_clip_path_units_attribute
+  give: [a, e]
+  call: a.setAttribute('clipPathUnits', e)
+- name: set_clip_path_attribute
+  give: [a, e]
+  call: a.setAttribute('clip-path', e)
+- name: set_clip_rule_attribute
+  give: [a, e]
+  call: a.setAttribute('clip-rule', e)
+- name: set_color_attribute
+  give: [a, e]
+  call: a.setAttribute('color', e)
+- name: set_color_interpolation_attribute
+  give: [a, e]
+  call: a.setAttribute('color-interpolation', e)
+- name: set_color_interpolation_filters_attribute
+  give: [a, e]
+  call: a.setAttribute('color-interpolation-filters', e)
+- name: set_color_profile_attribute
+  give: [a, e]
+  call: a.setAttribute('color-profile', e)
+- name: set_color_rendering_attribute
+  give: [a, e]
+  call: a.setAttribute('color-rendering', e)
+- name: set_content_script_type_attribute
+  give: [a, e]
+  call: a.setAttribute('contentScriptType', e)
+- name: set_content_style_type_attribute
+  give: [a, e]
+  call: a.setAttribute('contentStyleType', e)
+- name: set_cursor_attribute
+  give: [a, e]
+  call: a.setAttribute('cursor', e)
+- name: set_cx_attribute
+  give: [a, e]
+  call: a.setAttribute('cx', e)
+- name: set_cy_attribute
+  give: [a, e]
+  call: a.setAttribute('cy', e)
+- name: set_d_attribute
+  give: [a, e]
+  call: a.setAttribute('d', e)
+- name: set_decelerate_attribute
+  give: [a, e]
+  call: a.setAttribute('decelerate', e)
+- name: set_descent_attribute
+  give: [a, e]
+  call: a.setAttribute('descent', e)
+- name: set_diffuse_constant_attribute
+  give: [a, e]
+  call: a.setAttribute('diffuseConstant', e)
+- name: set_direction_attribute
+  give: [a, e]
+  call: a.setAttribute('direction', e)
+- name: set_display_attribute
+  give: [a, e]
+  call: a.setAttribute('display', e)
+- name: set_divisor_attribute
+  give: [a, e]
+  call: a.setAttribute('divisor', e)
+- name: set_dominant_baseline_attribute
+  give: [a, e]
+  call: a.setAttribute('dominant-baseline', e)
+- name: set_dur_attribute
+  give: [a, e]
+  call: a.setAttribute('dur', e)
+- name: set_dx_attribute
+  give: [a, e]
+  call: a.setAttribute('dx', e)
+- name: set_dy_attribute
+  give: [a, e]
+  call: a.setAttribute('dy', e)
+- name: set_edge_mode_attribute
+  give: [a, e]
+  call: a.setAttribute('edgeMode', e)
+- name: set_elevation_attribute
+  give: [a, e]
+  call: a.setAttribute('elevation', e)
+- name: set_enable_background_attribute
+  give: [a, e]
+  call: a.setAttribute('enable-background', e)
+- name: set_end_attribute
+  give: [a, e]
+  call: a.setAttribute('end', e)
+- name: set_exponent_attribute
+  give: [a, e]
+  call: a.setAttribute('exponent', e)
+- name: set_external_resources_required_attribute
+  give: [a, e]
+  call: a.setAttribute('externalResourcesRequired', e)
+- name: set_fill_attribute
+  give: [a, e]
+  call: a.setAttribute('fill', e)
+- name: set_fill_opacity_attribute
+  give: [a, e]
+  call: a.setAttribute('fill-opacity', e)
+- name: set_fill_rule_attribute
+  give: [a, e]
+  call: a.setAttribute('fill-rule', e)
+- name: set_filter_attribute
+  give: [a, e]
+  call: a.setAttribute('filter', e)
+- name: set_filter_res_attribute
+  give: [a, e]
+  call: a.setAttribute('filterRes', e)
+- name: set_filter_units_attribute
+  give: [a, e]
+  call: a.setAttribute('filterUnits', e)
+- name: set_flood_color_attribute
+  give: [a, e]
+  call: a.setAttribute('flood-color', e)
+- name: set_flood_opacity_attribute
+  give: [a, e]
+  call: a.setAttribute('flood-opacity', e)
+- name: set_font_family_attribute
+  give: [a, e]
+  call: a.setAttribute('font-family', e)
+- name: set_font_size_attribute
+  give: [a, e]
+  call: a.setAttribute('font-size', e)
+- name: set_font_size_adjust_attribute
+  give: [a, e]
+  call: a.setAttribute('font-size-adjust', e)
+- name: set_font_stretch_attribute
+  give: [a, e]
+  call: a.setAttribute('font-stretch', e)
+- name: set_font_style_attribute
+  give: [a, e]
+  call: a.setAttribute('font-style', e)
+- name: set_font_variant_attribute
+  give: [a, e]
+  call: a.setAttribute('font-variant', e)
+- name: set_font_weight_attribute
+  give: [a, e]
+  call: a.setAttribute('font-weight', e)
+- name: set_format_attribute
+  give: [a, e]
+  call: a.setAttribute('format', e)
+- name: set_from_attribute
+  give: [a, e]
+  call: a.setAttribute('from', e)
+- name: set_fr_attribute
+  give: [a, e]
+  call: a.setAttribute('fr', e)
+- name: set_fx_attribute
+  give: [a, e]
+  call: a.setAttribute('fx', e)
+- name: set_fy_attribute
+  give: [a, e]
+  call: a.setAttribute('fy', e)
+- name: set_g1_attribute
+  give: [a, e]
+  call: a.setAttribute('g1', e)
+- name: set_g2_attribute
+  give: [a, e]
+  call: a.setAttribute('g2', e)
+- name: set_glyph_name_attribute
+  give: [a, e]
+  call: a.setAttribute('glyph-name', e)
+- name: set_glyph_orientation_horizontal_attribute
+  give: [a, e]
+  call: a.setAttribute('glyph-orientation-horizontal', e)
+- name: set_glyph_orientation_vertical_attribute
+  give: [a, e]
+  call: a.setAttribute('glyph-orientation-vertical', e)
+- name: set_glyph_ref_attribute
+  give: [a, e]
+  call: a.setAttribute('glyphRef', e)
+- name: set_gradient_transform_attribute
+  give: [a, e]
+  call: a.setAttribute('gradientTransform', e)
+- name: set_gradient_units_attribute
+  give: [a, e]
+  call: a.setAttribute('gradientUnits', e)
+- name: set_hanging_attribute
+  give: [a, e]
+  call: a.setAttribute('hanging', e)
+- name: set_height_attribute
+  give: [a, e]
+  call: a.setAttribute('height', e)
+- name: set_href_attribute
+  give: [a, e]
+  call: a.setAttribute('href', e)
+- name: set_hreflang_attribute
+  give: [a, e]
+  call: a.setAttribute('hreflang', e)
+- name: set_horiz_adv_x_attribute
+  give: [a, e]
+  call: a.setAttribute('horiz-adv-x', e)
+- name: set_horiz_origin_x_attribute
+  give: [a, e]
+  call: a.setAttribute('horiz-origin-x', e)
+- name: set_id_attribute
+  give: [a, e]
+  call: a.setAttribute('id', e)
+- name: set_ideographic_attribute
+  give: [a, e]
+  call: a.setAttribute('ideographic', e)
+- name: set_image_rendering_attribute
+  give: [a, e]
+  call: a.setAttribute('image-rendering', e)
+- name: set_in_attribute
+  give: [a, e]
+  call: a.setAttribute('in', e)
+- name: set_in2_attribute
+  give: [a, e]
+  call: a.setAttribute('in2', e)
+- name: set_intercept_attribute
+  give: [a, e]
+  call: a.setAttribute('intercept', e)
+- name: set_k_attribute
+  give: [a, e]
+  call: a.setAttribute('k', e)
+- name: set_k1_attribute
+  give: [a, e]
+  call: a.setAttribute('k1', e)
+- name: set_k2_attribute
+  give: [a, e]
+  call: a.setAttribute('k2', e)
+- name: set_k3_attribute
+  give: [a, e]
+  call: a.setAttribute('k3', e)
+- name: set_k4_attribute
+  give: [a, e]
+  call: a.setAttribute('k4', e)
+- name: set_kernel_matrix_attribute
+  give: [a, e]
+  call: a.setAttribute('kernelMatrix', e)
+- name: set_kernel_unit_length_attribute
+  give: [a, e]
+  call: a.setAttribute('kernelUnitLength', e)
+- name: set_kerning_attribute
+  give: [a, e]
+  call: a.setAttribute('kerning', e)
+- name: set_key_points_attribute
+  give: [a, e]
+  call: a.setAttribute('keyPoints', e)
+- name: set_key_splines_attribute
+  give: [a, e]
+  call: a.setAttribute('keySplines', e)
+- name: set_key_times_attribute
+  give: [a, e]
+  call: a.setAttribute('keyTimes', e)
+- name: set_lang_attribute
+  give: [a, e]
+  call: a.setAttribute('lang', e)
+- name: set_length_adjust_attribute
+  give: [a, e]
+  call: a.setAttribute('lengthAdjust', e)
+- name: set_letter_spacing_attribute
+  give: [a, e]
+  call: a.setAttribute('letter-spacing', e)
+- name: set_lighting_color_attribute
+  give: [a, e]
+  call: a.setAttribute('lighting-color', e)
+- name: set_limiting_cone_angle_attribute
+  give: [a, e]
+  call: a.setAttribute('limitingConeAngle', e)
+- name: set_local_attribute
+  give: [a, e]
+  call: a.setAttribute('local', e)
+- name: set_marker_end_attribute
+  give: [a, e]
+  call: a.setAttribute('marker-end', e)
+- name: set_marker_mid_attribute
+  give: [a, e]
+  call: a.setAttribute('marker-mid', e)
+- name: set_marker_start_attribute
+  give: [a, e]
+  call: a.setAttribute('marker-start', e)
+- name: set_marker_height_attribute
+  give: [a, e]
+  call: a.setAttribute('markerHeight', e)
+- name: set_marker_units_attribute
+  give: [a, e]
+  call: a.setAttribute('markerUnits', e)
+- name: set_marker_width_attribute
+  give: [a, e]
+  call: a.setAttribute('markerWidth', e)
+- name: set_mask_attribute
+  give: [a, e]
+  call: a.setAttribute('mask', e)
+- name: set_mask_content_units_attribute
+  give: [a, e]
+  call: a.setAttribute('maskContentUnits', e)
+- name: set_mask_units_attribute
+  give: [a, e]
+  call: a.setAttribute('maskUnits', e)
+- name: set_mathematical_attribute
+  give: [a, e]
+  call: a.setAttribute('mathematical', e)
+- name: set_max_attribute
+  give: [a, e]
+  call: a.setAttribute('max', e)
+- name: set_media_attribute
+  give: [a, e]
+  call: a.setAttribute('media', e)
+- name: set_method_attribute
+  give: [a, e]
+  call: a.setAttribute('method', e)
+- name: set_min_attribute
+  give: [a, e]
+  call: a.setAttribute('min', e)
+- name: set_mode_attribute
+  give: [a, e]
+  call: a.setAttribute('mode', e)
+- name: set_name_attribute
+  give: [a, e]
+  call: a.setAttribute('name', e)
+- name: set_num_octaves_attribute
+  give: [a, e]
+  call: a.setAttribute('numOctaves', e)
+- name: set_offset_attribute
+  give: [a, e]
+  call: a.setAttribute('offset', e)
+- name: set_opacity_attribute
+  give: [a, e]
+  call: a.setAttribute('opacity', e)
+- name: set_operator_attribute
+  give: [a, e]
+  call: a.setAttribute('operator', e)
+- name: set_order_attribute
+  give: [a, e]
+  call: a.setAttribute('order', e)
+- name: set_orient_attribute
+  give: [a, e]
+  call: a.setAttribute('orient', e)
+- name: set_orientation_attribute
+  give: [a, e]
+  call: a.setAttribute('orientation', e)
+- name: set_origin_attribute
+  give: [a, e]
+  call: a.setAttribute('origin', e)
+- name: set_overflow_attribute
+  give: [a, e]
+  call: a.setAttribute('overflow', e)
+- name: set_overline_position_attribute
+  give: [a, e]
+  call: a.setAttribute('overline-position', e)
+- name: set_overline_thickness_attribute
+  give: [a, e]
+  call: a.setAttribute('overline-thickness', e)
+- name: set_panose_1_attribute
+  give: [a, e]
+  call: a.setAttribute('panose-1', e)
+- name: set_paint_order_attribute
+  give: [a, e]
+  call: a.setAttribute('paint-order', e)
+- name: set_path_attribute
+  give: [a, e]
+  call: a.setAttribute('path', e)
+- name: set_path_length_attribute
+  give: [a, e]
+  call: a.setAttribute('pathLength', e)
+- name: set_pattern_content_units_attribute
+  give: [a, e]
+  call: a.setAttribute('patternContentUnits', e)
+- name: set_pattern_transform_attribute
+  give: [a, e]
+  call: a.setAttribute('patternTransform', e)
+- name: set_pattern_units_attribute
+  give: [a, e]
+  call: a.setAttribute('patternUnits', e)
+- name: set_ping_attribute
+  give: [a, e]
+  call: a.setAttribute('ping', e)
+- name: set_pointer_events_attribute
+  give: [a, e]
+  call: a.setAttribute('pointer-events', e)
+- name: set_points_attribute
+  give: [a, e]
+  call: a.setAttribute('points', e)
+- name: set_points_at_x_attribute
+  give: [a, e]
+  call: a.setAttribute('pointsAtX', e)
+- name: set_points_at_y_attribute
+  give: [a, e]
+  call: a.setAttribute('pointsAtY', e)
+- name: set_points_at_z_attribute
+  give: [a, e]
+  call: a.setAttribute('pointsAtZ', e)
+- name: set_preserve_alpha_attribute
+  give: [a, e]
+  call: a.setAttribute('preserveAlpha', e)
+- name: set_preserve_aspect_ratio_attribute
+  give: [a, e]
+  call: a.setAttribute('preserveAspectRatio', e)
+- name: set_primitive_units_attribute
+  give: [a, e]
+  call: a.setAttribute('primitiveUnits', e)
+- name: set_r_attribute
+  give: [a, e]
+  call: a.setAttribute('r', e)
+- name: set_radius_attribute
+  give: [a, e]
+  call: a.setAttribute('radius', e)
+- name: set_referrer_policy_attribute
+  give: [a, e]
+  call: a.setAttribute('referrerPolicy', e)
+- name: set_ref_x_attribute
+  give: [a, e]
+  call: a.setAttribute('refX', e)
+- name: set_ref_y_attribute
+  give: [a, e]
+  call: a.setAttribute('refY', e)
+- name: set_rel_attribute
+  give: [a, e]
+  call: a.setAttribute('rel', e)
+- name: set_rendering_intent_attribute
+  give: [a, e]
+  call: a.setAttribute('rendering-intent', e)
+- name: set_repeat_count_attribute
+  give: [a, e]
+  call: a.setAttribute('repeatCount', e)
+- name: set_repeat_dur_attribute
+  give: [a, e]
+  call: a.setAttribute('repeatDur', e)
+- name: set_required_extensions_attribute
+  give: [a, e]
+  call: a.setAttribute('requiredExtensions', e)
+- name: set_required_features_attribute
+  give: [a, e]
+  call: a.setAttribute('requiredFeatures', e)
+- name: set_restart_attribute
+  give: [a, e]
+  call: a.setAttribute('restart', e)
+- name: set_result_attribute
+  give: [a, e]
+  call: a.setAttribute('result', e)
+- name: set_rotate_attribute
+  give: [a, e]
+  call: a.setAttribute('rotate', e)
+- name: set_rx_attribute
+  give: [a, e]
+  call: a.setAttribute('rx', e)
+- name: set_ry_attribute
+  give: [a, e]
+  call: a.setAttribute('ry', e)
+- name: set_scale_attribute
+  give: [a, e]
+  call: a.setAttribute('scale', e)
+- name: set_seed_attribute
+  give: [a, e]
+  call: a.setAttribute('seed', e)
+- name: set_shape_rendering_attribute
+  give: [a, e]
+  call: a.setAttribute('shape-rendering', e)
+- name: set_slope_attribute
+  give: [a, e]
+  call: a.setAttribute('slope', e)
+- name: set_spacing_attribute
+  give: [a, e]
+  call: a.setAttribute('spacing', e)
+- name: set_specular_constant_attribute
+  give: [a, e]
+  call: a.setAttribute('specularConstant', e)
+- name: set_specular_exponent_attribute
+  give: [a, e]
+  call: a.setAttribute('specularExponent', e)
+- name: set_speed_attribute
+  give: [a, e]
+  call: a.setAttribute('speed', e)
+- name: set_spread_method_attribute
+  give: [a, e]
+  call: a.setAttribute('spreadMethod', e)
+- name: set_start_offset_attribute
+  give: [a, e]
+  call: a.setAttribute('startOffset', e)
+- name: set_std_deviation_attribute
+  give: [a, e]
+  call: a.setAttribute('stdDeviation', e)
+- name: set_stemh_attribute
+  give: [a, e]
+  call: a.setAttribute('stemh', e)
+- name: set_stemv_attribute
+  give: [a, e]
+  call: a.setAttribute('stemv', e)
+- name: set_stitch_tiles_attribute
+  give: [a, e]
+  call: a.setAttribute('stitchTiles', e)
+- name: set_stop_color_attribute
+  give: [a, e]
+  call: a.setAttribute('stop-color', e)
+- name: set_stop_opacity_attribute
+  give: [a, e]
+  call: a.setAttribute('stop-opacity', e)
+- name: set_strikethrough_position_attribute
+  give: [a, e]
+  call: a.setAttribute('strikethrough-position', e)
+- name: set_strikethrough_thickness_attribute
+  give: [a, e]
+  call: a.setAttribute('strikethrough-thickness', e)
+- name: set_string_attribute
+  give: [a, e]
+  call: a.setAttribute('string', e)
+- name: set_stroke_attribute
+  give: [a, e]
+  call: a.setAttribute('stroke', e)
+- name: set_stroke_dasharray_attribute
+  give: [a, e]
+  call: a.setAttribute('stroke-dasharray', e)
+- name: set_stroke_dashoffset_attribute
+  give: [a, e]
+  call: a.setAttribute('stroke-dashoffset', e)
+- name: set_stroke_linecap_attribute
+  give: [a, e]
+  call: a.setAttribute('stroke-linecap', e)
+- name: set_stroke_linejoin_attribute
+  give: [a, e]
+  call: a.setAttribute('stroke-linejoin', e)
+- name: set_stroke_miterlimit_attribute
+  give: [a, e]
+  call: a.setAttribute('stroke-miterlimit', e)
+- name: set_stroke_opacity_attribute
+  give: [a, e]
+  call: a.setAttribute('stroke-opacity', e)
+- name: set_stroke_width_attribute
+  give: [a, e]
+  call: a.setAttribute('stroke-width', e)
+- name: set_style_attribute
+  give: [a, e]
+  call: a.setAttribute('style', e)
+- name: set_surface_scale_attribute
+  give: [a, e]
+  call: a.setAttribute('surfaceScale', e)
+- name: set_system_language_attribute
+  give: [a, e]
+  call: a.setAttribute('systemLanguage', e)
+- name: set_tabindex_attribute
+  give: [a, e]
+  call: a.setAttribute('tabindex', e)
+- name: set_table_values_attribute
+  give: [a, e]
+  call: a.setAttribute('tableValues', e)
+- name: set_target_attribute
+  give: [a, e]
+  call: a.setAttribute('target', e)
+- name: set_target_x_attribute
+  give: [a, e]
+  call: a.setAttribute('targetX', e)
+- name: set_target_y_attribute
+  give: [a, e]
+  call: a.setAttribute('targetY', e)
+- name: set_text_anchor_attribute
+  give: [a, e]
+  call: a.setAttribute('text-anchor', e)
+- name: set_text_decoration_attribute
+  give: [a, e]
+  call: a.setAttribute('text-decoration', e)
+- name: set_text_rendering_attribute
+  give: [a, e]
+  call: a.setAttribute('text-rendering', e)
+- name: set_text_length_attribute
+  give: [a, e]
+  call: a.setAttribute('textLength', e)
+- name: set_to_attribute
+  give: [a, e]
+  call: a.setAttribute('to', e)
+- name: set_transform_attribute
+  give: [a, e]
+  call: a.setAttribute('transform', e)
+- name: set_type_attribute
+  give: [a, e]
+  call: a.setAttribute('type', e)
+- name: set_u1_attribute
+  give: [a, e]
+  call: a.setAttribute('u1', e)
+- name: set_u2_attribute
+  give: [a, e]
+  call: a.setAttribute('u2', e)
+- name: set_underline_position_attribute
+  give: [a, e]
+  call: a.setAttribute('underline-position', e)
+- name: set_underline_thickness_attribute
+  give: [a, e]
+  call: a.setAttribute('underline-thickness', e)
+- name: set_unicode_attribute
+  give: [a, e]
+  call: a.setAttribute('unicode', e)
+- name: set_unicode_bidi_attribute
+  give: [a, e]
+  call: a.setAttribute('unicode-bidi', e)
+- name: set_unicode_range_attribute
+  give: [a, e]
+  call: a.setAttribute('unicode-range', e)
+- name: set_units_per_em_attribute
+  give: [a, e]
+  call: a.setAttribute('units-per-em', e)
+- name: set_v_alphabetic_attribute
+  give: [a, e]
+  call: a.setAttribute('v-alphabetic', e)
+- name: set_v_hanging_attribute
+  give: [a, e]
+  call: a.setAttribute('v-hanging', e)
+- name: set_v_ideographic_attribute
+  give: [a, e]
+  call: a.setAttribute('v-ideographic', e)
+- name: set_v_mathematical_attribute
+  give: [a, e]
+  call: a.setAttribute('v-mathematical', e)
+- name: set_values_attribute
+  give: [a, e]
+  call: a.setAttribute('values', e)
+- name: set_vector_effect_attribute
+  give: [a, e]
+  call: a.setAttribute('vector-effect', e)
+- name: set_version_attribute
+  give: [a, e]
+  call: a.setAttribute('version', e)
+- name: set_vert_adv_y_attribute
+  give: [a, e]
+  call: a.setAttribute('vert-adv-y', e)
+- name: set_vert_origin_x_attribute
+  give: [a, e]
+  call: a.setAttribute('vert-origin-x', e)
+- name: set_vert_origin_y_attribute
+  give: [a, e]
+  call: a.setAttribute('vert-origin-y', e)
+- name: set_view_box_attribute
+  give: [a, e]
+  call: a.setAttribute('viewBox', e)
+- name: set_view_target_attribute
+  give: [a, e]
+  call: a.setAttribute('viewTarget', e)
+- name: set_visibility_attribute
+  give: [a, e]
+  call: a.setAttribute('visibility', e)
+- name: set_width_attribute
+  give: [a, e]
+  call: a.setAttribute('width', e)
+- name: set_widths_attribute
+  give: [a, e]
+  call: a.setAttribute('widths', e)
+- name: set_word_spacing_attribute
+  give: [a, e]
+  call: a.setAttribute('word-spacing', e)
+- name: set_writing_mode_attribute
+  give: [a, e]
+  call: a.setAttribute('writing-mode', e)
+- name: set_x_attribute
+  give: [a, e]
+  call: a.setAttribute('x', e)
+- name: set_x_height_attribute
+  give: [a, e]
+  call: a.setAttribute('x-height', e)
+- name: set_x1_attribute
+  give: [a, e]
+  call: a.setAttribute('x1', e)
+- name: set_x2_attribute
+  give: [a, e]
+  call: a.setAttribute('x2', e)
+- name: set_x_channel_selector_attribute
+  give: [a, e]
+  call: a.setAttribute('xChannelSelector', e)
+- name: set_xlink_actuate_attribute
+  give: [a, e]
+  call: a.setAttribute('xlink:actuate', x)
+- name: set_xlink_arcrole_attribute
+  give: [a, e]
+  call: a.setAttribute('xlink:arcrole', x)
+- name: set_xlink_href_attribute
+  give: [a, e]
+  call: a.setAttribute('xlink:href', x)
+- name: set_xlink_role_attribute
+  give: [a, e]
+  call: a.setAttribute('xlink:role', x)
+- name: set_xlink_show_attribute
+  give: [a, e]
+  call: a.setAttribute('xlink:show', x)
+- name: set_xlink_title_attribute
+  give: [a, e]
+  call: a.setAttribute('xlink:title', x)
+- name: set_xlink_type_attribute
+  give: [a, e]
+  call: a.setAttribute('xlink:type', x)
+- name: set_xml_base_attribute
+  give: [a, e]
+  call: a.setAttribute('xml:base', x)
+- name: set_xml_lang_attribute
+  give: [a, e]
+  call: a.setAttribute('xml:lang', x)
+- name: set_xml_space_attribute
+  give: [a, e]
+  call: a.setAttribute('xml:space', x)
+- name: set_y_attribute
+  give: [a, e]
+  call: a.setAttribute('y', e)
+- name: set_y1_attribute
+  give: [a, e]
+  call: a.setAttribute('y1', e)
+- name: set_y2_attribute
+  give: [a, e]
+  call: a.setAttribute('y2', e)
+- name: set_y_channel_selector_attribute
+  give: [a, e]
+  call: a.setAttribute('yChannelSelector', e)
+- name: set_z_attribute
+  give: [a, e]
+  call: a.setAttribute('z', e)
+- name: set_zoom_and_pan_attribute
+  give: [a, e]
+  call: a.setAttribute('zoomAndPan', e)
+- name: create_regex
+  give: [a, e]
+  call: new RegExp(a, e)
+  hold: true
+- name: get_index_of
+  give: [a, e]
+  call: a.indexOf(e)
+  hold: true
+- name: match_regex
+  give: [a, e]
+  call: a.match(e)
+  hold: true
+- name: create_datetime
+  give: [a]
+  call: new Date(a)
+  hold: true
+- name: parse_date
+  give: [a]
+  call: Date.parse(a)
+  hold: true
+- name: get_microsecond_timestamp
+  call: window.performance.now()
+  hold: true
+- name: get_computed_style
+  give: [a, e]
+  call: window.getComputedStyle(a, e)
+  hold: true
+- name: get_head
+  give: [a]
+  call: a.head
+  hold: true
+- name: get_stylesheets
+  give: [a]
+  call: a.styleSheets
+  hold: true
+- name: listen_to_webglcontextlost_event
+  give: [a, e]
+  call: a.addEventListener('webglcontextlost', e)
+- name: listen_to_webglcontextrestored_event
+  give: [a, e]
+  call: a.addEventListener('webglcontextrestored', e)
+- name: get_webgl2_context
+  give: [a]
+  call: "a.getContext('webgl2', { antialias: true })"
+  hold: true
+- name: create_float32array
+  give: [a]
+  call: new Float32Array(a)
+  hold: true
+- name: create_function
+  give: [a]
+  call: new Function(a)
+  hold: true
+- name: insert_stylesheet_rule
+  give: [a, e, f]
+  call: a.insertRule(e, f)
+- name: delete_stylesheet_rule
+  give: [a, e]
+  call: a.deleteRule(e)
+- name: trim_string
+  give: [a]
+  call: x.trim()
+  hold: true
+- name: send_request
+  give: [a, e]
+  call: a.send(e)
+- name: set_request_header
+  give: [a, e, f]
+  call: a.setRequestHeader(e, f)
+- name: get_message
+  give: [a]
+  call: a.message
+  hold: true
+- name: get_stack
+  give: [a]
+  call: a.stack
+  hold: true
+- name: post_message
+  give: [a, e]
+  call: a.postMessage(e)
+- name: set_itemref_attribute
+  give: [a, e]
+  call: a.setAttribute('itemref', e)
+- name: set_itemscope_attribute
+  give: [a, e]
+  call: a.setAttribute('itemscope', e)
+- name: set_itemtype_attribute
+  give: [a, e]
+  call: a.setAttribute('itemtype', e)
+- name: remove_itemref_attribute
+  give: [a]
+  call: a.removeAttribute('itemref')
+- name: remove_itemscope_attribute
+  give: [a]
+  call: a.removeAttribute('itemscope')
+- name: remove_itemtype_attribute
+  give: [a]
+  call: a.removeAttribute('itemtype')
+- name: create_browser_worker
+  give: [a]
+  call: new Worker(a)
+  hold: true
+- name: open_request
+  give: [a, e, f]
+  call: a.open(e, f)
+- name: create_image
+  call: new Image()
+  hold: true
+- name: add_dom_element_class
+  give: [a, e]
+  call: a.classList.add(e)
+- name: remove_dom_element_class
+  give: [a, e]
+  call: a.classList.remove(e)
+- name: get_dom_element_parent
+  give: [a]
+  call: a.parentNode
+  hold: true
+- name: get_dom_element_children
+  give: [a]
+  call: a.childNodes
+  hold: true
+- name: measure_text_width
+  give: [a, e]
+  call: a.measureText(e)
+- name: get_first_child
+  give: [a]
+  call: a.firstChild
+  hold: true
+- name: get_last_child
+  give: [a]
+  call: a.lastChild
+  hold: true
+- name: get_next_sibling
+  give: [a]
+  call: a.nextSibling
+  hold: true
+- name: get_next_sibling_element
+  give: [a]
+  call: a.nextSiblingElement
+  hold: true
+- name: get_previous_sibling
+  give: [a]
+  call: a.previousSibling
+  hold: true
+- name: get_previous_sibling_element
+  give: [a]
+  call: a.previousSiblingElement
+  hold: true
+- name: check_if_window_supports_text_selection
+  call: "!!window.getSelection"
+  hold: true
+- name: check_if_document_supports_text_selection
+  call: "document.selection && document.selection.type != 'Control'"
+  hold: true
+- name: get_selected_text_from_document
+  call: document.selection.createRange().text
+  hold: true
+- name: get_selected_text_from_window
+  call: window.getSelection().toString()
+  hold: true
+- name: create_text_range_selector
+  call: document.createRange()
+  hold: true
+- name: select_dom_element_contents
+  give: [a, e]
+  call: a.selectNodeContents(e)
+- name: remove_all_text_selection
+  give: [a]
+  call: a.removeAllRanges()
+- name: add_text_selection_range
+  give: [a, e]
+  call: a.addRange(e)
+- name: set_webgl_shader_source
+  give: [a, e, f]
+  call: a.shaderSource(e, f)
+- name: compile_webgl_shader
+  give: [a, e]
+  call: a.compileShader(e)
+- name: create_webgl_buffer
+  give: [a]
+  call: a.createBuffer()
+  hold: true
+- name: get_webgl_attribute_location
+  give: [a, e, f]
+  call: a.getAttribLocation(e, f)
+  hold: true
+- name: get_webgl_uniform_location
+  give: [a, e, f]
+  call: a.getUniformLocation(e, f)
+  hold: true
+- name: set_webgl_uniform1f
+  give: [a, e, f]
+  call: a.uniform1f(e, f)
+- name: set_webgl_uniform1fv
+  give: [a, e, f]
+  call: a.uniform1fv(e, f)
+- name: set_webgl_uniform2f
+  give: [a, e, f, r]
+  call: a.uniform2f(e, f, r)
+- name: set_webgl_uniform2fv
+  give: [a, e, f, r]
+  call: a.uniform2fv(e, [ f, r ])
+- name: set_webgl_uniform3f
+  give: [a, e, f, r, s]
+  call: a.uniform3f(e, f, r, s)
+- name: set_webgl_uniform3fv
+  give: [a, e, f, r, s]
+  call: a.uniform3fv(e, [ f, r, s ])
+- name: set_webgl_uniform4f
+  give: [a, e, f, r, s, u]
+  call: a.uniform4f(e, f, r, s, u)
+- name: set_webgl_uniform4fv
+  give: [a, e, f, r, s, u]
+  call: a.uniform4fv(e, [ f, r, s, u ])
