@@ -6181,3 +6181,319 @@
 - name: set_webgl_uniform4fv
   give: [a, e, f, r, s, u]
   call: a.uniform4fv(e, [ f, r, s, u ])
+- name: set_accept_request_header
+  give: [a, e]
+  call: a.setRequestHeader('Accept', e)
+- name: set_accept_charset_request_header
+  give: [a, e]
+  call: a.setRequestHeader('Accept-Charset', e)
+- name: set_accept_datetime_request_header
+  give: [a, e]
+  call: a.setRequestHeader('Accept-Datetime', e)
+- name: set_accept_encoding_request_header
+  give: [a, e]
+  call: a.setRequestHeader('Accept-Encoding', e)
+- name: set_accept_language_request_header
+  give: [a, e]
+  call: a.setRequestHeader('Accept-Language', e)
+- name: set_access_control_request_method_request_header
+  give: [a, e]
+  call: a.setRequestHeader('Access-Control-Request-Method', e)
+- name: set_authorization_request_header
+  give: [a, e]
+  call: a.setRequestHeader('Authorization', e)
+- name: set_cache_control_request_header
+  give: [a, e]
+  call: a.setRequestHeader('Cache-Control', e)
+- name: set_connection_request_header
+  give: [a, e]
+  call: a.setRequestHeader('Connection', e)
+- name: set_content_length_request_header
+  give: [a, e]
+  call: a.setRequestHeader('Content-Length', e)
+- name: set_content_md5_request_header
+  give: [a, e]
+  call: a.setRequestHeader('Content-MD5', e)
+- name: set_content_type_request_header
+  give: [a, e]
+  call: a.setRequestHeader('Content-Type', e)
+- name: set_cookie_request_header
+  give: [a, e]
+  call: a.setRequestHeader('Cookie', e)
+- name: set_date_request_header
+  give: [a, e]
+  call: a.setRequestHeader('Date', e)
+- name: set_expect_request_header
+  give: [a, e]
+  call: a.setRequestHeader('Expect', e)
+- name: set_forwarded_request_header
+  give: [a, e]
+  call: a.setRequestHeader('Forwarded', e)
+- name: set_from_request_header
+  give: [a, e]
+  call: a.setRequestHeader('From', e)
+- name: set_host_request_header
+  give: [a, e]
+  call: a.setRequestHeader('Host', e)
+- name: set_http2_settings_request_header
+  give: [a, e]
+  call: a.setRequestHeader('HTTP2-Settings', e)
+- name: set_if_match_request_header
+  give: [a, e]
+  call: a.setRequestHeader('If-Match', e)
+- name: set_if_modified_since_request_header
+  give: [a, e]
+  call: a.setRequestHeader('If-Modified-Since', e)
+- name: set_if_none_match_request_header
+  give: [a, e]
+  call: a.setRequestHeader('If-None-Match', e)
+- name: set_if_range_request_header
+  give: [a, e]
+  call: a.setRequestHeader('If-Range', e)
+- name: set_if_unmodified_since_request_header
+  give: [a, e]
+  call: a.setRequestHeader('If-Unmodified-Since', e)
+- name: set_max_forwards_request_header
+  give: [a, e]
+  call: a.setRequestHeader('Max-Forwards', e)
+- name: set_origin_request_header
+  give: [a, e]
+  call: a.setRequestHeader('Origin', e)
+- name: set_pragma_request_header
+  give: [a, e]
+  call: a.setRequestHeader('Pragma', e)
+- name: set_proxy_authorization_request_header
+  give: [a, e]
+  call: a.setRequestHeader('Proxy-Authorization', e)
+- name: set_range_request_header
+  give: [a, e]
+  call: a.setRequestHeader('Range', e)
+- name: set_referer_request_header
+  give: [a, e]
+  call: a.setRequestHeader('Referer', e)
+- name: set_user_agent_request_header
+  give: [a, e]
+  call: a.setRequestHeader('User-Agent', e)
+- name: set_upgrade_request_header
+  give: [a, e]
+  call: a.setRequestHeader('Upgrade', e)
+- name: set_via_request_header
+  give: [a, e]
+  call: a.setRequestHeader('Via', e)
+- name: set_warning_request_header
+  give: [a, e]
+  call: a.setRequestHeader('Warning', e)
+- name: set_upgrade_insecure_requests_request_header
+  give: [a, e]
+  call: a.setRequestHeader('Upgrade-Insecure-Requests', e)
+- name: set_x_requested_with_request_header
+  give: [a, e]
+  call: a.setRequestHeader('X-Requested-With', e)
+- name: set_x_forwarded_for_request_header
+  give: [a, e]
+  call: a.setRequestHeader('X-Forwarded-For', e)
+- name: set_x_forwarded_host_request_header
+  give: [a, e]
+  call: a.setRequestHeader('X-Forwarded-Host', e)
+- name: set_x_forwarded_proto_request_header
+  give: [a, e]
+  call: a.setRequestHeader('X-Forwarded-Proto', e)
+- name: set_front_end_https_request_header
+  give: [a, e]
+  call: a.setRequestHeader('Front-End-Https', e)
+- name: set_x_http_method_override_request_header
+  give: [a, e]
+  call: a.setRequestHeader('X-Http-Method-Override', e)
+- name: set_proxy_connection_request_header
+  give: [a, e]
+  call: a.setRequestHeader('Proxy-Connection', e)
+- name: set_x_csrf_token_request_header
+  give: [a, e]
+  call: a.setRequestHeader('X-Csrf-Token', e)
+- name: set_x_request_id_request_header
+  give: [a, e]
+  call: a.setRequestHeader('X-Request-ID', e)
+- name: set_x_correlation_id_request_header
+  give: [a, e]
+  call: a.setRequestHeader('X-Correlation-ID', e)
+- name: set_etag_request_header
+  give: [a, e]
+  call: a.setRequestHeader('ETag', e)
+- name: set_www_authenticate_request_header
+  give: [a, e]
+  call: a.setRequestHeader('WWW-Authenticate', e)
+- name: set_expires_request_header
+  give: [a, e]
+  call: a.setRequestHeader('Expires', e)
+- name: set_access_control_allow_origin_request_header
+  give: [a, e]
+  call: a.setRequestHeader('Access-Control-Allow-Origin', e)
+- name: set_access_control_allow_credentials_request_header
+  give: [a, e]
+  call: a.setRequestHeader('Access-Control-Allow-Credentials', e)
+- name: set_access_control_expose_headers_request_header
+  give: [a, e]
+  call: a.setRequestHeader('Access-Control-Expose-Headers', e)
+- name: set_access_control_max_age_request_header
+  give: [a, e]
+  call: a.setRequestHeader('Access-Control-Max-Age', e)
+- name: set_access_control_allow_methods_request_header
+  give: [a, e]
+  call: a.setRequestHeader('Access-Control-Allow-Methods', e)
+- name: set_access_control_allow_headers_request_header
+  give: [a, e]
+  call: a.setRequestHeader('Access-Control-Allow-Headers', e)
+- name: set_accept_patch_request_header
+  give: [a, e]
+  call: a.setRequestHeader('Accept-Patch', e)
+- name: set_accept_ranges_request_header
+  give: [a, e]
+  call: a.setRequestHeader('Accept-Ranges', e)
+- name: set_age_request_header
+  give: [a, e]
+  call: a.setRequestHeader('Age', e)
+- name: set_content_range_header
+  give: [a, e]
+  call: a.setRequestHeader('Content-Range', e)
+- name: create_formdata
+  give: [a]
+  call: new FormData(a)
+  hold: true
+
+- name: set_webgl_uniform_matrix2fv
+  give: [a, e, f]
+  call: a.uniformMatrix2fv(e, false, [f])
+- name: set_webgl_uniform_matrix3fv
+  give: [a, e, f]
+  call: a.uniformMatrix3fv(e, false, [f])
+- name: set_webgl_uniform_matrix4fv
+  give: [a, e, f]
+  call: a.uniformMatrix4fv(e, false, [f])
+
+- name: set_webgl_uniform1i
+  give: [a, e, f]
+  call: a.uniform1i(e, f)
+- name: set_webgl_uniform1iv
+  give: [a, e, f]
+  call: a.uniform1iv(e, [ f ])
+
+- name: set_webgl_uniform2i
+  give: [a, e, f, r]
+  call: a.uniform2i(e, f, r)
+- name: set_webgl_uniform2iv
+  give: [a, e, f, r]
+  call: a.uniform2iv(e, [ f, r ])
+
+- name: set_webgl_uniform3i
+  give: [a, e, f, r, s]
+  call: a.uniform3i(e, f, r, s)
+- name: set_webgl_uniform3iv
+  give: [a, e, f, r, s]
+  call: a.uniform3iv(e, [ f, r, s ])
+
+- name: set_webgl_uniform4i
+  give: [a, e, f, r, s, u]
+  call: a.uniform4i(e, f, r, s, u)
+- name: set_webgl_uniform4iv
+  give: [a, e, f, r, s, u]
+  call: a.uniform4iv(e, [ f, r, s, u ])
+
+- name: get_webgl_shader_parameter
+  give: [a, e]
+  call: a.getShaderParameter(e, a.COMPILE_STATUS)
+  hold: true
+- name: get_webgl_shader_info_log
+  give: [a, e]
+  call: a.getShaderInfoLog(e)
+  hold: true
+
+- name: buffer_webgl_element_array_data
+  give: [a, e]
+  call: a.bufferData(a.ELEMENT_ARRAY_BUFFER, e, a.DYNAMIC_DRAW)
+
+- name: buffer_webgl_element_array_subdata
+  give: [a, e]
+  call: a.bufferSubData(a.ELEMENT_ARRAY_BUFFER, 0, e)
+
+- name: bind_webgl_array_buffer
+  give: [a, e]
+  call: a.bindBuffer(a.ARRAY_BUFFER, e)
+
+- name: buffer_webgl_array_data
+  give: [a, e]
+  call: a.bufferData(a.ARRAY_BUFFER, e, a.DYNAMIC_DRAW)
+
+- name: buffer_webgl_array_subdata
+  give: [a, e]
+  call: a.bufferSubData(a.ARRAY_BUFFER, 0, e)
+
+- name: draw_webgl_triangle_arrays
+  give: [a, e]
+  call: a.drawArrays(a.TRIANGLES, 0, 3)
+
+- name: draw_webgl_triangle_elements
+  give: [a, e]
+  call: a.drawElements(a.TRIANGLES, 4, a.UNSIGNED_SHORT, 0)
+
+- name: create_webgl_texture
+  give: [a]
+  call: a.createTexture()
+  hold: true
+
+- name: bind_webgl_texture
+  give: [a, e]
+  call: a.bindTexture(a.TEXTURE_2D, e)
+
+- name: add_webgl_2d_image_texture
+  give: [a, e]
+  call: a.texImage2D(a.TEXTURE_2D, 0, a.RGBA, a.RGBA, a.UNSIGNED_BYTE, e)
+
+- name: set_webgl_viewport
+  give: [a, e, f]
+  call: a.viewport(0, 0, e, f)
+- name: create_media_recorder
+  give: [a]
+  call: new MediaRecorder(a)
+  hold: true
+- name: connect_media_node
+  give: [a, e]
+  call: a.connect(e)
+  hold: true
+- name: create_audio_gain
+  give: [a]
+  call: a.createGain()
+  hold: true
+- name: create_audio_oscillator
+  give: [a]
+  call: a.createOscillator()
+  hold: true
+- name: create_audio_biquad_filter
+  give: [a]
+  call: a.createBiquadFilter()
+  hold: true
+- name: get_media_devices
+  call: navigator.mediaDevices
+  hold: true
+- name: get_files
+  give: [a]
+  hold: true
+  call: a.files
+- name: get_clipboard_data
+  give: [a]
+  hold: true
+  call: a.clipboardData
+- name: get_gamepads
+  call: navigator.getGamepads()
+  hold: true
+- name: handle_promise_success
+  call: a.then(e)
+  give: [a, e]
+- name: handle_promise_error
+  call: a.catch(e)
+  give: [a, e]
+- name: create_request
+  hold: true
+  call: |-
+    typeof XMLHttpRequest != 'undefined'
+        ? new XMLHttpRequest()
+        : new ActiveXObject('msxml2.xmlhttp.6.0')

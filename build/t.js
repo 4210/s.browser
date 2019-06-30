@@ -16160,6 +16160,768 @@ n(function(a, e, f, r, s, u){
 })
 
 /**
+ * SET_ACCEPT_REQUEST_HEADER
+ */
+
+n(function(a, e){
+  a.setRequestHeader('Accept', e)
+})
+
+/**
+ * SET_ACCEPT_CHARSET_REQUEST_HEADER
+ */
+
+n(function(a, e){
+  a.setRequestHeader('Accept-Charset', e)
+})
+
+/**
+ * SET_ACCEPT_DATETIME_REQUEST_HEADER
+ */
+
+n(function(a, e){
+  a.setRequestHeader('Accept-Datetime', e)
+})
+
+/**
+ * SET_ACCEPT_ENCODING_REQUEST_HEADER
+ */
+
+n(function(a, e){
+  a.setRequestHeader('Accept-Encoding', e)
+})
+
+/**
+ * SET_ACCEPT_LANGUAGE_REQUEST_HEADER
+ */
+
+n(function(a, e){
+  a.setRequestHeader('Accept-Language', e)
+})
+
+/**
+ * SET_ACCESS_CONTROL_REQUEST_METHOD_REQUEST_HEADER
+ */
+
+n(function(a, e){
+  a.setRequestHeader('Access-Control-Request-Method', e)
+})
+
+/**
+ * SET_AUTHORIZATION_REQUEST_HEADER
+ */
+
+n(function(a, e){
+  a.setRequestHeader('Authorization', e)
+})
+
+/**
+ * SET_CACHE_CONTROL_REQUEST_HEADER
+ */
+
+n(function(a, e){
+  a.setRequestHeader('Cache-Control', e)
+})
+
+/**
+ * SET_CONNECTION_REQUEST_HEADER
+ */
+
+n(function(a, e){
+  a.setRequestHeader('Connection', e)
+})
+
+/**
+ * SET_CONTENT_LENGTH_REQUEST_HEADER
+ */
+
+n(function(a, e){
+  a.setRequestHeader('Content-Length', e)
+})
+
+/**
+ * SET_CONTENT_MD5_REQUEST_HEADER
+ */
+
+n(function(a, e){
+  a.setRequestHeader('Content-MD5', e)
+})
+
+/**
+ * SET_CONTENT_TYPE_REQUEST_HEADER
+ */
+
+n(function(a, e){
+  a.setRequestHeader('Content-Type', e)
+})
+
+/**
+ * SET_COOKIE_REQUEST_HEADER
+ */
+
+n(function(a, e){
+  a.setRequestHeader('Cookie', e)
+})
+
+/**
+ * SET_DATE_REQUEST_HEADER
+ */
+
+n(function(a, e){
+  a.setRequestHeader('Date', e)
+})
+
+/**
+ * SET_EXPECT_REQUEST_HEADER
+ */
+
+n(function(a, e){
+  a.setRequestHeader('Expect', e)
+})
+
+/**
+ * SET_FORWARDED_REQUEST_HEADER
+ */
+
+n(function(a, e){
+  a.setRequestHeader('Forwarded', e)
+})
+
+/**
+ * SET_FROM_REQUEST_HEADER
+ */
+
+n(function(a, e){
+  a.setRequestHeader('From', e)
+})
+
+/**
+ * SET_HOST_REQUEST_HEADER
+ */
+
+n(function(a, e){
+  a.setRequestHeader('Host', e)
+})
+
+/**
+ * SET_HTTP2_SETTINGS_REQUEST_HEADER
+ */
+
+n(function(a, e){
+  a.setRequestHeader('HTTP2-Settings', e)
+})
+
+/**
+ * SET_IF_MATCH_REQUEST_HEADER
+ */
+
+n(function(a, e){
+  a.setRequestHeader('If-Match', e)
+})
+
+/**
+ * SET_IF_MODIFIED_SINCE_REQUEST_HEADER
+ */
+
+n(function(a, e){
+  a.setRequestHeader('If-Modified-Since', e)
+})
+
+/**
+ * SET_IF_NONE_MATCH_REQUEST_HEADER
+ */
+
+n(function(a, e){
+  a.setRequestHeader('If-None-Match', e)
+})
+
+/**
+ * SET_IF_RANGE_REQUEST_HEADER
+ */
+
+n(function(a, e){
+  a.setRequestHeader('If-Range', e)
+})
+
+/**
+ * SET_IF_UNMODIFIED_SINCE_REQUEST_HEADER
+ */
+
+n(function(a, e){
+  a.setRequestHeader('If-Unmodified-Since', e)
+})
+
+/**
+ * SET_MAX_FORWARDS_REQUEST_HEADER
+ */
+
+n(function(a, e){
+  a.setRequestHeader('Max-Forwards', e)
+})
+
+/**
+ * SET_ORIGIN_REQUEST_HEADER
+ */
+
+n(function(a, e){
+  a.setRequestHeader('Origin', e)
+})
+
+/**
+ * SET_PRAGMA_REQUEST_HEADER
+ */
+
+n(function(a, e){
+  a.setRequestHeader('Pragma', e)
+})
+
+/**
+ * SET_PROXY_AUTHORIZATION_REQUEST_HEADER
+ */
+
+n(function(a, e){
+  a.setRequestHeader('Proxy-Authorization', e)
+})
+
+/**
+ * SET_RANGE_REQUEST_HEADER
+ */
+
+n(function(a, e){
+  a.setRequestHeader('Range', e)
+})
+
+/**
+ * SET_REFERER_REQUEST_HEADER
+ */
+
+n(function(a, e){
+  a.setRequestHeader('Referer', e)
+})
+
+/**
+ * SET_USER_AGENT_REQUEST_HEADER
+ */
+
+n(function(a, e){
+  a.setRequestHeader('User-Agent', e)
+})
+
+/**
+ * SET_UPGRADE_REQUEST_HEADER
+ */
+
+n(function(a, e){
+  a.setRequestHeader('Upgrade', e)
+})
+
+/**
+ * SET_VIA_REQUEST_HEADER
+ */
+
+n(function(a, e){
+  a.setRequestHeader('Via', e)
+})
+
+/**
+ * SET_WARNING_REQUEST_HEADER
+ */
+
+n(function(a, e){
+  a.setRequestHeader('Warning', e)
+})
+
+/**
+ * SET_UPGRADE_INSECURE_REQUESTS_REQUEST_HEADER
+ */
+
+n(function(a, e){
+  a.setRequestHeader('Upgrade-Insecure-Requests', e)
+})
+
+/**
+ * SET_X_REQUESTED_WITH_REQUEST_HEADER
+ */
+
+n(function(a, e){
+  a.setRequestHeader('X-Requested-With', e)
+})
+
+/**
+ * SET_X_FORWARDED_FOR_REQUEST_HEADER
+ */
+
+n(function(a, e){
+  a.setRequestHeader('X-Forwarded-For', e)
+})
+
+/**
+ * SET_X_FORWARDED_HOST_REQUEST_HEADER
+ */
+
+n(function(a, e){
+  a.setRequestHeader('X-Forwarded-Host', e)
+})
+
+/**
+ * SET_X_FORWARDED_PROTO_REQUEST_HEADER
+ */
+
+n(function(a, e){
+  a.setRequestHeader('X-Forwarded-Proto', e)
+})
+
+/**
+ * SET_FRONT_END_HTTPS_REQUEST_HEADER
+ */
+
+n(function(a, e){
+  a.setRequestHeader('Front-End-Https', e)
+})
+
+/**
+ * SET_X_HTTP_METHOD_OVERRIDE_REQUEST_HEADER
+ */
+
+n(function(a, e){
+  a.setRequestHeader('X-Http-Method-Override', e)
+})
+
+/**
+ * SET_PROXY_CONNECTION_REQUEST_HEADER
+ */
+
+n(function(a, e){
+  a.setRequestHeader('Proxy-Connection', e)
+})
+
+/**
+ * SET_X_CSRF_TOKEN_REQUEST_HEADER
+ */
+
+n(function(a, e){
+  a.setRequestHeader('X-Csrf-Token', e)
+})
+
+/**
+ * SET_X_REQUEST_ID_REQUEST_HEADER
+ */
+
+n(function(a, e){
+  a.setRequestHeader('X-Request-ID', e)
+})
+
+/**
+ * SET_X_CORRELATION_ID_REQUEST_HEADER
+ */
+
+n(function(a, e){
+  a.setRequestHeader('X-Correlation-ID', e)
+})
+
+/**
+ * SET_ETAG_REQUEST_HEADER
+ */
+
+n(function(a, e){
+  a.setRequestHeader('ETag', e)
+})
+
+/**
+ * SET_WWW_AUTHENTICATE_REQUEST_HEADER
+ */
+
+n(function(a, e){
+  a.setRequestHeader('WWW-Authenticate', e)
+})
+
+/**
+ * SET_EXPIRES_REQUEST_HEADER
+ */
+
+n(function(a, e){
+  a.setRequestHeader('Expires', e)
+})
+
+/**
+ * SET_ACCESS_CONTROL_ALLOW_ORIGIN_REQUEST_HEADER
+ */
+
+n(function(a, e){
+  a.setRequestHeader('Access-Control-Allow-Origin', e)
+})
+
+/**
+ * SET_ACCESS_CONTROL_ALLOW_CREDENTIALS_REQUEST_HEADER
+ */
+
+n(function(a, e){
+  a.setRequestHeader('Access-Control-Allow-Credentials', e)
+})
+
+/**
+ * SET_ACCESS_CONTROL_EXPOSE_HEADERS_REQUEST_HEADER
+ */
+
+n(function(a, e){
+  a.setRequestHeader('Access-Control-Expose-Headers', e)
+})
+
+/**
+ * SET_ACCESS_CONTROL_MAX_AGE_REQUEST_HEADER
+ */
+
+n(function(a, e){
+  a.setRequestHeader('Access-Control-Max-Age', e)
+})
+
+/**
+ * SET_ACCESS_CONTROL_ALLOW_METHODS_REQUEST_HEADER
+ */
+
+n(function(a, e){
+  a.setRequestHeader('Access-Control-Allow-Methods', e)
+})
+
+/**
+ * SET_ACCESS_CONTROL_ALLOW_HEADERS_REQUEST_HEADER
+ */
+
+n(function(a, e){
+  a.setRequestHeader('Access-Control-Allow-Headers', e)
+})
+
+/**
+ * SET_ACCEPT_PATCH_REQUEST_HEADER
+ */
+
+n(function(a, e){
+  a.setRequestHeader('Accept-Patch', e)
+})
+
+/**
+ * SET_ACCEPT_RANGES_REQUEST_HEADER
+ */
+
+n(function(a, e){
+  a.setRequestHeader('Accept-Ranges', e)
+})
+
+/**
+ * SET_AGE_REQUEST_HEADER
+ */
+
+n(function(a, e){
+  a.setRequestHeader('Age', e)
+})
+
+/**
+ * SET_CONTENT_RANGE_HEADER
+ */
+
+n(function(a, e){
+  a.setRequestHeader('Content-Range', e)
+})
+
+/**
+ * CREATE_FORMDATA
+ */
+
+n(function(a){
+  return new FormData(a)
+})
+
+/**
+ * SET_WEBGL_UNIFORM_MATRIX2FV
+ */
+
+n(function(a, e, f){
+  a.uniformMatrix2fv(e, false, [f])
+})
+
+/**
+ * SET_WEBGL_UNIFORM_MATRIX3FV
+ */
+
+n(function(a, e, f){
+  a.uniformMatrix3fv(e, false, [f])
+})
+
+/**
+ * SET_WEBGL_UNIFORM_MATRIX4FV
+ */
+
+n(function(a, e, f){
+  a.uniformMatrix4fv(e, false, [f])
+})
+
+/**
+ * SET_WEBGL_UNIFORM1I
+ */
+
+n(function(a, e, f){
+  a.uniform1i(e, f)
+})
+
+/**
+ * SET_WEBGL_UNIFORM1IV
+ */
+
+n(function(a, e, f){
+  a.uniform1iv(e, [ f ])
+})
+
+/**
+ * SET_WEBGL_UNIFORM2I
+ */
+
+n(function(a, e, f, r){
+  a.uniform2i(e, f, r)
+})
+
+/**
+ * SET_WEBGL_UNIFORM2IV
+ */
+
+n(function(a, e, f, r){
+  a.uniform2iv(e, [ f, r ])
+})
+
+/**
+ * SET_WEBGL_UNIFORM3I
+ */
+
+n(function(a, e, f, r, s){
+  a.uniform3i(e, f, r, s)
+})
+
+/**
+ * SET_WEBGL_UNIFORM3IV
+ */
+
+n(function(a, e, f, r, s){
+  a.uniform3iv(e, [ f, r, s ])
+})
+
+/**
+ * SET_WEBGL_UNIFORM4I
+ */
+
+n(function(a, e, f, r, s, u){
+  a.uniform4i(e, f, r, s, u)
+})
+
+/**
+ * SET_WEBGL_UNIFORM4IV
+ */
+
+n(function(a, e, f, r, s, u){
+  a.uniform4iv(e, [ f, r, s, u ])
+})
+
+/**
+ * GET_WEBGL_SHADER_PARAMETER
+ */
+
+n(function(a, e){
+  return a.getShaderParameter(e, a.COMPILE_STATUS)
+})
+
+/**
+ * GET_WEBGL_SHADER_INFO_LOG
+ */
+
+n(function(a, e){
+  return a.getShaderInfoLog(e)
+})
+
+/**
+ * BUFFER_WEBGL_ELEMENT_ARRAY_DATA
+ */
+
+n(function(a, e){
+  a.bufferData(a.ELEMENT_ARRAY_BUFFER, e, a.DYNAMIC_DRAW)
+})
+
+/**
+ * BUFFER_WEBGL_ELEMENT_ARRAY_SUBDATA
+ */
+
+n(function(a, e){
+  a.bufferSubData(a.ELEMENT_ARRAY_BUFFER, 0, e)
+})
+
+/**
+ * BIND_WEBGL_ARRAY_BUFFER
+ */
+
+n(function(a, e){
+  a.bindBuffer(a.ARRAY_BUFFER, e)
+})
+
+/**
+ * BUFFER_WEBGL_ARRAY_DATA
+ */
+
+n(function(a, e){
+  a.bufferData(a.ARRAY_BUFFER, e, a.DYNAMIC_DRAW)
+})
+
+/**
+ * BUFFER_WEBGL_ARRAY_SUBDATA
+ */
+
+n(function(a, e){
+  a.bufferSubData(a.ARRAY_BUFFER, 0, e)
+})
+
+/**
+ * DRAW_WEBGL_TRIANGLE_ARRAYS
+ */
+
+n(function(a, e){
+  a.drawArrays(a.TRIANGLES, 0, 3)
+})
+
+/**
+ * DRAW_WEBGL_TRIANGLE_ELEMENTS
+ */
+
+n(function(a, e){
+  a.drawElements(a.TRIANGLES, 4, a.UNSIGNED_SHORT, 0)
+})
+
+/**
+ * CREATE_WEBGL_TEXTURE
+ */
+
+n(function(a){
+  return a.createTexture()
+})
+
+/**
+ * BIND_WEBGL_TEXTURE
+ */
+
+n(function(a, e){
+  a.bindTexture(a.TEXTURE_2D, e)
+})
+
+/**
+ * ADD_WEBGL_2D_IMAGE_TEXTURE
+ */
+
+n(function(a, e){
+  a.texImage2D(a.TEXTURE_2D, 0, a.RGBA, a.RGBA, a.UNSIGNED_BYTE, e)
+})
+
+/**
+ * SET_WEBGL_VIEWPORT
+ */
+
+n(function(a, e, f){
+  a.viewport(0, 0, e, f)
+})
+
+/**
+ * CREATE_MEDIA_RECORDER
+ */
+
+n(function(a){
+  return new MediaRecorder(a)
+})
+
+/**
+ * CONNECT_MEDIA_NODE
+ */
+
+n(function(a, e){
+  return a.connect(e)
+})
+
+/**
+ * CREATE_AUDIO_GAIN
+ */
+
+n(function(a){
+  return a.createGain()
+})
+
+/**
+ * CREATE_AUDIO_OSCILLATOR
+ */
+
+n(function(a){
+  return a.createOscillator()
+})
+
+/**
+ * CREATE_AUDIO_BIQUAD_FILTER
+ */
+
+n(function(a){
+  return a.createBiquadFilter()
+})
+
+/**
+ * GET_MEDIA_DEVICES
+ */
+
+n(function(){
+  return navigator.mediaDevices
+})
+
+/**
+ * GET_FILES
+ */
+
+n(function(a){
+  return a.files
+})
+
+/**
+ * GET_CLIPBOARD_DATA
+ */
+
+n(function(a){
+  return a.clipboardData
+})
+
+/**
+ * GET_GAMEPADS
+ */
+
+n(function(){
+  return navigator.getGamepads()
+})
+
+/**
+ * HANDLE_PROMISE_SUCCESS
+ */
+
+n(function(a, e){
+  a.then(e)
+})
+
+/**
+ * HANDLE_PROMISE_ERROR
+ */
+
+n(function(a, e){
+  a.catch(e)
+})
+
+/**
+ * CREATE_REQUEST
+ */
+
+n(function(){
+  return typeof XMLHttpRequest != 'undefined'
+    ? new XMLHttpRequest()
+    : new ActiveXObject('msxml2.xmlhttp.6.0')
+})
+
+/**
  * HOLD
  */
 
@@ -35957,6 +36719,994 @@ r(function(a, e, f, r, s, u){
   const n = d(s)
   const o = d(u)
   h6(2000, b, i, k, m, n, o)
+})
+
+/**
+ * SET_ACCEPT_REQUEST_HEADER
+ */
+
+r(function(a, e){
+  const b = d(a)
+  const i = d(e)
+  h2(2001, b, i)
+})
+
+/**
+ * SET_ACCEPT_CHARSET_REQUEST_HEADER
+ */
+
+r(function(a, e){
+  const b = d(a)
+  const i = d(e)
+  h2(2002, b, i)
+})
+
+/**
+ * SET_ACCEPT_DATETIME_REQUEST_HEADER
+ */
+
+r(function(a, e){
+  const b = d(a)
+  const i = d(e)
+  h2(2003, b, i)
+})
+
+/**
+ * SET_ACCEPT_ENCODING_REQUEST_HEADER
+ */
+
+r(function(a, e){
+  const b = d(a)
+  const i = d(e)
+  h2(2004, b, i)
+})
+
+/**
+ * SET_ACCEPT_LANGUAGE_REQUEST_HEADER
+ */
+
+r(function(a, e){
+  const b = d(a)
+  const i = d(e)
+  h2(2005, b, i)
+})
+
+/**
+ * SET_ACCESS_CONTROL_REQUEST_METHOD_REQUEST_HEADER
+ */
+
+r(function(a, e){
+  const b = d(a)
+  const i = d(e)
+  h2(2006, b, i)
+})
+
+/**
+ * SET_AUTHORIZATION_REQUEST_HEADER
+ */
+
+r(function(a, e){
+  const b = d(a)
+  const i = d(e)
+  h2(2007, b, i)
+})
+
+/**
+ * SET_CACHE_CONTROL_REQUEST_HEADER
+ */
+
+r(function(a, e){
+  const b = d(a)
+  const i = d(e)
+  h2(2008, b, i)
+})
+
+/**
+ * SET_CONNECTION_REQUEST_HEADER
+ */
+
+r(function(a, e){
+  const b = d(a)
+  const i = d(e)
+  h2(2009, b, i)
+})
+
+/**
+ * SET_CONTENT_LENGTH_REQUEST_HEADER
+ */
+
+r(function(a, e){
+  const b = d(a)
+  const i = d(e)
+  h2(2010, b, i)
+})
+
+/**
+ * SET_CONTENT_MD5_REQUEST_HEADER
+ */
+
+r(function(a, e){
+  const b = d(a)
+  const i = d(e)
+  h2(2011, b, i)
+})
+
+/**
+ * SET_CONTENT_TYPE_REQUEST_HEADER
+ */
+
+r(function(a, e){
+  const b = d(a)
+  const i = d(e)
+  h2(2012, b, i)
+})
+
+/**
+ * SET_COOKIE_REQUEST_HEADER
+ */
+
+r(function(a, e){
+  const b = d(a)
+  const i = d(e)
+  h2(2013, b, i)
+})
+
+/**
+ * SET_DATE_REQUEST_HEADER
+ */
+
+r(function(a, e){
+  const b = d(a)
+  const i = d(e)
+  h2(2014, b, i)
+})
+
+/**
+ * SET_EXPECT_REQUEST_HEADER
+ */
+
+r(function(a, e){
+  const b = d(a)
+  const i = d(e)
+  h2(2015, b, i)
+})
+
+/**
+ * SET_FORWARDED_REQUEST_HEADER
+ */
+
+r(function(a, e){
+  const b = d(a)
+  const i = d(e)
+  h2(2016, b, i)
+})
+
+/**
+ * SET_FROM_REQUEST_HEADER
+ */
+
+r(function(a, e){
+  const b = d(a)
+  const i = d(e)
+  h2(2017, b, i)
+})
+
+/**
+ * SET_HOST_REQUEST_HEADER
+ */
+
+r(function(a, e){
+  const b = d(a)
+  const i = d(e)
+  h2(2018, b, i)
+})
+
+/**
+ * SET_HTTP2_SETTINGS_REQUEST_HEADER
+ */
+
+r(function(a, e){
+  const b = d(a)
+  const i = d(e)
+  h2(2019, b, i)
+})
+
+/**
+ * SET_IF_MATCH_REQUEST_HEADER
+ */
+
+r(function(a, e){
+  const b = d(a)
+  const i = d(e)
+  h2(2020, b, i)
+})
+
+/**
+ * SET_IF_MODIFIED_SINCE_REQUEST_HEADER
+ */
+
+r(function(a, e){
+  const b = d(a)
+  const i = d(e)
+  h2(2021, b, i)
+})
+
+/**
+ * SET_IF_NONE_MATCH_REQUEST_HEADER
+ */
+
+r(function(a, e){
+  const b = d(a)
+  const i = d(e)
+  h2(2022, b, i)
+})
+
+/**
+ * SET_IF_RANGE_REQUEST_HEADER
+ */
+
+r(function(a, e){
+  const b = d(a)
+  const i = d(e)
+  h2(2023, b, i)
+})
+
+/**
+ * SET_IF_UNMODIFIED_SINCE_REQUEST_HEADER
+ */
+
+r(function(a, e){
+  const b = d(a)
+  const i = d(e)
+  h2(2024, b, i)
+})
+
+/**
+ * SET_MAX_FORWARDS_REQUEST_HEADER
+ */
+
+r(function(a, e){
+  const b = d(a)
+  const i = d(e)
+  h2(2025, b, i)
+})
+
+/**
+ * SET_ORIGIN_REQUEST_HEADER
+ */
+
+r(function(a, e){
+  const b = d(a)
+  const i = d(e)
+  h2(2026, b, i)
+})
+
+/**
+ * SET_PRAGMA_REQUEST_HEADER
+ */
+
+r(function(a, e){
+  const b = d(a)
+  const i = d(e)
+  h2(2027, b, i)
+})
+
+/**
+ * SET_PROXY_AUTHORIZATION_REQUEST_HEADER
+ */
+
+r(function(a, e){
+  const b = d(a)
+  const i = d(e)
+  h2(2028, b, i)
+})
+
+/**
+ * SET_RANGE_REQUEST_HEADER
+ */
+
+r(function(a, e){
+  const b = d(a)
+  const i = d(e)
+  h2(2029, b, i)
+})
+
+/**
+ * SET_REFERER_REQUEST_HEADER
+ */
+
+r(function(a, e){
+  const b = d(a)
+  const i = d(e)
+  h2(2030, b, i)
+})
+
+/**
+ * SET_USER_AGENT_REQUEST_HEADER
+ */
+
+r(function(a, e){
+  const b = d(a)
+  const i = d(e)
+  h2(2031, b, i)
+})
+
+/**
+ * SET_UPGRADE_REQUEST_HEADER
+ */
+
+r(function(a, e){
+  const b = d(a)
+  const i = d(e)
+  h2(2032, b, i)
+})
+
+/**
+ * SET_VIA_REQUEST_HEADER
+ */
+
+r(function(a, e){
+  const b = d(a)
+  const i = d(e)
+  h2(2033, b, i)
+})
+
+/**
+ * SET_WARNING_REQUEST_HEADER
+ */
+
+r(function(a, e){
+  const b = d(a)
+  const i = d(e)
+  h2(2034, b, i)
+})
+
+/**
+ * SET_UPGRADE_INSECURE_REQUESTS_REQUEST_HEADER
+ */
+
+r(function(a, e){
+  const b = d(a)
+  const i = d(e)
+  h2(2035, b, i)
+})
+
+/**
+ * SET_X_REQUESTED_WITH_REQUEST_HEADER
+ */
+
+r(function(a, e){
+  const b = d(a)
+  const i = d(e)
+  h2(2036, b, i)
+})
+
+/**
+ * SET_X_FORWARDED_FOR_REQUEST_HEADER
+ */
+
+r(function(a, e){
+  const b = d(a)
+  const i = d(e)
+  h2(2037, b, i)
+})
+
+/**
+ * SET_X_FORWARDED_HOST_REQUEST_HEADER
+ */
+
+r(function(a, e){
+  const b = d(a)
+  const i = d(e)
+  h2(2038, b, i)
+})
+
+/**
+ * SET_X_FORWARDED_PROTO_REQUEST_HEADER
+ */
+
+r(function(a, e){
+  const b = d(a)
+  const i = d(e)
+  h2(2039, b, i)
+})
+
+/**
+ * SET_FRONT_END_HTTPS_REQUEST_HEADER
+ */
+
+r(function(a, e){
+  const b = d(a)
+  const i = d(e)
+  h2(2040, b, i)
+})
+
+/**
+ * SET_X_HTTP_METHOD_OVERRIDE_REQUEST_HEADER
+ */
+
+r(function(a, e){
+  const b = d(a)
+  const i = d(e)
+  h2(2041, b, i)
+})
+
+/**
+ * SET_PROXY_CONNECTION_REQUEST_HEADER
+ */
+
+r(function(a, e){
+  const b = d(a)
+  const i = d(e)
+  h2(2042, b, i)
+})
+
+/**
+ * SET_X_CSRF_TOKEN_REQUEST_HEADER
+ */
+
+r(function(a, e){
+  const b = d(a)
+  const i = d(e)
+  h2(2043, b, i)
+})
+
+/**
+ * SET_X_REQUEST_ID_REQUEST_HEADER
+ */
+
+r(function(a, e){
+  const b = d(a)
+  const i = d(e)
+  h2(2044, b, i)
+})
+
+/**
+ * SET_X_CORRELATION_ID_REQUEST_HEADER
+ */
+
+r(function(a, e){
+  const b = d(a)
+  const i = d(e)
+  h2(2045, b, i)
+})
+
+/**
+ * SET_ETAG_REQUEST_HEADER
+ */
+
+r(function(a, e){
+  const b = d(a)
+  const i = d(e)
+  h2(2046, b, i)
+})
+
+/**
+ * SET_WWW_AUTHENTICATE_REQUEST_HEADER
+ */
+
+r(function(a, e){
+  const b = d(a)
+  const i = d(e)
+  h2(2047, b, i)
+})
+
+/**
+ * SET_EXPIRES_REQUEST_HEADER
+ */
+
+r(function(a, e){
+  const b = d(a)
+  const i = d(e)
+  h2(2048, b, i)
+})
+
+/**
+ * SET_ACCESS_CONTROL_ALLOW_ORIGIN_REQUEST_HEADER
+ */
+
+r(function(a, e){
+  const b = d(a)
+  const i = d(e)
+  h2(2049, b, i)
+})
+
+/**
+ * SET_ACCESS_CONTROL_ALLOW_CREDENTIALS_REQUEST_HEADER
+ */
+
+r(function(a, e){
+  const b = d(a)
+  const i = d(e)
+  h2(2050, b, i)
+})
+
+/**
+ * SET_ACCESS_CONTROL_EXPOSE_HEADERS_REQUEST_HEADER
+ */
+
+r(function(a, e){
+  const b = d(a)
+  const i = d(e)
+  h2(2051, b, i)
+})
+
+/**
+ * SET_ACCESS_CONTROL_MAX_AGE_REQUEST_HEADER
+ */
+
+r(function(a, e){
+  const b = d(a)
+  const i = d(e)
+  h2(2052, b, i)
+})
+
+/**
+ * SET_ACCESS_CONTROL_ALLOW_METHODS_REQUEST_HEADER
+ */
+
+r(function(a, e){
+  const b = d(a)
+  const i = d(e)
+  h2(2053, b, i)
+})
+
+/**
+ * SET_ACCESS_CONTROL_ALLOW_HEADERS_REQUEST_HEADER
+ */
+
+r(function(a, e){
+  const b = d(a)
+  const i = d(e)
+  h2(2054, b, i)
+})
+
+/**
+ * SET_ACCEPT_PATCH_REQUEST_HEADER
+ */
+
+r(function(a, e){
+  const b = d(a)
+  const i = d(e)
+  h2(2055, b, i)
+})
+
+/**
+ * SET_ACCEPT_RANGES_REQUEST_HEADER
+ */
+
+r(function(a, e){
+  const b = d(a)
+  const i = d(e)
+  h2(2056, b, i)
+})
+
+/**
+ * SET_AGE_REQUEST_HEADER
+ */
+
+r(function(a, e){
+  const b = d(a)
+  const i = d(e)
+  h2(2057, b, i)
+})
+
+/**
+ * SET_CONTENT_RANGE_HEADER
+ */
+
+r(function(a, e){
+  const b = d(a)
+  const i = d(e)
+  h2(2058, b, i)
+})
+
+/**
+ * CREATE_FORMDATA
+ */
+
+r(function(a){
+  const b = d(a)
+  const i = h1(2059, b)
+  const k = h1(0, i)
+  return k
+})
+
+/**
+ * SET_WEBGL_UNIFORM_MATRIX2FV
+ */
+
+r(function(a, e, f){
+  const b = d(a)
+  const i = d(e)
+  const k = d(f)
+  h3(2060, b, i, k)
+})
+
+/**
+ * SET_WEBGL_UNIFORM_MATRIX3FV
+ */
+
+r(function(a, e, f){
+  const b = d(a)
+  const i = d(e)
+  const k = d(f)
+  h3(2061, b, i, k)
+})
+
+/**
+ * SET_WEBGL_UNIFORM_MATRIX4FV
+ */
+
+r(function(a, e, f){
+  const b = d(a)
+  const i = d(e)
+  const k = d(f)
+  h3(2062, b, i, k)
+})
+
+/**
+ * SET_WEBGL_UNIFORM1I
+ */
+
+r(function(a, e, f){
+  const b = d(a)
+  const i = d(e)
+  const k = d(f)
+  h3(2063, b, i, k)
+})
+
+/**
+ * SET_WEBGL_UNIFORM1IV
+ */
+
+r(function(a, e, f){
+  const b = d(a)
+  const i = d(e)
+  const k = d(f)
+  h3(2064, b, i, k)
+})
+
+/**
+ * SET_WEBGL_UNIFORM2I
+ */
+
+r(function(a, e, f, r){
+  const b = d(a)
+  const i = d(e)
+  const k = d(f)
+  const m = d(r)
+  h4(2065, b, i, k, m)
+})
+
+/**
+ * SET_WEBGL_UNIFORM2IV
+ */
+
+r(function(a, e, f, r){
+  const b = d(a)
+  const i = d(e)
+  const k = d(f)
+  const m = d(r)
+  h4(2066, b, i, k, m)
+})
+
+/**
+ * SET_WEBGL_UNIFORM3I
+ */
+
+r(function(a, e, f, r, s){
+  const b = d(a)
+  const i = d(e)
+  const k = d(f)
+  const m = d(r)
+  const n = d(s)
+  h5(2067, b, i, k, m, n)
+})
+
+/**
+ * SET_WEBGL_UNIFORM3IV
+ */
+
+r(function(a, e, f, r, s){
+  const b = d(a)
+  const i = d(e)
+  const k = d(f)
+  const m = d(r)
+  const n = d(s)
+  h5(2068, b, i, k, m, n)
+})
+
+/**
+ * SET_WEBGL_UNIFORM4I
+ */
+
+r(function(a, e, f, r, s, u){
+  const b = d(a)
+  const i = d(e)
+  const k = d(f)
+  const m = d(r)
+  const n = d(s)
+  const o = d(u)
+  h6(2069, b, i, k, m, n, o)
+})
+
+/**
+ * SET_WEBGL_UNIFORM4IV
+ */
+
+r(function(a, e, f, r, s, u){
+  const b = d(a)
+  const i = d(e)
+  const k = d(f)
+  const m = d(r)
+  const n = d(s)
+  const o = d(u)
+  h6(2070, b, i, k, m, n, o)
+})
+
+/**
+ * GET_WEBGL_SHADER_PARAMETER
+ */
+
+r(function(a, e){
+  const b = d(a)
+  const i = d(e)
+  const k = h2(2071, b, i)
+  const m = h1(0, k)
+  return m
+})
+
+/**
+ * GET_WEBGL_SHADER_INFO_LOG
+ */
+
+r(function(a, e){
+  const b = d(a)
+  const i = d(e)
+  const k = h2(2072, b, i)
+  const m = h1(0, k)
+  return m
+})
+
+/**
+ * BUFFER_WEBGL_ELEMENT_ARRAY_DATA
+ */
+
+r(function(a, e){
+  const b = d(a)
+  const i = d(e)
+  h2(2073, b, i)
+})
+
+/**
+ * BUFFER_WEBGL_ELEMENT_ARRAY_SUBDATA
+ */
+
+r(function(a, e){
+  const b = d(a)
+  const i = d(e)
+  h2(2074, b, i)
+})
+
+/**
+ * BIND_WEBGL_ARRAY_BUFFER
+ */
+
+r(function(a, e){
+  const b = d(a)
+  const i = d(e)
+  h2(2075, b, i)
+})
+
+/**
+ * BUFFER_WEBGL_ARRAY_DATA
+ */
+
+r(function(a, e){
+  const b = d(a)
+  const i = d(e)
+  h2(2076, b, i)
+})
+
+/**
+ * BUFFER_WEBGL_ARRAY_SUBDATA
+ */
+
+r(function(a, e){
+  const b = d(a)
+  const i = d(e)
+  h2(2077, b, i)
+})
+
+/**
+ * DRAW_WEBGL_TRIANGLE_ARRAYS
+ */
+
+r(function(a, e){
+  const b = d(a)
+  const i = d(e)
+  h2(2078, b, i)
+})
+
+/**
+ * DRAW_WEBGL_TRIANGLE_ELEMENTS
+ */
+
+r(function(a, e){
+  const b = d(a)
+  const i = d(e)
+  h2(2079, b, i)
+})
+
+/**
+ * CREATE_WEBGL_TEXTURE
+ */
+
+r(function(a){
+  const b = d(a)
+  const i = h1(2080, b)
+  const k = h1(0, i)
+  return k
+})
+
+/**
+ * BIND_WEBGL_TEXTURE
+ */
+
+r(function(a, e){
+  const b = d(a)
+  const i = d(e)
+  h2(2081, b, i)
+})
+
+/**
+ * ADD_WEBGL_2D_IMAGE_TEXTURE
+ */
+
+r(function(a, e){
+  const b = d(a)
+  const i = d(e)
+  h2(2082, b, i)
+})
+
+/**
+ * SET_WEBGL_VIEWPORT
+ */
+
+r(function(a, e, f){
+  const b = d(a)
+  const i = d(e)
+  const k = d(f)
+  h3(2083, b, i, k)
+})
+
+/**
+ * CREATE_MEDIA_RECORDER
+ */
+
+r(function(a){
+  const b = d(a)
+  const i = h1(2084, b)
+  const k = h1(0, i)
+  return k
+})
+
+/**
+ * CONNECT_MEDIA_NODE
+ */
+
+r(function(a, e){
+  const b = d(a)
+  const i = d(e)
+  const k = h2(2085, b, i)
+  const m = h1(0, k)
+  return m
+})
+
+/**
+ * CREATE_AUDIO_GAIN
+ */
+
+r(function(a){
+  const b = d(a)
+  const i = h1(2086, b)
+  const k = h1(0, i)
+  return k
+})
+
+/**
+ * CREATE_AUDIO_OSCILLATOR
+ */
+
+r(function(a){
+  const b = d(a)
+  const i = h1(2087, b)
+  const k = h1(0, i)
+  return k
+})
+
+/**
+ * CREATE_AUDIO_BIQUAD_FILTER
+ */
+
+r(function(a){
+  const b = d(a)
+  const i = h1(2088, b)
+  const k = h1(0, i)
+  return k
+})
+
+/**
+ * GET_MEDIA_DEVICES
+ */
+
+r(function(){
+  const b = h0(2089)
+  const i = h1(0, b)
+  return i
+})
+
+/**
+ * GET_FILES
+ */
+
+r(function(a){
+  const b = d(a)
+  const i = h1(2090, b)
+  const k = h1(0, i)
+  return k
+})
+
+/**
+ * GET_CLIPBOARD_DATA
+ */
+
+r(function(a){
+  const b = d(a)
+  const i = h1(2091, b)
+  const k = h1(0, i)
+  return k
+})
+
+/**
+ * GET_GAMEPADS
+ */
+
+r(function(){
+  const b = h0(2092)
+  const i = h1(0, b)
+  return i
+})
+
+/**
+ * HANDLE_PROMISE_SUCCESS
+ */
+
+r(function(a, e){
+  const b = d(a)
+  const i = d(e)
+  h2(2093, b, i)
+})
+
+/**
+ * HANDLE_PROMISE_ERROR
+ */
+
+r(function(a, e){
+  const b = d(a)
+  const i = d(e)
+  h2(2094, b, i)
+})
+
+/**
+ * CREATE_REQUEST
+ */
+
+r(function(){
+  const b = h0(2095)
+  const i = h1(0, b)
+  return i
 })
 
 
